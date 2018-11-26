@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>152 - State Codes</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">152 - State Codes</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[5]</td>
+	<td>account_balance</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[8]/div/div[34]</td>
+	<td>Washington DC</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//button[@type='button']</td>
+	<td>Show Non-Banking Related (51)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[27]/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[27]/ul/div/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[27]/ul/div/ul/div/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.btn.btn-primary</td>
+	<td>View PDF</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[5]</td>
+	<td>account_balance</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[8]/div/div[3]</td>
+	<td>California</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.state-code-title</td>
+	<td>California Code of Regulations</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[7]/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[7]/ul/div[2]/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[7]/ul/div[2]/ul/div/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.btn.btn-primary</td>
+	<td>View PDF</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[5]</td>
+	<td>account_balance</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[8]/div/div[14]</td>
+	<td>Michigan</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[5]</td>
+	<td>account_balance</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[8]/div/div[34]</td>
+	<td>Washington DC</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.state-code-chapter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[2]/ul/div/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[2]/ul/div/ul/div/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/ul/div[2]/ul/div/ul/div/ul/div/div/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=DC-CODE 1-101. Territorial area.</td>
+	<td>DC-CODE 1-101. Territorial area.</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[5]</td>
+	<td>account_balance</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[8]/div/div[26]</td>
+	<td>Pennsylvania</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.state-code-title</td>
+	<td>The Pennsylvania Code</td>
+</tr>
+</tbody></table>
+</body>
+</html>

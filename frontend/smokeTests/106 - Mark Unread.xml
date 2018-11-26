@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>106 - Mark Unread</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">106 - Mark Unread</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td>Bank of America</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div[2]/div/div/ul/li/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=h2</td>
+	<td>title1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${title1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div[2]/div/div/ul/li/div/div[4]/div/div/label/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropdown.btn-group &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropdown.btn-group &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=remove_red_eyeRead</td>
+	<td>remove_red_eyeRead</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[15]/td[4]/span</td>
+	<td>${title1}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div/div[3]/div[2]/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://pro.compliance.ai/content?read=true&amp;read_folder_view=true</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td></td>
+	<td>${title1}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

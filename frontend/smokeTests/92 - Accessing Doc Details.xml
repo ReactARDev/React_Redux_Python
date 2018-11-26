@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>92 - Accessing Doc Details</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">92 - Accessing Doc Details</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td>regulation act</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div[2]/div/div/ul/li/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.dropdown.btn-group &gt; button.btn.btn-primary</td>
+	<td>View PDF</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=document-summary-tabs-tab-details</td>
+	<td>Details</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td</td>
+	<td>Author</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='document-summary-tabs-pane-details']/div/div/table[2]/tbody/tr/td</td>
+	<td>Document Type</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='document-summary-tabs-pane-details']/div/div/table[3]/tbody/tr/td</td>
+	<td>Published</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li.add. &gt; span</td>
+	<td>Add</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='document-summary-tabs-pane-details']/div/section[2]/h4</td>
+	<td>Summary</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.label-container</td>
+	<td>Tags</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropdown.btn-group &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.dropdown.btn-group &gt; button.btn.btn-primary</td>
+	<td>Close PDF</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=document-summary-view-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=View on Source Website</td>
+	<td>View on Source Website</td>
+</tr>
+</tbody></table>
+</body>
+</html>

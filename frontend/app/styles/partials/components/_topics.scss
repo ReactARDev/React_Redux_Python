@@ -1,0 +1,122 @@
+.topics-container {
+  font-family: $font-family-sans-serif;
+  margin: 15px;
+  height: 100%;
+  overflow: auto;
+
+  .topics-guide-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    .topics-guide-text {
+      font-size: 16px;
+    }
+
+    .topics-guide-header, .topics-guide-text {
+      margin: 20px 0;
+    }
+
+    .topics-guide-header-fdbck-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .topics-guide-header {
+        margin-right: 20px;
+        span {
+          color: $beta-orange;
+        }
+      }
+    }
+
+    .topics-guide-following-menu-btn {
+      align-self: center;
+      width: 256px;
+      height: 56px;
+      font-size: 14px;
+      color: $white;
+      border-radius: 4px;
+      background-color: $hover-blue;
+      border: solid 1px $hover-blue;
+
+      &:hover {
+        color: $hover-blue;
+        background-color: $white;
+      }
+
+       &:focus {
+         outline: none;
+       }
+    }
+
+    .topics-guide-img-1 {
+      width: 630px;
+      height: 310px;
+      margin: 0 0 0 30px;
+      background: url('../images/topics_guide_timeline.svg') no-repeat;
+      background-position: center;
+    }
+
+    .topics-guide-img-2 {
+      @extend .topics-guide-img-1;
+      width: 540px;
+      height: 800px;
+      background: url('../images/topics_guide_right_panel.svg') no-repeat;
+    }
+
+    .topics-guide-img-3 {
+      @extend .topics-guide-img-1;
+      width: 285px;
+      height: 222px;
+      background: url('../images/topics_guide_search_bar.svg') no-repeat;
+    }
+
+    .topics-guide-tip {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+
+      .topics-guide-num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: $success-green;
+        border: solid 1px $success-green;
+      }
+    }
+
+    .topics-guide-tips-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topics-guide-tips-row {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.topics-guide-feedback-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $feedback-orange;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  i {
+    font-size: 30px;
+    color: $white;
+  }
+}

@@ -1,0 +1,576 @@
+$table_body_height_tall: 500px;
+$table_body_height_short: 250px;
+$column_one_width: 250px;
+$column_two_width: 250px;
+$column_three_width: 250px;
+
+
+.newDashboardContainer {
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+  padding: 0px 10px 100px 10px;
+  background-color: lighten($light-grey, 10%);
+
+  -ms-overflow-style: scrollbar; //IE 11
+
+  @media screen and (max-width: $small) {
+    margin-right: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .sucky-alignment-spacer {
+    padding: 72px 0 0 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .summaryContainer {
+    padding: 16px 0 0 0;
+    width: 100%;
+    @media screen and (max-width: $medium) {
+      padding: 8px;
+    }
+
+    &.popularFedSources {
+      .addAgency {
+        color: $hover-blue;
+        cursor: pointer;
+        vertical-align: bottom;
+      }
+      .agencyAdded {
+        color: green;
+        vertical-align: bottom;
+        cursor: default;
+      }
+    }
+  }
+
+  .summary {
+    background-color: $white;
+    border: solid 1px $light-grey;
+    border-radius: 6px;
+    padding: 8px;
+    height: 100%;
+
+    @media screen and (max-width: $medium) {
+      padding: 12px;
+    }
+
+    .show-more-less {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 12px;
+      padding-top: 8px;
+
+      &:hover {
+        color: $hover-blue;
+      }
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    .panel-group {
+      .acoord-panel {
+        cursor: pointer;
+
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                            supported by Chrome and Opera */
+
+        .panel-heading {
+          .panel-header-text-container {
+            a {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              text-decoration: none;
+              .header-check-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .check {
+                  color: $success-green;
+                  font-size: 20px;
+                  margin-left: 10px;
+                }
+
+                .assignment {
+                  color: $beta-orange;
+                  font-size: 20px;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        &.contributor-panel {
+          .panel-body {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+
+            .contributor-button {
+              width: 200px;
+              height: 40px;
+              border-radius: 6px;
+              color: $white;
+              background-color: $hover-blue;
+              border: solid 1px $hover-blue;
+              align-self: center;
+
+              &:hover, &:active {
+                background-color: $white;
+                color: $hover-blue;
+                border: solid 1px $hover-blue;
+              }
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .timelineGraph {
+    margin: 16px 0 0 0;
+    background-color: $white;
+    border-radius: 6px;
+    border: solid 1px $light-grey;
+
+    @media screen and (max-width: 1091px) {
+      width: 100%;
+    }
+
+    h2 {
+      margin-left: 10px;
+      .days {
+        font-size: 14px;
+        color: $rando-grey;
+      }
+    }
+  }
+  .newTimeline {
+    @media screen and (max-width: 1091px) {
+      width: 100%;
+    }
+    .timelineTable {
+      margin-top: 16px;
+
+      .subTitle {
+        color: $hover-blue;
+        cursor: pointer;
+      }
+
+      .viewAllUpdates {
+        padding: 10px 0 0 0;
+        color: $hover-blue;
+        cursor: pointer;
+      }
+
+      h1 {
+        color: $black;
+        padding-bottom: 7px;
+        .days {
+          font-size: 14px;
+          color: $rando-grey;
+        }
+      }
+
+      .dash-carousel-timeline-table {
+        background-color: $white;
+        border-radius: 6px;
+        border: solid 1px $light-grey;
+        padding: 10px;
+
+        .agencyTabs {
+          height: 40px;
+          padding: 0 10px 0 10px;
+
+          -ms-overflow-style: none;  // IE 10+
+          overflow: -moz-scrollbars-none;  // Firefox
+          ::-webkit-scrollbar { display: none; }  // Safari and Chrome
+
+          .agencyTab {
+            cursor: pointer;
+            height: 40px;
+            min-width: 120px;
+            border: solid 1px #dddddd;
+
+            .tabText {
+              font-size: 14px;
+              color: $dark-grey;
+              font-weight: 800;
+
+              &.currentTab {
+                color: $white;
+              }
+
+              .tabDocCount {
+                color: $medium-grey;
+
+                &.currentTab {
+                  color: $white;
+                }
+              }
+
+              .notif-bubble {
+                border-radius: 50%;
+                margin-right: 5px;
+                width: 12px;
+                height: 12px;
+                background-color: $notif-red;
+                border: solid 1px $notif-red;
+                display: inline-block;
+              }
+
+              .documentCount {
+                padding-right: 20px;
+                color: $medium-grey;
+                font-size: 16px;
+              }
+
+            }
+          }
+          .currentTab {
+            background-color: $hover-blue;
+          }
+        }
+
+        .table-responsive {
+          margin-top: 10px;
+          border-top: 1px solid $light-grey;
+          /*
+            Fixed table header technique from https://codepen.io/tjvantoll/pen/JEKIu
+          */
+          table {
+            table-layout: fixed;
+            // overriding bootstrap table default, is there a better way to do this?
+            margin-bottom: 0px !important;
+
+            tbody {
+              display: block;
+              overflow: auto;
+              width: 100%;
+            }
+
+            .scroll {
+              height: $table_body_height_tall;
+              @media screen and (max-height: 850px) {
+                height: $table_body_height_short;
+              }
+            }
+
+            .timelineItem {
+              display: block;
+              cursor: pointer;
+              padding: 10px 0px 10px 0px;
+              border-bottom: 1px solid $light-grey;
+              background-color: #ffffff;
+              &:hover { background-color: rgba($hover-blue, 0.1); }
+
+              &.read_document {
+                background-color: #f5f5f5;
+                .rowText { color: $dark-grey; }
+                .docName { border-left: 3px solid transparent; }
+                .docProps { border-left: 3px solid transparent; }
+                &:hover { background-color: #eeeeee; }
+              }
+
+              .rowText {
+                color: $black;
+                line-height: 150%;
+              }
+
+              .docName {
+                padding: 0px 10px 12px 10px;
+                border-top: none;
+                border-left: 3px solid $hover-blue;
+                white-space: normal;
+
+              }
+
+              .docProps {
+                border-left: 3px solid $hover-blue;
+                td {
+                  text-align: left;
+                  padding: 0px 10px 0px 10px;
+                }
+
+                td:nth-child(1) { width: $column_one_width; }
+                td:nth-child(2) { width: $column_two_width; }
+                td:nth-child(3) { width: $column_three_width; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // styles for timeline graph
+  .agencies-chart svg {
+    height: 400px;
+
+    .tick line {
+      stroke-opacity: 0.5;
+    }
+    .nv-axis .zero line{
+      stroke:black;
+      stroke-opacity: 1;
+    }
+    .nv-axis.nv-x .tick line {
+      display: none;
+    }
+  }
+
+  .leaderboard {
+    .statusContainer {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .status {
+      width: 112px;
+      height: 112px;
+      border: solid 1px #f1f1f1;
+      margin: 8px 0 8px 0;
+      .statusTitle {
+        text-align: center;
+      }
+      .check {
+        color: #15d953;
+        font-size: 29px;
+        display: block;
+        margin: 33px auto 0 auto;
+      }
+      .tryIt {
+        margin: 24px auto 16px auto;
+        display: block;
+        width: 88px;
+        height: 32px;
+        border: solid 1px #2c6ddf;
+        color: #2c6ddf
+      }
+
+      .pointsContainer {
+        width: 80px;
+        height: 24px;
+        border: solid 1px #e7e9ea;
+        margin: 33px auto 0 auto;
+        .docPoints {
+          height: 24px;
+          background-color: #ff9100;
+          &.a {
+            width: 0px;
+          }
+          &.b {
+            width: 13.3px;
+          }
+          &.c {
+            width: 26.7px;
+          }
+          &.d {
+            width: 40px;
+          }
+          &.e {
+            width: 53.3px;
+          }
+          &.f {
+            width: 66.6px;
+          }
+        }
+        .myStuffPoints {
+          height: 24px;
+          background-color: #ffe900;
+          &.a {
+            width: 0px;
+          }
+          &.b {
+            width: 40px;
+          }
+        }
+      }
+      .navigationPoints {
+        height: 32px;
+        width: 36px;
+        margin: 33px auto 0 auto;
+        &.a {
+          background-image: url('../images/navigation0bar.svg');
+          background-repeat: no-repeat;
+        }
+        &.b {
+          background-image: url('../images/navigation1bar.svg');
+          background-repeat: no-repeat;
+        }
+        &.c {
+          background-image: url('../images/navigation2bar.svg');
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  .news {
+    h1 {
+      color: $black;
+      padding-bottom: 7px;
+    }
+    margin-bottom: 32px;
+    overflow: hidden;
+
+    .subTitle {
+      color: $hover-blue;
+      cursor: pointer;
+    }
+    .noNews {
+      background-image: url('../images/noNewsToday.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-position: top;
+      width: 100%;
+      min-height: 250px;
+      height: 100%;
+      margin: 0 0 25px 0;
+
+      h3, h5{
+        text-align: center;
+        padding-top: 10px;
+      }
+    }
+    .newsItemContainer {
+      margin-top: 12px;
+      max-width: 236px;
+      width: 200px;
+      min-width: 200px;
+    }
+    .newsItem {
+      height: 259px;
+      border-radius: 6px;
+      background-color: $white;
+      border: solid 1px $border-line-grey;
+      padding: 10px;
+      cursor: pointer;
+      margin-right: 4px;
+
+      box-shadow: 2px 2px 2px darken($light-grey, 20%);
+
+      .icon {
+        background-repeat: no-repeat;
+        background-size: 128px;
+        height: 128px;
+        width: 128px;
+        margin: auto;
+        margin-bottom: 12px;
+        &.stock{
+          background-image: url('../images/News-Stock-Logo.svg');
+        }
+        &.monetary{
+          background-image: url('../images/News-Monetary-Logo.svg');
+        }
+        &.state{
+          background-image: url('../images/News-State-CA-Logo.svg');
+        }
+        &.consumer{
+          background-image: url('../images/News-CFPB-Logo.svg');
+        }
+        &.examination{
+          background-image: url('../images/News-Examination-Logo.svg');
+        }
+        &.economist{
+          background-image: url('../images/News-Economist-Logo.jpg');
+        }
+        &.hill{
+          background-image: url('../images/News-Hill-Logo.jpg');
+        }
+        &.american_banker{
+          background-image: url('../images/News-AB-Logo.jpg');
+        }
+      }
+
+      .news-img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 12px;
+        max-height: 125px;
+        align-self: center;
+      }
+      .agencies {
+        bottom: -4px;
+        position: absolute;
+      }
+    }
+    .slickContainer {
+      display: flex;
+      flex-direction: row;
+      height: 290px;
+      flex-wrap: nowrap;
+      .slick-list {
+        width: 100%;
+      }
+    }
+  }
+
+  .recentActivity {
+    h5 {
+      color: $grey;
+    }
+    .updateCount {
+        margin-left: 8px;
+        color: $hover-blue;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+  }
+
+  .popularDocuments {
+    h5 {
+      color: $hover-blue;
+      cursor: pointer;
+    }
+  }
+  .commonSearches {
+    h5 {
+      color: $hover-blue;
+      cursor: pointer;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.contributorFormModal {
+  height: 90vh;
+  .formContainer {
+    height: 70vh;
+    width: 100%;
+  }
+  .modalBody {
+
+  }
+  iframe{
+    height: 90%;
+    width: 100%;
+  }
+}

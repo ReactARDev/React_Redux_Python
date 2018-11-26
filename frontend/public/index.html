@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compliance.ai</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- FIXME: Include separate css file for prod builds -->
+
+    <!-- Google Analytics -->
+    <script>
+    window.ga = window.ga ||
+  function () {
+    (ga.q = ga.q || []).push(arguments);
+  };
+ga.l = +new Date();
+//if host name equal to that of production site, send proper UA_ID to Google analytics
+const UA_ID = window.location.host.indexOf('pro') === -1 ? 'UA-100484087-2' : 'UA-100484087-1';
+ga('create', UA_ID, 'auto');
+//      ga('send', 'pageview');
+// track pageviews in the router
+</script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
+    <!-- fuckAdBlock detector -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.js"></script>
+
+    <!-- zxcvbn password strength indicator -->
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js'></script>
+
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var     c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+      0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+      for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+      //if host name equal to that of production site, send proper MIX_ID to Mixpanel
+      const MIX_ID = window.location.host.indexOf('pro') === -1 ? '30ea564ae498957654bf120577819e3f' : 'a6e05efcb500de2af26e8cb229d54747'; // Integration – Pro token : Live – Pro token
+      mixpanel.init(MIX_ID);
+    </script><!-- end Mixpanel -->
+
+    <!--CRAZY EGG  -->
+    <script type="text/javascript">
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0066/3951.js?"+Math.floor(new Date().getTime()/3600000);
+      a.id="crazyEggJavaScript";a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+  </head>
+
+  <body>
+
+    <!--[if lte IE 9]>
+      <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="root"></div>
+
+    <!-- FIXME: Only include polyfill in dev -->
+    <script type="text/javascript">
+    // Force `fetch` polyfill to workaround Chrome not displaying request body
+// in developer tools for the native `fetch`.
+self.fetch = null;
+</script>
+    <script src="app.js"></script>
+  </body>
+</html>

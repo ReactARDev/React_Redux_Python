@@ -1,0 +1,957 @@
+.timeline-toolbar {
+  height: auto;
+  flex-shrink: 0;
+  border-bottom: 2px solid $brand-blue;
+
+  .tabsContainer {
+    .nav-tabs {
+      border-bottom: none;
+    }
+    .nav-tabs {
+      a {
+        outline: none !important;
+      }
+      li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        border-color: black;
+        color: white;
+        background-color: $hover-blue;
+      }
+    }
+  }
+  .toolbar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+
+    .save-search-btn {
+      margin-right: 20px;
+      align-self: flex-end;
+    }
+  }
+
+  .search-saved-success {
+    margin: 10px;
+  }
+
+  .toolbar-search-suggest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+
+    @media screen and (max-width: $small) {
+      margin: 0 50px;
+    }
+
+
+    .suggestion-btn-container {
+      display: flex;
+      color: $hover-blue;
+      .material-icons {
+        cursor: pointer;
+      }
+
+      .freeTrialEnd {
+        color: $beta-orange;
+        margin-left: 20px;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+      .upgradeButton {
+        margin-left: 24px;
+        background-color: $beta-orange;
+        color: white;
+        width: 64px;
+        height: 24px;
+        border: none;
+        border-radius: 2px;
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+
+    .navbar-form {
+      display: flex;
+      flex-direction: row;
+
+      .search {
+        margin-top: 5px;
+        color: $black;
+        cursor: default;
+      }
+      .search-menu {
+        width: 250px;
+        &.highlightSearch {
+
+        }
+        input {
+          text-overflow: ellipsis;
+          &.highlightSearch {
+            background-color: #2C6DDF !important;
+            border-radius: 4px;
+            &::-webkit-input-placeholder {
+              color: white;
+            }
+            &:-moz-placeholder {
+              color: white;
+            }
+            &::-moz-placeholder {
+              color: white;
+            }
+            &:-ms-input-placeholder {
+              color: white;
+            }
+          }
+        }
+        .search-input  {
+          width: 100%;
+          height: 32px;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          border-radius: 0;
+          border-bottom: 2px solid $black;
+          border-width: thin;
+          padding-right: 6px;
+          font-size: 12px;
+          color: $black;
+          box-shadow: none;
+          pointer-events: all;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::-webkit-input-placeholder {
+            color: $medium-grey;
+          }
+
+          &:-moz-placeholder { /* Firefox 18- */
+            color: $medium-grey;
+          }
+
+          &::-moz-placeholder {  /* Firefox 19+ */
+            color: $medium-grey;
+          }
+
+          &:-ms-input-placeholder {
+            color: $medium-grey;
+          }
+        }
+
+        .menuStyle {
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+          border-top-right-radius: 0;
+          border-top-left-radius: 0;
+          border: 1px solid $dark-grey;
+          background: rgba(255, 255, 255, 0.9);
+          padding: 2px 0;
+          font-size: 90%;
+          position: fixed;
+          overflow: auto;
+          max-height: 50%;
+          z-index: 1000;
+        }
+
+        .entity-span {
+          color: gray;
+        }
+
+        .roundLogo {
+          max-height: 19px;
+          margin-right: 5px;
+        }
+
+        .item {
+          padding: 2px 6px;
+          cursor: default;
+          pointer-events: all;
+        }
+
+        .item-header {
+          background: $light-grey;
+          color: $insights-light-blue;
+        }
+        .saved-search-item {
+          &:hover {
+            color: white;
+            background: hsl(200, 50%, 50%);
+          }
+        }
+        .highlightedItem {
+          color: white;
+          background: hsl(200, 50%, 50%);
+          padding: 2px 6px;
+          cursor: default;
+          pointer-events: all;
+        }
+
+        .menu {
+          border: solid 1px #ccc;
+        }
+      }
+    }
+  }
+
+
+  .timeline-header {
+    cursor: default;
+    margin: 0 10px;
+  }
+
+  .saved-search-header {
+    cursor: default;
+    margin: 10px;
+  }
+
+  .filter-select-icon {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    cursor: pointer;
+
+    i {
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: $hover-blue;
+    }
+  }
+
+  .filter-menu {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    color: $brand-blue;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $active-grey;
+    .left{
+      margin-left: 0px !important;
+    }
+    .filter-header {
+      width:204px;
+
+      h3 {
+        float: left;
+      }
+
+      a {
+        cursor: pointer;
+        float: right;
+        margin-top: 25px;
+
+        &:active, &:hover {
+          color: blue;
+        }
+      }
+    }
+    .mainFilters {
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .topFilters {
+        margin-right: 80px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        button{
+          height: 36px;
+        }
+      }
+      .bottomFilters {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-right: 20px;
+      .Select.active {
+        height: 100% !important;
+        .Select-clear-zone {
+          padding-right: 5px;
+        }
+      }
+      .react-datepicker__month-container  {
+        font-size: 12px;
+      }
+      .filter-section {
+        height: 36px;
+        margin-left: 0px;
+        .react-datepicker__input-container {
+          input {
+            height: 36px;
+          }
+        }
+        .filter-date-range {
+          margin-left: 0px;
+        }
+      }
+
+      .filter-select {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .filter-title {
+        label {
+          width: 100px;
+          font-weight: normal;
+        }
+      }
+
+      .filter-error {
+        width: 425px;
+        font-weight: normal;
+      }
+
+      .Select {
+        .Select-control {
+          border: 1px solid $medium-grey;
+          width: auto;
+          min-width: 200px;
+          padding: 0;
+        }
+
+        &.active {
+          display: inline-table;
+          height: 30px;
+        }
+      }
+
+      .filter-date {
+        margin-left: 10px;
+
+        .date-range-label{
+          margin-bottom: 0;
+        }
+
+        .filters-filter{
+          color: $white;
+          background-color: $brand-blue;
+          font-size: 13px;
+          margin-top: 20px;
+        }
+
+        .filters-clear-all{
+          color: $brand-blue;
+          border-color: $brand-blue;
+          background-color: $white;
+          margin-top: 10px;
+          font-size: 13px;
+        }
+
+        .filters-filter:hover,
+        .filters-clear-all:hover {
+          background-color: $active-grey;
+          color: $brand-blue;
+        }
+
+        .filters-filter:focus {
+          color: $white;
+          background-color: $brand-blue;
+          outline: none;
+        }
+
+        .filters-clear-all:focus {
+          color: $brand-blue;
+          border-color: $brand-blue;
+          background-color: $white;
+          outline: none;
+        }
+
+        .btn-group {
+          /* n.b. custom button built with http://blog.koalite.com/bbg/ */
+          width: 100px;
+
+          .key_date_btn {
+            width: 100%;
+            border-shadow: none;
+            border: 1px solid $active-grey;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 36px;
+            line-height: 20px;
+            vertical-align: middle;
+            font-size:12px;
+          }
+
+          .publication_btn {
+            width: 100%;
+            border: 1px solid $active-grey;
+            border-shadow: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            height: 36px;
+            line-height: 20px;
+            vertical-align: middle;
+            font-size:12px;
+          }
+
+          .btn-date-switcher {
+            color: $brand-blue;
+            background-color: $white;
+            border-color: $medium-grey;
+          }
+
+          .btn-date-switcher:active,
+          .btn-date-switcher.active,
+          .open .dropdown-toggle.btn-date-switcher {
+            color: $white;
+            background-color: $right-panel-blue;
+            border-color: $medium-grey;
+          }
+
+          .btn-date-switcher:hover {
+            background-color: $primary-action-blue;
+          }
+
+          .btn-date-switcher:focus {
+            outline: none;
+          }
+
+          .btn-date-switcher:active,
+          .btn-date-switcher.active,
+          .open .dropdown-toggle.btn-date-switcher {
+            background-image: none;
+          }
+
+          .btn-date-switcher.disabled,
+          .btn-date-switcher[disabled],
+          fieldset[disabled] .btn-date-switcher,
+          .btn-date-switcher.disabled:hover,
+          .btn-date-switcher[disabled]:hover,
+          fieldset[disabled] .btn-date-switcher:hover,
+          .btn-date-switcher.disabled:focus,
+          .btn-date-switcher[disabled]:focus,
+          fieldset[disabled] .btn-date-switcher:focus,
+          .btn-date-switcher.disabled:active,
+          .btn-date-switcher[disabled]:active,
+          fieldset[disabled] .btn-date-switcher:active,
+          .btn-date-switcher.disabled.active,
+          .btn-date-switcher[disabled].active,
+          fieldset[disabled] .btn-date-switcher.active {
+            background-color: $active-grey;
+            border-color: $medium-grey;
+          }
+
+          .btn-date-switcher .badge {
+            color: $active-grey;
+            background-color: $black;
+          }
+        }
+      }
+
+      .filter-date-range{
+        margin-left: 10px;
+        height: 20px;
+
+        div{
+          flex-grow: 1;
+
+          .react-datepicker__close-icon::after{
+            right:4px;
+            margin: -11px auto 0;
+            background: none;
+            color: $medium-grey;
+            font-size: 18px;
+            vertical-align: middle;
+          }
+        }
+
+        div{
+          input{
+            border: 1px solid $medium-grey;
+            border-radius: 5px;
+            width: 100px;
+            height: 25px;
+            max-width: 100px;
+            padding-left: 5px;
+
+            &:focus {
+              #publication_datepicker, #key_date_datepicker {
+                .date-icon {
+                  display: none;
+                }
+              }
+            }
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              color: $brand-blue;
+              padding-left: 25px;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+              color: $brand-blue;
+              padding-left: 25px;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+              color: $brand-blue;
+              padding-left: 25px;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: $brand-blue;
+              padding-left: 25px;
+            }
+          }
+
+          input:nth-child(1) {
+            margin-right: 2px;
+          }
+        }
+
+        #publication_datepicker, #key_date_datepicker {
+          cursor: pointer;
+
+          .date-ranges {
+            display: -webkit-box;
+            position: relative;
+
+            .date-icon {
+              position: absolute;
+              margin-top: 8px;
+              margin-left: 5px;
+              font-size: 18px;
+              color: $dark-grey;
+              z-index: 2;
+              cursor: default;
+            }
+
+            .hide {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .filter-btm-btn-group {
+      margin: 20px 0;
+
+      .cancel-filter-btn, .apply-filter-btn {
+        float: right;
+        width: 100px;
+        margin: 0 10px 0 0;
+      }
+
+      .apply-filter-btn {
+        color: $white;
+        background-color: $right-panel-blue;;
+        font-size: 16px;
+        font-weight: normal;
+
+        &:hover{
+          color: $white;
+          background-color: $primary-action-blue;
+        }
+
+        &.disabled {
+          opacity: .15;
+          cursor: not-allowed;
+        }
+      }
+
+      .cancel-filter-btn {
+        font-size: 16px;
+        font-weight: normal;
+        color: darken($primary-action-blue, 20%);
+        background-color: $active-grey;
+      }
+    }
+  }
+
+
+  .folder-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+
+    .folder-cookie-trail {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      span {
+        font-family: $font-family-sans-serif;
+        font-size: 14px;
+        margin-left: 2px;
+        cursor: default;
+      }
+
+      i {
+        font-size: 18px;
+        color: $medium-grey;
+      }
+    }
+
+    .folder-controls {
+      display: flex;
+      flex-direction: row;
+
+      .folder-sectional, .document-sectional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $light-grey;
+        border-radius: 5px;
+        padding: 10px 10px 0px 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .folder-control-btns {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .folder-btn {
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 4px;
+
+            &.coming-soon {
+              opacity: .6;
+            }
+          }
+
+          .folder-control-label {
+            font-size: 12px;
+            font-family: $font-family-sans-serif;
+          }
+        }
+
+        .folder-control-btns {
+          button {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid $light-grey;
+            background-color: $white;
+            color: $dark-grey;
+            height: 25px;
+            line-height: 23px;
+            padding: 0 6px;
+            min-width: auto;
+
+            &:focus {
+              outline: none;
+            }
+
+            span {
+              margin: 0 5px;
+            }
+
+            .material-icons {
+              line-height: 23px;
+              height: 23px;
+              vertical-align: middle;
+              display: inline;
+
+              &.open-close {
+                margin-right: -6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.action-bar-container {
+  display: none;
+
+  .create-folder {
+    position: relative;
+
+    .folder-dropdown-menu {
+      position: absolute;
+      font-family: $font-family-sans-serif;
+      border: 1px solid $dark-grey;
+      background: rgba(255, 255, 255, 1);
+      top: 25px;
+      left: 11px;
+      width: 300px;
+      height: 300px;
+      padding: 0;
+      z-index: 90;
+      //necessary to create center scroll of Folder items
+      .folder-scroll-container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        cursor: default;
+        overflow:auto;
+        .folder-dropdown-header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background-color: $brand-grey;
+          width: 100%;
+          height: 50px;
+          cursor: default;
+
+          .folder-menu-title {
+            font-size: 14px;
+            line-height: 50px;
+            margin: 0;
+            padding-left: 10px;
+
+            &.header-center {
+              text-align: center;
+              padding: 0;
+            }
+          }
+
+          .folder-dropdown-close {
+            font-size: 14px;
+            margin-left: auto;
+            margin-right: 10px;
+
+            &:hover {
+              color: $hover-blue;
+              cursor: pointer;
+            }
+          }
+
+          .folder-back-arrow, .folder-done-icon {
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 14px;
+
+            &:hover {
+              color: $hover-blue;
+              cursor: pointer;
+            }
+          }
+
+          .folder-back-arrow {
+            left: 25px;
+          }
+
+          input {
+            margin: auto;
+            border-color: 1px $dark-grey;
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .folder-done-icon {
+            right: 25px;
+          }
+        }
+
+        .folder-list-container {
+          margin-top: 10px;
+          padding: 0;
+          overflow-y: auto;
+          overflow-x: hidden;
+          height: 100%;
+          width: 100%;
+          cursor: default;
+
+          .folder-document-item {
+            margin: 8px;
+            padding: 15px 10px;
+            border-top: 1px solid $dark-grey;
+            border-bottom: 1px solid $dark-grey;
+            font-size: 14px;
+            line-height: 20px;
+            list-style-type: none;
+
+            &:hover {
+              background-color: $active-grey;
+              cursor: pointer;
+            }
+          }
+
+          .folder-menu-message {
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 10%;
+            right: 10%;
+            font-size: 12px;
+          }
+
+          .folder-item {
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            left: 0;
+            width: 100%;
+            padding: 15px 10px;
+            margin: 0;
+
+            &:hover {
+              background-color: $active-grey;
+              cursor: pointer;
+            }
+
+            i {
+              line-height: 18px;
+              font-size: 20px;
+            }
+
+            li {
+              font-size: 12px;
+              margin-left: 8px;
+              line-height: 20px;
+              list-style-type: none;
+            }
+          }
+        }
+
+        .folder-controllers {
+          bottom: 0;
+          position: relative;
+          margin: 10px 10px;
+          cursor: default;
+
+          .new-folder-control {
+            text-decoration: none;
+            cursor: pointer;
+            color: $dark-grey;
+
+            &:hover {
+              color: $hover-blue;
+              cursor: pointer;
+            }
+          }
+
+          .add-folder-control {
+            float: left;
+            text-decoration: none;
+            cursor: pointer;
+            color: $dark-grey;
+
+            i {
+              font-size: 15px;
+              vertical-align: middle;
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .folder-spacer {
+          position: relative;
+          margin: 17px;
+        }
+      }
+    }
+  }
+
+  .doc-action-item {
+    color: $black;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+
+    &.material-icons {
+      font-size: 24px;
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .mark-unread-folder {
+    position: relative;
+    .unread-circle {
+      position: absolute;
+      background: $black;
+      border-radius: 50%;
+      top: 2px;
+      right: 8px;
+      height: 10px;
+      width: 10px;
+      color: $black;
+    }
+
+    &:hover {
+      .unread-circle {
+        background: $hover-blue;
+      }
+    }
+
+    &.disabled {
+      opacity: .15;
+
+      .doc-action-item {
+        cursor: not-allowed;
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      .unread-circle {
+        background: $black;
+      }
+    }
+  }
+
+  .send-emails {
+    position: relative;
+    .email-circle {
+      position: absolute;
+      background: $black;
+      border-radius: 50%;
+      top: 2px;
+      right: 8px;
+      height: 10px;
+      width: 10px;
+      color: $black;
+    }
+
+    &:hover {
+      .email-circle {
+        background: $hover-blue;
+      }
+    }
+
+    &.disabled {
+      opacity: .15;
+
+      .doc-action-item {
+        cursor: not-allowed;
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      .email-circle {
+        background: $black;
+      }
+    }
+  }
+
+  &.remove-transperancy {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    color: $black;
+    align-items: center;
+    width: 100%;
+
+    .doc-action-item {
+      &:hover {
+        text-decoration: none;
+        color: $hover-blue;
+      }
+    }
+  }
+}

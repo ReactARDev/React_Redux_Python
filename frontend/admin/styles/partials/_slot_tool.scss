@@ -1,0 +1,251 @@
+.token_hilite {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.token_hilite .feature_score {
+    visibility: hidden;
+    text-align: center;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.token_hilite:hover .feature_score {
+    visibility: visible;
+}
+
+.note {
+  margin-top: 100px;
+  display: block;
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+.link {
+    stroke: #999;
+    stroke-opacity: .6;
+}
+
+.hidden_parse {
+    display: none;
+}
+
+.tagged_sentence {
+    font-size: 120%;
+}
+
+.selected_value {
+    font-size: 90%;
+    background: rgba(0, 255, 0, 0.2);
+    background-color: rgb(0, 255, 0);
+}
+
+.unselected_value {
+    font-size: 90%;
+}
+
+.entities {
+    line-height: 2;
+}
+
+.hr_border {
+  border-style: inset;
+  border-width: 1px;
+}
+
+[data-entity] {
+    padding: 0.25em 0.35em;
+    margin: 0px 0.25em;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 0.25em;
+    border: 1px solid;
+}
+
+[data-entity]::after {
+    box-sizing: border-box;
+    content: attr(data-entity);
+    font-size: 0.6em;
+    line-height: 1;
+    padding: 0.35em;
+    border-radius: 0.35em;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 0px 0.1rem 0.5rem;
+}
+
+[data-entity][data-entity="person"] {
+    background: rgba(189,200,150, 0.2);
+    border-color: rgb(189,200,150);
+}
+[data-entity][data-entity="person"]::after {
+    background: rgb(189,200,150);
+}
+
+[data-entity][data-entity="org"] {
+    background: rgba(189,183,107, 0.2);
+    border-color: rgb(189,183,107);
+}
+[data-entity][data-entity="org"]::after {
+    background: rgb(189,183,107);
+}
+
+[data-entity][data-entity="gpe"] {
+    background: rgba(189,183,107, 0.2);
+    border-color: rgb(189,183,107);
+}
+[data-entity][data-entity="gpe"]::after {
+    background: rgb(189,183,107);
+}
+
+[data-entity][data-entity="fac"] {
+    background: rgba(189,183,107, 0.2);
+    border-color: rgb(189,183,107);
+}
+[data-entity][data-entity="fac"]::after {
+    background: rgb(189,183,107);
+}
+
+[data-entity][data-entity="loc"] {
+    background: rgba(189,183,107, 0.2);
+    border-color: rgb(189,183,107);
+}
+[data-entity][data-entity="loc"]::after {
+    background: rgb(189,183,107);
+}
+
+[data-entity][data-entity="product"] {
+    background: rgba(255, 165, 0, 0.2);
+    border-color: rgb(255, 165, 0);
+}
+[data-entity][data-entity="product"]::after {
+    background: rgb(255, 165, 0);
+}
+
+[data-entity][data-entity="law"] {
+    background: rgba(32, 178, 170, 0.2);
+    border-color: rgb(32, 178, 170);
+}
+[data-entity][data-entity="law"]::after {
+    background: rgb(32, 178, 170);
+}
+
+[data-entity][data-entity="work_of_art"] {
+    background: rgba(32, 178, 170, 0.2);
+    border-color: rgb(32, 178, 170);
+}
+[data-entity][data-entity="work_of_art"]::after {
+    background: rgb(32, 178, 170);
+}
+
+[data-entity][data-entity="act"] {
+    background: rgba(200, 0, 255, 0.2);
+    border-color: rgb(200, 0, 255);
+}
+[data-entity][data-entity="act"]::after {
+    background: rgb(200, 0, 255);
+}
+
+[data-entity][data-entity="usc"] {
+    background: rgba(200, 0, 255, 0.2);
+    border-color: rgb(200, 0, 255);
+}
+[data-entity][data-entity="usc"]::after {
+    background: rgb(200, 0, 255);
+}
+[data-entity][data-entity="cfr"] {
+    background: rgba(200, 0, 255, 0.2);
+    border-color: rgb(200, 0, 255);
+}
+[data-entity][data-entity="cfr"]::after {
+    background: rgb(200, 0, 255);
+}
+
+[data-entity][data-entity="named_regulation"] {
+    background: rgba(255, 0, 200, 0.2);
+    border-color: rgb(255, 0, 200);
+}
+[data-entity][data-entity="named_regulation"]::after {
+    background: rgb(255, 0, 200);
+}
+
+[data-entity][data-entity="event"] {
+    background: rgba(0, 255, 255, 0.2);
+    border-color: rgb(0, 255, 255);
+}
+[data-entity][data-entity="event"]::after {
+    background: rgb(0, 255, 255);
+}
+
+[data-entity][data-entity="money"] {
+    background: rgba(100,149,237, 0.2);
+    border-color: rgb(100,149,237);
+}
+[data-entity][data-entity="money"]::after {
+    background: rgb(100,149,237);
+}
+
+[data-entity][data-entity="cardinal"] {
+    background: rgba(67, 198, 252, 0.2);
+    border-color: rgb(67, 198, 252);
+}
+[data-entity][data-entity="cardinal"]::after {
+    background: rgb(67, 198, 252);
+}
+
+[data-entity][data-entity="percent"] {
+    background: rgba(67, 198, 252, 0.2);
+    border-color: rgb(67, 198, 252);
+}
+[data-entity][data-entity="percent"]::after {
+    background: rgb(67, 198, 252);
+}
+
+[data-entity][data-entity="quntity"] {
+    background: rgba(67, 198, 252, 0.2);
+    border-color: rgb(67, 198, 252);
+}
+[data-entity][data-entity="quantity"]::after {
+    background: rgb(67, 198, 252);
+}
+
+[data-entity][data-entity="date"] {
+    background: rgba(135, 206, 250, 0.2);
+    border-color: rgb(135, 206, 250);
+}
+[data-entity][data-entity="date"]::after {
+    background: rgb(135, 206, 250);
+}
+
+[data-entity][data-entity="misc"] {
+    background: rgba(255, 240, 245, 0.2);
+    border-color: rgb(255, 240, 245);
+}
+[data-entity][data-entity="misc"]::after {
+    background: rgb(255, 240, 245);
+}
+
+.selected_span[data-entity] {
+    padding: 0.25em 0.35em;
+    margin: 0px 0.25em;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 0.50em;
+    border: 2px solid;
+    background: rgba(0, 255, 0, 0.8);
+    border-color: rgb(0, 255, 0);
+}

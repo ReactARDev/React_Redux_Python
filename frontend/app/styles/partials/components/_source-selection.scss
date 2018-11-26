@@ -1,0 +1,134 @@
+#source-selection {
+  max-height: 800px;
+
+  .source-selection-header {
+    display: flex;
+    flex-direction: row;
+    .overlay {
+      display: flex;
+      align-content: center;
+      height: 40px;
+      width: 40px;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  .source-columns {
+    display: flex;
+    flex-direction: column;
+
+    .fed-header, .state-header {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      border: none;
+      padding: 0;
+
+      h4 {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      a {
+        margin-left: 10px;
+        cursor: pointer;
+        color: $hover-blue;
+
+        //remove highlight when clicking on text
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                            supported by Chrome and Opera */
+      }
+    }
+
+    > div {
+      margin: 10px;
+      max-height: 300px;
+      padding: 0 20px;
+      overflow-y: scroll;
+      border: 1px solid $brand-grey;
+      border-radius: 5px;
+    }
+
+    .agency_container {
+      margin: 5px 0;
+      cursor: pointer;
+
+      .check-box {
+        display: inline;
+        width: 20px;
+        justify-content: center;
+        color: $medium-grey;
+        // override checkbox style with this method:
+        // http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
+        label {
+          padding-left: 0;
+          vertical-align: middle;
+          align-self: center;
+
+          input {
+            display: none;
+          }
+          .checked, .unchecked {
+            font-size: 18px;
+            margin-right: 5px;
+            display: none;
+            &:hover {
+              color: $hover-blue;
+              text-decoration: none;
+            }
+          }
+          input + .unchecked {
+            display: inline-block;
+          }
+          input:checked ~ .checked {
+            display: inline-block;
+          }
+          input:checked ~ .unchecked {
+            display: none;
+          }
+          i {
+            vertical-align: middle;
+          }
+        }
+
+        .clickable {
+          cursor: pointer;
+        }
+        .clickable:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        display: inline;
+        vertical-align: middle;
+      }
+
+      i {
+        vertical-align: sub;
+        font-size: 18px;
+        cursor: default;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>96 - Tags</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">96 - Tags</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=bookmarkBookmarked</td>
+	<td>bookmarkBookmarked</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.add. &gt; i.material-icons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=html body div#root div#top.auth.dashboard div.main-container div.right-panel div#rule-container.loading-overlay-medium div#document-summary-tabs div.tab-content div#document-summary-tabs-pane-details.tab-pane.active.fade.in div.rule-content div.document-summary-tags div.tag-container div.add-tag-container div.Select.is-searchable div.Select-control div.Select-input input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.Select-option.is-focused</td>
+	<td>Collections</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li &gt; span</td>
+	<td>Collections</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li &gt; i.material-icons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li.add. &gt; span</td>
+	<td>Add</td>
+</tr>
+</tbody></table>
+</body>
+</html>

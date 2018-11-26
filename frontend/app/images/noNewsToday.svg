@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="752px" height="259px" viewBox="0 0 752 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>No News Today</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="752" height="259" rx="6"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="113.977051%" id="linearGradient-3">
+            <stop stop-color="#FBDA61" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Dashboard---No-News" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="news-options" transform="translate(-118.000000, -2947.000000)">
+            <g id="No-News-Today" transform="translate(118.000000, 2947.000000)">
+                <g id="Oval-2-+-ic_wb_cloudy_black_24px-copy-+-ic_wb_cloudy_black_24px-copy-3-+-ic_wb_cloudy_black_24px-copy-4-+-Group-14-Mask-Copy-Copy-Copy-Copy-Copy">
+                    <g id="Group-22">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#E7E9EA" stroke-width="1" x="0.5" y="0.5" width="751" height="258" rx="6"></rect>
+                        </g>
+                        <circle id="Oval-2" fill="url(#linearGradient-3)" opacity="0.696536847" mask="url(#mask-2)" cx="91" cy="60" r="40"></circle>
+                        <g id="ic_wb_cloudy_black_24px-copy" mask="url(#mask-2)">
+                            <g transform="translate(610.000000, 180.000000)" id="Shape">
+                                <polygon fill="none" points="0 0 64 0 64 64 0 64"></polygon>
+                                <path d="M51.6266667,26.7733333 C49.7866667,17.5733333 41.7066667,10.6666667 32,10.6666667 C24.2933333,10.6666667 17.6,15.04 14.2666667,21.44 C6.24,22.2933333 0,29.0933333 0,37.3333333 C0,46.16 7.17333333,53.3333333 16,53.3333333 L50.6666667,53.3333333 C58.0266667,53.3333333 64,47.36 64,40 C64,32.96 58.5333333,27.2533333 51.6266667,26.7733333 Z" fill="#A8D8FA" fill-rule="nonzero" opacity="0.501923974"></path>
+                            </g>
+                        </g>
+                        <g id="ic_wb_cloudy_black_24px-copy-3" mask="url(#mask-2)">
+                            <g transform="translate(470.000000, 130.000000)" id="Shape">
+                                <polygon fill="none" points="0 0 64 0 64 64 0 64"></polygon>
+                                <path d="M51.6266667,26.7733333 C49.7866667,17.5733333 41.7066667,10.6666667 32,10.6666667 C24.2933333,10.6666667 17.6,15.04 14.2666667,21.44 C6.24,22.2933333 0,29.0933333 0,37.3333333 C0,46.16 7.17333333,53.3333333 16,53.3333333 L50.6666667,53.3333333 C58.0266667,53.3333333 64,47.36 64,40 C64,32.96 58.5333333,27.2533333 51.6266667,26.7733333 Z" fill="#A8D8FA" fill-rule="nonzero" opacity="0.501923974"></path>
+                            </g>
+                        </g>
+                        <g id="ic_wb_cloudy_black_24px-copy-6" mask="url(#mask-2)">
+                            <g transform="translate(305.000000, 162.000000)" id="Shape">
+                                <polygon fill="none" points="0 0 64 0 64 64 0 64"></polygon>
+                                <path d="M51.6266667,26.7733333 C49.7866667,17.5733333 41.7066667,10.6666667 32,10.6666667 C24.2933333,10.6666667 17.6,15.04 14.2666667,21.44 C6.24,22.2933333 0,29.0933333 0,37.3333333 C0,46.16 7.17333333,53.3333333 16,53.3333333 L50.6666667,53.3333333 C58.0266667,53.3333333 64,47.36 64,40 C64,32.96 58.5333333,27.2533333 51.6266667,26.7733333 Z" fill="#A8D8FA" fill-rule="nonzero" opacity="0.501923974"></path>
+                            </g>
+                        </g>
+                        <g id="ic_wb_cloudy_black_24px-copy-7" mask="url(#mask-2)">
+                            <g transform="translate(154.000000, 130.000000)" id="Shape">
+                                <polygon fill="none" points="0 0 64 0 64 64 0 64"></polygon>
+                                <path d="M51.6266667,26.7733333 C49.7866667,17.5733333 41.7066667,10.6666667 32,10.6666667 C24.2933333,10.6666667 17.6,15.04 14.2666667,21.44 C6.24,22.2933333 0,29.0933333 0,37.3333333 C0,46.16 7.17333333,53.3333333 16,53.3333333 L50.6666667,53.3333333 C58.0266667,53.3333333 64,47.36 64,40 C64,32.96 58.5333333,27.2533333 51.6266667,26.7733333 Z" fill="#A8D8FA" fill-rule="nonzero" opacity="0.501923974"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

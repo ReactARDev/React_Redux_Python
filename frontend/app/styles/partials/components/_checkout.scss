@@ -1,0 +1,146 @@
+.checkout {
+  height: 100%;
+  overflow: scroll;
+  padding: 36px 24px 28px 40px;
+
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 33px;
+    margin-bottom: 53px;
+    img {
+      height: 28px;
+    }
+  }
+
+  .breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .clickable {
+      cursor: pointer;
+    }
+    .view {
+      font-size: 14px;
+      color: #989898;
+      &.highlight {
+        color: $hover-blue;
+      }
+    }
+    .next {
+      margin-left: 8px;
+      margin-right: 8px;
+      color: #cfcfcf;
+    }
+  }
+  h3 {
+    margin-top: 40px;
+  }
+  .subscriptionCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    .outter-subscription-card {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 352px;
+      height: 359px;
+      border-radius: 6px;
+      border: solid 1px $border-line-grey;
+      margin: 20px;
+
+      .inner-subscription-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 305px;
+        height: 297px;
+        background-color: #f6f8fd;
+
+        h1 {
+          font-family: CircularStd;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        i {
+          font-size: 48px;
+          color: $hover-blue;
+        }
+
+        p {
+          margin-top: 24px;
+          font-size: 14px;
+        }
+        .checkoutText {
+          margin-left: 42px;
+          margin-right: 42px;
+          text-align: center;
+          width: 100%;
+          &.stripeCheckout {
+            margin-bottom: 26px;
+          }
+        }
+        .btn {
+          border-color: #2c6ddf;
+          color: #2254d7;
+          margin-top: 28px;
+          &:hover {
+            color: #ffffff;
+            background-color: rgba(34, 84, 215, .5);
+          }
+        }
+        .discount {
+          align-self: flex-end;
+          margin-top: -60px;
+        }
+        .monthly {
+          margin-top: 44px;
+
+        }
+      }
+    }
+  }
+  .teamCard {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    .outter-team-card {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 720px;
+      height: 160px;
+      border-radius: 6px;
+      border: solid 1px $border-line-grey;
+      margin-top: 24px;
+      margin-bottom: 23px;
+      padding-left: 24px;
+      padding-right: 24px;
+      .inner-team-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 672px;
+        height: 128px;
+        background-color: #f6f8fd;
+        .comingSoon {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .questions {
+    text-align: center;
+  }
+}

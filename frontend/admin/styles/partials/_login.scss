@@ -1,0 +1,33 @@
+.login-container {
+  background-color: $black;
+  margin-top: 150px;
+
+  .logo {
+    width: 100%;
+    height: 100px;
+    background: url('../images/Logo-Mobile.svg') no-repeat 0 0px/250px;
+    background-position: center;
+  }
+
+  .error {
+    font-weight: bold;
+    background-color: $gray-lighter;
+    color: $chestnut-rose;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  input {
+    border-radius: 0;
+  }
+
+  button {
+    background-color: $gray-light;
+    border-color: $gray-light;
+  }
+}

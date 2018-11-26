@@ -1,0 +1,31 @@
+.documents-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.document-data {
+	padding: 8px 5px;
+	width: 90%;
+	word-wrap: break-word;
+}
+
+.sortable {
+  cursor: pointer;
+}
+
+.qa-checkbox {
+  transform: scale(2);
+}
+
+.filter-container {
+	border: solid 1px #d9dadb;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.date-picker-doc-tool {
+	border: 1px solid #e7e9ea;
+	border-radius: 5px;
+	margin: 5px;
+	height: 2em;
+}

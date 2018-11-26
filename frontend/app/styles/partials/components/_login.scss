@@ -1,0 +1,169 @@
+.login-outer-container {
+  @extend %city-background;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+  height: 100px; // needed to fix IE vertical centering: http://stackoverflow.com/a/25386261
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: -1 * $anon-footer-height;
+  padding-bottom: $anon-footer-height;
+
+  a {
+    color: #ffffff;
+  }
+
+  .login-container {
+    @media screen and (min-width: 500px) {
+      width: 440px;
+    }
+    background-color: $white;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    border: none;
+    border-radius: 0;
+
+    .logo-row {
+      height: 80px;
+      .logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 80px;
+        width: 100%;
+        background: url('../images/Logo-Mobile.svg') no-repeat 0 0px/98px;
+        background-position: center;
+        background-color: $black;
+        background-size: 200px;
+      }
+    }
+
+    .sign-up-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      a {
+        font-size: 14px;
+        color: $medium-grey;
+        &:hover {
+          text-decoration: none;
+          color: $primary-action-blue;
+        }
+      }
+    }
+
+    label {
+      @extend .label;
+      width: 100%;
+      text-align: left;
+      padding-bottom: 10px;
+      color: $black;
+      font-size: 14px;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .panel-body {
+      .error {
+        font-weight: bold;
+        background-color: $brand-danger;
+        color: $state-danger-text;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        button {
+          margin-top: 10px;
+        }
+      }
+
+      .success {
+      }
+
+      input {
+        max-width: none;
+      }
+
+      .oauth-btn-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .linkedin_btn {
+          width: 176px;
+          height: 35px;
+          margin: 10px 0 10px 0;
+          border-radius: 6px;
+          background: url('../images/linked-in-default-signin.png') no-repeat;
+          background-size: 176px 35px;
+          cursor: pointer;
+
+          &:hover {
+            background: url('../images/linked-in-hover-signin.png') no-repeat;
+            background-size: 176px 35px;
+          }
+
+          &:active {
+            background: url('../images/linked-in-active-signin.png') no-repeat;
+            background-size: 176px 35px;
+          }
+        }
+
+        .google_btn {
+          &:hover {
+            background-color: $josue-grey
+          }
+          font-size: 12px;
+          font-weight: bold;
+          margin: 10px 0 10px;
+          width: 176px;
+          height: 35px;
+          border-radius: 6px;
+          background-color: $white;
+          border: solid 1px $light-grey;
+          cursor: pointer;
+          opacity: 0.65;
+          padding-bottom: 1px;
+          span {
+            margin-left: -20px;
+          }
+          .googleLogo {
+            height: 98%;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .or-line {
+        display: flex;
+        flex-direction: row;
+        color: $black;
+        justify-content: center;
+        align-items: center;
+
+        .black-line {
+          margin: 0 5px 0 5px;
+          width: 160px;
+          font-weight: bold;
+        }
+      }
+
+      .btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>News - Stock Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.06757761e-14,2.00138927 C9.25686025e-15,0.896052496 0.894938439,0 2.00138927,0 L45.9986107,0 C47.1039475,0 48,0.894938439 48,2.00138927 L48,45.9986107 C48,47.1039475 47.1050616,48 45.9986107,48 L2.00138927,48 C0.896052496,48 4.86628824e-13,47.1050616 4.75198399e-13,45.9986107 L2.06757761e-14,2.00138927 Z" id="path-1"></path>
+    </defs>
+    <g id="Dashboard---News-Section-Logos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="News-Section-Logos" transform="translate(-633.000000, -102.000000)">
+            <g id="News---Stock-Logo" transform="translate(633.000000, 102.000000)">
+                <path d="M64,1 C98.7939392,1 127,29.2060608 127,64 C127,98.7939392 98.7939392,127 64,127 C29.2060608,127 1,98.7939392 1,64 C1.0385779,29.2220528 29.2220528,1.0385779 64,1 L64,1 Z M64,8.8817842e-15 C28.653776,1.99840144e-14 7.10542736e-15,28.653776 0,64 C-7.10542736e-15,99.346224 28.653776,128 64,128 C99.346224,128 128,99.346224 128,64 C128,47.0261447 121.257162,30.7474942 109.254834,18.745166 C97.2525058,6.74283778 80.9738553,8.8817842e-16 64,0 L64,8.8817842e-15 Z" id="Shape-Copy-10" fill="#7961FF" fill-rule="nonzero"></path>
+                <g id="Group-15" transform="translate(40.000000, 41.000000)">
+                    <g id="Rectangle-Copy-15">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#7961FF" stroke-width="2" d="M-1,2.00138927 L-1,45.9986107 C-1,47.6570477 0.343468905,49 2.00138927,49 L45.9986107,49 C47.6570477,49 49,47.6565311 49,45.9986107 L49,2.00138927 C49,0.342952346 47.6565311,-1 45.9986107,-1 L2.00138927,-1 C0.342952346,-1 -1,0.343468905 -1,2.00138927 Z"></path>
+                    </g>
+                    <g id="Group-32" transform="translate(8.000000, 8.000000)" fill="#7961FF">
+                        <g id="Group-30-Copy-2" transform="translate(0.522686, 0.000000)">
+                            <rect id="Rectangle" x="16.261343" y="5.05263158" width="6.50453721" height="26.9473684"></rect>
+                            <rect id="Rectangle-Copy-9" x="8.13067151" y="0.561403509" width="6.50453721" height="31.4385965"></rect>
+                            <rect id="Rectangle-Copy-7" x="24.3920145" y="15.1578947" width="6.50453721" height="16.8421053"></rect>
+                            <rect id="Rectangle-Copy-8" x="0" y="15.1578947" width="6.50453721" height="16.8421053"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

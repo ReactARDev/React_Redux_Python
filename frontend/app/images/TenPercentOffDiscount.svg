@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="88px" viewBox="0 0 91 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>10 percent off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Payments" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Payment---step-1-of-4" transform="translate(-1079.000000, -387.000000)">
+            <g id="10-percent-off" transform="translate(1079.000000, 387.000000)">
+                <g id="20-Percent-Off-Discount-Copy">
+                    <polygon id="Rectangle-5" fill="#2C6DDF" points="0.427734375 0 91 0 91 87.9443359"></polygon>
+                    <polygon id="Rectangle-5-Copy" fill="#2C6DDF" points="0.427734375 0 91 0 91 87.9443359"></polygon>
+                    <text id="10%-off" transform="translate(63.000000, 28.213203) rotate(45.000000) translate(-63.000000, -28.213203) " font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" line-spacing="12" fill="#FFFFFF">
+                        <tspan x="40" y="36.2132034">10% off</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

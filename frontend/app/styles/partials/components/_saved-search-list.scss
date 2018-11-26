@@ -1,0 +1,100 @@
+.saved-search-list {
+  height: 100%;
+  overflow: scroll;
+  padding-bottom: 200px;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+  .saved-searches-section {
+    padding-left: 8px;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  .edit {
+    color: $insights-light-blue;
+    margin-left: 12px;
+  }
+
+  .edit-icons {
+    vertical-align: middle;
+  }
+
+  .check {
+    color: $insights-light-blue;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+
+  table {
+    font-size: 13px;
+    thead {
+      border-bottom: 3px solid $light-grey;
+      tr {
+        th {
+          white-space: nowrap;
+          color: $medium-grey;
+          font-size: 13px;
+          font-weight: normal;
+
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+          -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                              supported by Chrome and Opera */
+
+          .header-arrow {
+            vertical-align: middle;
+            font-size: 13px;
+          }
+          .active {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    tr {
+      cursor: pointer;
+      td {
+        color: $dark-grey;
+        text-overflow: ellipsis;
+
+        .saved-search-action {
+          color: $medium-grey;
+          margin-left: 10px;
+          font-size: 20px;
+        }
+      }
+
+      .search-name {
+        min-width: 100px;
+      }
+      .table-icons {
+        min-width: 85px;
+      }
+    }
+  }
+
+
+
+}
+
+.delete-saved-search-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  .delete-button {
+    margin: 20px 20px 0 20px;
+  }
+}

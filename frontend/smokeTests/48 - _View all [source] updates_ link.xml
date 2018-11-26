@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>48 - "View all [source] updates" link</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">48 - "View all [source] updates" link</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=h5.tabText &gt; span</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/h5/span</td>
+	<td>name3</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/h5/span</td>
+	<td>name5</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[4]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[4]/h5/span</td>
+	<td>name7</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name8</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]/h5/span</td>
+	<td>name9</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]/h5/span</td>
+	<td>name11</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5/span</td>
+	<td>name13</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name14</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5/span</td>
+	<td>name15</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name16</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]/h5/span</td>
+	<td>name17</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name18</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]/h5/span</td>
+	<td>name19</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.viewAllUpdates</td>
+	<td>name20</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name2}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name4}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word2</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name6}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word3</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name8}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word4</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name10}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word5</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name12}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word6</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name14}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word7</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name16}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word8</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name18}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word9</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${name20}&quot;.split(&quot; &quot;)[2]</td>
+	<td>word10</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word3}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word4}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word5}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word6}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word7}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word8}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word9}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${word10}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name1']==storedVars['word1']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name3']==storedVars['word2']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name5']==storedVars['word3']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name7']==storedVars['word4']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name9']==storedVars['word5']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name11']==storedVars['word6']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name13']==storedVars['word7']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name15']==storedVars['word8']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name17']==storedVars['word9']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name19']==storedVars['word10']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[5]/span</td>
+	<td>*${name1}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[5]/span</td>
+	<td>*${name3}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[5]/span</td>
+	<td>*${name5}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[4]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[5]/span</td>
+	<td>*${name7}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[5]/span</td>
+	<td>*${name9}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[5]/span</td>
+	<td>*${name11}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[5]/span</td>
+	<td>*${name13}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[5]/span</td>
+	<td>*${name15}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.agencies</td>
+	<td>*${name17}*</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.viewAllUpdates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[13]/td[5]/span</td>
+	<td>*${name19}*</td>
+</tr>
+</tbody></table>
+</body>
+</html>

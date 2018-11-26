@@ -1,0 +1,237 @@
+.document-list {
+  .header-line {
+    position: absolute;
+    top: 14px; //XXX
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid $medium-grey;
+  }
+  table {
+    border-collapse: separate;
+    table-layout: fixed;
+    // technique from here: https://jsfiddle.net/dPixie/byB9d/3/light/
+    thead {
+      border-bottom: 1px solid $light-grey;
+      tr {
+        width: calc(100% - 10px); // scrollbar
+        th {
+          white-space: nowrap;
+          width: 15%;
+
+          &.bulk_select {
+            width: 25%;
+          }
+
+          &.doc_type_in_news {
+            width: 20%;
+          }
+
+          &.title {
+            width: 40%;
+
+            &.news {
+              width: 50%;
+            }
+          }
+
+          span { // used for sizing column only
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+          }
+          div {
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+    tr {
+      .month {
+        background-color: $faded-yellow;
+        color: $insights-orange;
+        font-weight: normal;
+        font-size: 18px;
+
+        &.sticky {
+          position: absolute;
+          top: 15px;
+          left: 0px;
+          right: 0px;
+        }
+      }
+
+      .empty-timeline-data {
+        background-color: $white;
+
+        .empty-timeline-msg {
+          font-family: $font-family-sans-serif;
+          padding: 0 20px;
+          width: 800px;
+        }
+      }
+
+      &.document-row {
+        cursor: pointer;
+        font-weight: bold;
+        height: 80px;
+
+        &.read_document {
+          font-weight: normal;
+        }
+
+        &.selected {
+          background-color: fade-out($primary-action-blue, 0.84);
+        }
+        .gutter {
+          border-right-width: 4px;
+          border-right-style: solid;
+          border-right-color: gray;
+          font-size: 10px;
+          text-transform: uppercase;
+          padding: 0 2px;
+        }
+
+
+        td {
+          width: 15%;
+
+          &.title {
+            width: 40%;
+            overflow-wrap: break-word;
+
+            .document-topics-list {
+              display: flex;
+              flex-direction: row;
+
+              .topic-list-btn {
+                width: auto;
+                height: auto;
+                font-size: 14px;
+                border-radius: 4px;
+                background-color: $light-grey;
+                border: solid 1px $light-grey;
+                margin: 5px 5px 0 0;
+
+                &:hover, &:active {
+                  background-color: $white;
+                }
+
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+          }
+
+          .key-dates {
+            .date {
+              padding-left: 6px;
+            }
+          }
+          .controls {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 10px;
+            padding-left: 6px;
+
+            div {
+              display: inline-block;
+              color: $medium-grey;
+
+              // override checkbox style with this method:
+              // http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
+              label {
+                height: 22px;
+                padding-left: 0;
+                font-size: 13px;
+                input {
+                  display: none;
+                }
+                .checked, .unchecked {
+                  font-size: 22px;
+                  display: none;
+                  &:hover {
+                    color: $hover-blue;
+                    text-decoration: none;
+                  }
+                }
+                input + .unchecked {
+                  display: inline-block;
+                }
+                input:checked ~ .checked {
+                  display: inline-block;
+                }
+                input:checked ~ .unchecked {
+                  display: none;
+                }
+              }
+            }
+            .bookmark {
+              cursor: pointer;
+              font-size: 22px;
+              padding-left: 10px;
+              color: $medium-grey;
+
+              &:hover {
+                text-decoration: none;
+                color: $hover-blue;
+              }
+            }
+          }
+        }
+
+        &.today.today-before .gutter {
+          border-top: 4px solid $gray;
+          vertical-align: top;
+        }
+
+        &.today.today-same .gutter {
+          border-bottom: 4px solid $gray;
+          vertical-align: bottom;
+        }
+
+        &.today ~ tr .gutter {
+          background-color: $gray-light;
+        }
+
+        // XXX add final colors
+        &.presidential-document .gutter {
+          border-right-color: red;
+        }
+        &.notice .gutter {
+          border-right-color: orange;
+        }
+        &.final-rule .gutter {
+          border-right-color: yellow;
+        }
+        &.proposed-rule .gutter {
+          border-right-color: green;
+        }
+      }
+
+    }
+  }
+  .clickable {
+    cursor: pointer;
+  }
+  .clickable:hover {
+    text-decoration: underline;
+  }
+  .agencies {
+    span {
+      margin: 0 5px;
+      display: inline-block; // https://github.com/twbs/bootstrap/issues/13219
+      max-width: 100px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    a {
+      color: #fff;
+      :hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

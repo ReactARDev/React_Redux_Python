@@ -1,0 +1,23 @@
+.navbar-inverse {
+
+  .logo {
+    width: 160px;
+    height: 26px;
+    margin-top: 8px;
+    background-image: url('../images/Logo-Mobile.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .dropdown-menu {
+    border-top: 0;
+  }
+
+}

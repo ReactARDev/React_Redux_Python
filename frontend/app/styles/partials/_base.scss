@@ -1,0 +1,51 @@
+$left-panel-width: 96px;
+$search-min-width: 530px;
+$right-panel-width: 335px;
+
+// width at which horizontal scroll becomes necessary
+$dashboard-horizontal-scroll-width: $left-panel-width + $search-min-width + $right-panel-width;
+
+$anon-footer-height: 84px;
+
+.form-control {
+  padding: 10px;
+  height: auto;
+  font-weight: normal;
+}
+
+.form-control, .Select {
+  max-width: 250px;
+}
+
+
+%city-background {
+  background-color: $app-bkgd;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-danger {
+  color: $white;
+  padding: 15px;
+  border-radius: 3px;
+  a {
+    color: $white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.error-container {
+  @extend .bg-danger;
+  background-color: $brand-danger;
+}
+
+#app-error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: auto;
+  width: 440px;
+  z-index: 1000;
+}

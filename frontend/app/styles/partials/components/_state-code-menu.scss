@@ -1,0 +1,85 @@
+.state-code-menu-container {
+  padding: 0 10px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none; //IE 11
+
+  .state-code-menu-header {
+    font-size: 24px;
+    cursor: pointer;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+  }
+
+  .state-code-menu-instructions {
+    font-size: 14px;
+    margin: 24px 0;
+  }
+
+  .state-code-menu-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 167px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px $josue-grey;
+    font-size: 14px;
+    color: $josue-blue;
+
+    i {
+      color: $josue-darker-grey;
+    }
+
+    &:hover {
+      background-color: $hover-blue;
+      color: $white;
+      i {
+        color: $white;
+      }
+    }
+
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+  .state-code-select-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: $josue-blue;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px $josue-grey;
+
+    .state-select {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      text-align: left;
+      cursor: pointer;
+      height: 50px;
+      width: 33.33%;
+      padding: 20px 30px;
+
+      &:hover {
+        color: $white;
+        background: $hover-blue;
+      }
+    }
+  }
+}

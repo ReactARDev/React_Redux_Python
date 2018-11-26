@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="530px" viewBox="0 0 330 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Sidebar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="280" height="500"></rect>
+        <rect id="path-2" x="0" y="25" width="280" height="1"></rect>
+        <path d="M0,2 L0,22 L0,22 C1.3527075e-16,23.1045695 0.8954305,24 2,24 L94,24 L94,24 C95.1045695,24 96,23.1045695 96,22 L96,11.9973958 L96,2 L96,2 C96,0.8954305 95.1045695,7.20144301e-15 94,-4.4408921e-16 L2,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="path-3"></path>
+        <rect id="path-4" x="77" y="0" width="1" height="24"></rect>
+        <path d="M0,2 L0,22 L0,22 C1.3527075e-16,23.1045695 0.8954305,24 2,24 L114,24 L114,24 C115.104569,24 116,23.1045695 116,22 L116,11.9973958 L116,2 L116,2 C116,0.8954305 115.104569,-4.2495073e-16 114,-2.22044605e-16 L2,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="path-5"></path>
+        <rect id="path-6" x="97" y="0" width="1" height="24"></rect>
+        <path d="M0,2 L0,30 L0,30 C2.09738034e-15,31.1045695 0.8954305,32 2,32 L158,32 L158,32 C159.104569,32 160,31.1045695 160,30 L160,15.9965278 L160,2 L160,2 C160,0.8954305 159.104569,-2.02906125e-16 158,0 L2,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="path-7"></path>
+        <rect id="path-8" x="0" y="0" width="80" height="24" rx="2"></rect>
+        <rect id="path-9" x="0" y="0" width="80" height="24" rx="2"></rect>
+        <filter x="-11.2%" y="-7.9%" width="126.7%" height="126.7%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="5" dy="13" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-11" cx="120" cy="120" r="120"></circle>
+        <path d="M0,2 L0,22 L0,22 C1.3527075e-16,23.1045695 0.8954305,24 2,24 L121,24 L121,24 C122.104569,24 123,23.1045695 123,22 L123,11.9973958 L123,2 L123,2 C123,0.8954305 122.104569,-4.2495073e-16 121,-2.22044605e-16 L2,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="path-12"></path>
+        <path d="M43.0559082,0.230834961 C40.3012903,0.459231986 38.3046269,0.6520217 37.065918,0.809204102 C30.8111655,1.6028829 26.1110876,2.55209808 22.9542236,3.41809082 C20.5466707,4.07853214 16.4838315,5.10363182 11.6488037,6.96630859 C10.1750074,7.53408322 7.62384235,8.48807367 4.80627441,9.74475098 C3.80580335,10.190976 2.24965101,10.9441091 0.137817383,12.0041504 L101.987305,12.0041504 C100.598293,11.2713276 99.5800231,10.7565164 98.9324951,10.4597168 C96.0334438,9.13091357 93.7433222,8.25578471 92.2554932,7.6652832 C88.2231951,6.06491242 84.5882459,5.00053978 81.7977295,4.20068359 C78.8812151,3.36471212 74.997477,2.46076008 70.8205566,1.74914551 C69.6442978,1.54874835 68.0760478,1.27120565 66.017334,1.00061035 C65.2331168,0.897533626 63.8963248,0.745474707 62.006958,0.544433594 C59.1584688,0.255526125 56.1509004,0.0848718281 52.9842529,0.0324707031 C49.8176054,-0.0199304219 46.5081572,0.0461909974 43.0559082,0.230834961 Z" id="path-13"></path>
+        <rect id="path-14" x="0" y="0" width="56" height="16" rx="2"></rect>
+        <rect id="path-15" x="0" y="0" width="56" height="16" rx="2"></rect>
+    </defs>
+    <g id="Topics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Topics---Beta-Intro-Copy-2" transform="translate(-251.000000, -1052.000000)">
+            <g id="Sidebar" transform="translate(251.000000, 1052.000000)">
+                <g id="Group-11">
+                    <g id="Rectangle-3-Copy-5">
+                        <use fill="#49628E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#49628E" stroke-width="1" x="0.5" y="0.5" width="279" height="499"></rect>
+                    </g>
+                    <text id="US-Code" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="19" y="46">US Code</tspan>
+                    </text>
+                    <text id="Details-Copy-5" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="120" y="18">Details</tspan>
+                    </text>
+                    <text id="48-CFR-49.601-Notice" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="14" fill="#FFFFFF">
+                        <tspan x="19" y="71">48 CFR 49.601 Notice of termination for </tspan>
+                        <tspan x="19" y="85">convenience.</tspan>
+                    </text>
+                    <g id="Rectangle-5-Copy-5">
+                        <use fill="#F5A623" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#F5A623" stroke-width="1" x="0.5" y="25.5" width="279" height="1"></rect>
+                    </g>
+                    <g id="Group-69" transform="translate(19.000000, 155.000000)" fill="#FFFFFF">
+                        <text id="49.601-Notice-of-ter" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" line-spacing="14">
+                            <tspan x="0" y="33">49.601 Notice of termination for convenience. (See </tspan>
+                            <tspan x="0" y="47">49.402-3(g) for notice of termination for default.)	</tspan>
+                        </text>
+                        <text id="Summary-Copy-5" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="16">
+                            <tspan x="0" y="12">Summary</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-8" transform="translate(88.000000, 110.000000)">
+                        <g id="Group-17">
+                            <g id="Group-13-Copy-3">
+                                <g id="View-PDF-button-Copy-3">
+                                    <g id="Group">
+                                        <g id="Button-Background">
+                                            <use fill="#2C6DDF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                            <path stroke="#2C6DDF" stroke-width="1" d="M0.5,2 L0.5,22 C0.5,22.8284271 1.17157288,23.5 2,23.5 L94,23.5 C94.8284271,23.5 95.5,22.8284271 95.5,22 L95.5,2 C95.5,1.17157288 94.8284271,0.5 94,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 Z"></path>
+                                        </g>
+                                        <text id="View-PDF" font-family="CircularStd-Bold, Circular Std" font-size="10" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="21.075" y="16">View PDF</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                            <polygon id="Triangle-3-Copy-2" stroke="#FFFFFF" fill="#FFFFFF" transform="translate(87.000000, 12.250000) scale(1, -1) translate(-87.000000, -12.250000) " points="87 11 89 13.5 85 13.5"></polygon>
+                            <g id="Rectangle-7-Copy-2">
+                                <use fill="#0C335C" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <rect stroke="#13508F" stroke-width="1" x="77.5" y="0.5" width="1" height="23"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-8-Copy" transform="translate(72.000000, 226.000000)">
+                        <g id="Group-17">
+                            <g id="Group-13-Copy-3">
+                                <g id="View-PDF-button-Copy-3">
+                                    <g id="Group">
+                                        <g id="Button-Background">
+                                            <use fill="#2C6DDF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                            <path stroke="#2C6DDF" stroke-width="1" d="M0.5,2 L0.5,22 C0.5,22.8284271 1.17157288,23.5 2,23.5 L114,23.5 C114.828427,23.5 115.5,22.8284271 115.5,22 L115.5,2 C115.5,1.17157288 114.828427,0.5 114,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 Z"></path>
+                                        </g>
+                                        <text id="Report-a-Problem" font-family="CircularStd-Bold, Circular Std" font-size="10" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="11.61" y="15">Report a Problem</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                            <polygon id="Triangle-3-Copy-2" stroke="#FFFFFF" fill="#FFFFFF" transform="translate(107.000000, 12.250000) scale(1, -1) translate(-107.000000, -12.250000) " points="107 11 109 13.5 105 13.5"></polygon>
+                            <g id="Rectangle-7-Copy-2">
+                                <use fill="#0C335C" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <rect stroke="#13508F" stroke-width="1" x="97.5" y="0.5" width="1" height="23"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="Friday,-January-1st," font-family="CircularStd-Book, Circular Std" font-size="12" font-weight="300" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="135" y="366">Friday, January 1st, 2016</tspan>
+                    </text>
+                    <text id="Published" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="19" y="366">Published</tspan>
+                    </text>
+                    <g id="Group-14-Copy-5" transform="translate(19.000000, 312.000000)" font-size="12" line-spacing="16" fill="#FFFFFF">
+                        <text id="Document-Type" font-family="CircularStd-Medium, Circular Std" font-weight="400">
+                            <tspan x="0" y="12">Document Type</tspan>
+                        </text>
+                        <text id="US-Code" font-family="CircularStd-Book, Circular Std" font-weight="300">
+                            <tspan x="116" y="12">US Code</tspan>
+                        </text>
+                    </g>
+                    <text id="Author" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="19" y="282">Author</tspan>
+                    </text>
+                    <text id="CFR" font-family="CircularStd-Book, Circular Std" font-size="12" font-weight="300" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="135" y="282">CFR</tspan>
+                    </text>
+                    <g id="View-PDF-button-Copy-8" transform="translate(64.000000, 448.000000)">
+                        <g id="Group">
+                            <g id="Button-Background">
+                                <use fill="#4D90FF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                <path stroke="#4D90FF" stroke-width="1" d="M0.5,2 L0.5,30 C0.5,30.8284271 1.17157288,31.5 2,31.5 L158,31.5 C158.828427,31.5 159.5,30.8284271 159.5,30 L159.5,2 C159.5,1.17157288 158.828427,0.5 158,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 Z"></path>
+                            </g>
+                            <text id="Related-Documents-(2" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" line-spacing="16" fill="#FFFFFF">
+                                <tspan x="16.675" y="18">Related Documents (240127)</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-25-Copy" transform="translate(19.000000, 402.000000)" font-size="14" font-family="CircularStd-Medium, Circular Std" fill="#FFFFFF" font-weight="400">
+                        <text id="Topics">
+                            <tspan x="0" y="14">Topics</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-32" transform="translate(96.000000, 399.000000)">
+                        <g id="Rectangle-Copy-25">
+                            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-8"></use>
+                            <rect stroke="#D8D8D8" stroke-width="1" x="0.5" y="0.5" width="79" height="23" rx="2"></rect>
+                        </g>
+                        <text id="Lending" font-family="CircularStd-Book, Circular Std" font-size="12" font-weight="300" line-spacing="16" fill="#000000">
+                            <tspan x="18.702" y="16">Lending</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-32" transform="translate(183.000000, 399.000000)">
+                        <g id="Rectangle-Copy-25">
+                            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            <rect stroke="#D8D8D8" stroke-width="1" x="0.5" y="0.5" width="79" height="23" rx="2"></rect>
+                        </g>
+                        <text id="BSA/AML" font-family="CircularStd-Book, Circular Std" font-size="12" font-weight="300" line-spacing="16" fill="#000000">
+                            <tspan x="13.398" y="16">BSA/AML</tspan>
+                        </text>
+                    </g>
+                    <rect id="Rectangle-5" fill="#FFFFFF" opacity="0.299999982" x="0" y="0" width="280" height="500"></rect>
+                </g>
+                <g id="Group-10" filter="url(#filter-10)" transform="translate(68.000000, 260.000000)">
+                    <g id="Oval-6-Copy-2">
+                        <use fill="#49628E" fill-rule="evenodd" xlink:href="#path-11"></use>
+                        <circle stroke="#D8D8D8" stroke-width="6" cx="120" cy="120" r="117"></circle>
+                    </g>
+                    <g id="View-PDF-button-Copy-9" transform="translate(63.000000, 170.000000)">
+                        <g id="Group">
+                            <g id="Button-Background">
+                                <use fill="#4D90FF" fill-rule="evenodd" xlink:href="#path-12"></use>
+                                <path stroke="#4D90FF" stroke-width="1" d="M0.5,2 L0.5,22 C0.5,22.8284271 1.17157288,23.5 2,23.5 L121,23.5 C121.828427,23.5 122.5,22.8284271 122.5,22 L122.5,2 C122.5,1.17157288 121.828427,0.5 121,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 Z"></path>
+                            </g>
+                            <text id="Related-Documents-(2" font-family="CircularStd-Book, Circular Std" font-size="8" font-weight="300" line-spacing="10" fill="#FFFFFF">
+                                <tspan x="10.44" y="15">Related Documents (240127)</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="View-PDF-button-Copy-10" transform="translate(69.000000, 6.000000)">
+                        <g id="Group">
+                            <g id="Button-Background">
+                                <use fill="#4D90FF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                                <path stroke="#4D90FF" stroke-width="1" d="M43.0899219,0.729730555 C40.3457668,0.957308139 38.3575566,1.14931467 37.1288593,1.30522667 C31.3799121,2.03472277 26.5723491,2.94403631 23.0864973,3.90027718 C21.0721967,4.44168367 19.7891396,4.7936477 18.3544272,5.2205923 C16.1270998,5.88340488 13.9921673,6.5993569 11.8285497,7.43288269 C11.6709107,7.49361252 10.8064241,7.82483806 10.5338439,7.92983296 C9.95265014,8.15370239 9.43835529,8.35433806 8.91608029,8.56185559 C7.55215084,9.10379095 6.2710003,9.63893954 5.00994232,10.2013902 C4.34565605,10.4976718 3.43089457,10.9320622 2.26663901,11.5041504 L99.935495,11.5041504 C99.4414845,11.2545919 99.0375386,11.0578852 98.7241585,10.914245 C97.4243455,10.3184653 96.1730223,9.77940019 94.8754166,9.24838874 C94.3781612,9.04489987 93.8933535,8.85031825 93.334654,8.6290339 C93.115981,8.54242402 92.268475,8.20837607 92.0710453,8.13001858 C88.7446562,6.80981464 85.9299133,5.90524128 81.6599604,4.68132866 C78.5393039,3.78684317 74.6518043,2.90907285 70.7365825,2.24204341 C68.379343,1.84044468 67.8822857,1.75950318 66.4496935,1.56313966 C66.2847001,1.54052423 66.1189244,1.51826385 65.9521749,1.49634647 C65.1731223,1.39394857 63.8395816,1.24225947 61.9565044,1.04188152 C59.122405,0.754433531 56.1288754,0.584575814 52.9759802,0.53240226 C49.8234959,0.480235506 46.5281276,0.545994073 43.0899219,0.729730555 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="Published" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="31" y="100">Published</tspan>
+                    </text>
+                    <text id="Topics" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="31" y="141">Topics</tspan>
+                    </text>
+                    <text id="Friday,-January-1st," font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="105" y="98">Friday, January 1st, 2016</tspan>
+                    </text>
+                    <text id="US-Code" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="105" y="72">US Code</tspan>
+                    </text>
+                    <text id="CFR" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="105" y="46">CFR</tspan>
+                    </text>
+                    <g id="Group-9" transform="translate(105.000000, 130.000000)">
+                        <g id="Group-34-Copy-17">
+                            <g id="Rectangle-Copy-25">
+                                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-14"></use>
+                                <rect stroke="#D8D8D8" stroke-width="1" x="0.5" y="0.5" width="55" height="15" rx="2"></rect>
+                            </g>
+                            <text id="Lending" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" line-spacing="16" fill="#000000">
+                                <tspan x="9.835" y="10">Lending</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-34-Copy-16" transform="translate(62.000000, 0.000000)">
+                            <g id="Rectangle-Copy-25">
+                                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-15"></use>
+                                <rect stroke="#D8D8D8" stroke-width="1" x="0.5" y="0.5" width="55" height="15" rx="2"></rect>
+                            </g>
+                            <text id="BSA/AML" font-family="CircularStd-Book, Circular Std" font-size="10" font-weight="300" line-spacing="16" fill="#000000">
+                                <tspan x="5.915" y="10">BSA/AML</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

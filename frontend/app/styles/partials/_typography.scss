@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: normal;
+  src: url('../../shared/assets/lineto-circular-pro-book.woff2') format('woff2'),
+    url('../../shared/assets/lineto-circular-pro-book.woff') format('woff'),
+    url('../../shared/assets/lineto-circular-pro-book.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: bold;
+  src: url('../../shared/assets/lineto-circular-pro-bold.woff2') format('woff2'),
+    url('../../shared/assets/lineto-circular-pro-bold.woff') format('woff'),
+    url('../../shared/assets/lineto-circular-pro-bold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 900;
+  src: url('../../shared/assets/lineto-circular-pro-black.woff2') format('woff2'),
+    url('../../shared/assets/lineto-circular-pro-black.woff') format('woff'),
+    url('../../shared/assets/lineto-circular-pro-black.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'CircularStdMedium';
+  font-weight: normal;
+  src: url('../../shared/assets/CircularStd-Medium.otf') format("opentype");
+}
+@font-face {
+  font-family: 'CircularStdBook';
+  font-weight: normal;
+  src: url('../../shared/assets/CircularStd-Book.otf') format("opentype");
+}
+
+.label {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 12px;
+  color: $medium-grey;
+}

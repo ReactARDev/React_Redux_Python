@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>40 - sources</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">40 - sources</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>g</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>h</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>4</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>5</td>
+	<td>b</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>6</td>
+	<td>c</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7</td>
+	<td>d</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>8</td>
+	<td>e</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>9</td>
+	<td>f</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/div[2]/div/div/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[1]/div/div/div/div</td>
+	<td>divcount</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${divcount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>class=slick-slide slick-active agencyTab currentTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=h5.tabText &gt; span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${variable1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['g'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=material-icons icon nextArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>class=slick-slide slick-active agencyTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${variable1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['h'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=material-icons icon nextArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>class=slick-slide slick-active agencyTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${variable1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['i'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=material-icons icon nextArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>class=slick-slide slick-active agencyTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[4]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${variable1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['a'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=material-icons icon nextArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${var1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['b'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]/h5/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${variable1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['c'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=material-icons icon nextArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['d'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=material-icons icon nextArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['e'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['f'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]/h5/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]/h5/span</td>
+	<td>variable1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/h5</td>
+	<td>*${variable1}*</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>END</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

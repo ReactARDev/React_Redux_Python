@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>110 - Menu Item</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">110 - Menu Item</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.material-icons</td>
+	<td>account_circle</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.control-label</td>
+	<td>First Name</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/form/div[2]/label</td>
+	<td>Last Name</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/form/div[3]/label</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/form/div[4]/label</td>
+	<td>Current Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/form/div[5]/label</td>
+	<td>New Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/form/div[6]/label</td>
+	<td>Confirm New Password</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[4]/input</td>
+	<td>jurispect</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[5]/input</td>
+	<td>newpassword123!</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[6]/input</td>
+	<td>newpassword123!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[4]/input</td>
+	<td>newpassword123!</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[5]/input</td>
+	<td>jurispect</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[6]/input</td>
+	<td>jurispect</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.form-control</td>
+	<td>Nicholas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[2]/input</td>
+	<td>Yazdani</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=label.left-nav-option-txt</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Nicholas Yazdani</td>
+	<td>name2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name1']==storedVars['name2']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.form-control</td>
+	<td>UI</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/div/div/form/div[2]/input</td>
+	<td>Testing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=label.left-nav-option-txt</td>
+	<td>name3</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>UI Testing</td>
+	<td>name4</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name3}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name4}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name3']==storedVars['name4']</td>
+	<td>true</td>
+</tr>
+</tbody></table>
+</body>
+</html>

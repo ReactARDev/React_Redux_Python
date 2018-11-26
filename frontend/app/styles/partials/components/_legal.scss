@@ -1,0 +1,7 @@
+.legal-container {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 100px; //necessary padding to keep legal text from being cutoff
+}

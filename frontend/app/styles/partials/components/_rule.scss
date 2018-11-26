@@ -1,0 +1,706 @@
+.right-panel {
+  background-color: $brand-blue;
+  color: white;
+  min-width: 200px;
+  max-width: $right-panel-width;
+  padding: 0 20px;
+  flex-shrink: 0;
+  flex-basis: $right-panel-width;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  -ms-overflow-style: scrollbar; //IE 11
+
+  &::-webkit-scrollbar {//chrome
+    display: none;
+  }
+
+  .error-container {
+    width: 100%;
+  }
+
+  .row {
+    margin-left: 0; // override stupid negative margin
+    margin-right: 0;
+  }
+}
+
+#rule-container {
+  .action-bar-container {
+    .doc-action-item {
+      margin-top: 10px;
+      color: $white;
+      &:hover {
+        color: $hover-blue;
+      }
+    }
+    .folder-dropdown-menu {
+      margin-top: 6px;
+    }
+  }
+
+  .top-tab-container {
+    display: flex;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    justify-content: space-between;
+    border-bottom: none;
+    padding: 0;
+
+    .top-tab {
+      width: 100%;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      border-bottom: 1px solid $white;
+      padding: 13px 0 0;
+      text-align: center;
+      font-size: 14px;
+
+      &.active {
+        border-bottom-color: $right-panel-active-orange;
+      }
+
+      &.disabled {
+        display: none;
+
+        a {
+          cursor: normal;
+        }
+      }
+
+      a {
+        background-color: transparent;
+        color: white;
+        border: none;
+        outline: none !important; // override :focus
+        cursor: pointer;
+      }
+    }
+  }
+  #document-summary-tabs {
+    & > ul {
+      @extend .top-tab-container;
+
+      & > li {
+        @extend .top-tab;
+      }
+    }
+
+  }
+
+  #document-summary-with-back {
+    .back-btn {
+
+    }
+  }
+}
+
+.rule-content {
+  padding: 0;
+  background-color: $brand-blue;
+  color: $white;
+  border-radius: 5px;
+  font-size: 14px;
+
+  .view-btn-container {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 36px;
+    margin-bottom: 28px;
+
+    .dropdown {
+      display: inline-flex;
+      :first-child {
+        width: 100%;
+      }
+
+      .dropdown-menu {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border: 1px solid $dark-grey;
+      }
+
+      #document-summary-view-btn {
+        margin-left: 1px;
+      }
+
+      .doc-summary-btn {
+        width: 100px;
+        height: 38px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        background-color: $hover-blue;
+        border: solid 1px $hover-blue;
+        color: $white;
+        text-decoration: none;
+        font-size: 14px;
+
+        &:hover, &:active {
+          background-color: $white;
+          color: $hover-blue;
+          border: solid 1px $hover-blue;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &.close_overlay {
+          background-color: $right-panel-active-orange;
+          border: solid 1px $right-panel-active-orange;
+          color: $black;
+
+          &:hover, &:active {
+            background-color: $hover-blue;
+            color: $white;
+            border: solid 1px $hover-blue;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .dropdown-toggle {
+        background-color: $hover-blue;
+        border: solid 1px $hover-blue;
+
+        &:hover, &:active {
+          background-color: $white;
+          border: solid 1px $hover-blue;
+
+          span {
+            color: $hover-blue;
+          }
+        }
+
+        span {
+          color: $white;
+        }
+
+        &.close_overlay {
+          background-color: $right-panel-active-orange;
+          border: solid 1px $right-panel-active-orange;
+          color: $black;
+
+          &:hover, &:active {
+            background-color: $hover-blue;
+            color: $white;
+            border: solid 1px $hover-blue;
+
+            span {
+              color: $white;
+            }
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          span {
+            color: $black;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        &.disabled {
+          display: none;
+        }
+      }
+
+      .disabled {
+        opacity: .5;
+        cursor: not-allowed;
+      }
+
+      .caret {
+        display: table;
+        text-align: center;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .heading {
+    color: $white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .byline {
+    font-family: $font-family-serif;
+    font-size: 16px;
+    color: $white;
+  }
+
+  section {
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 100px;
+    }
+
+    p {
+      line-height: 19px;
+      text-align: justify;
+      text-justify: auto;
+    }
+
+    .docket-title {
+      text-align: center;
+      font-size: 24px;
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      font-family: $font-family-sans-serif;
+
+      &.collapsed {
+        @include multiline-ellipsis(19px, 10);
+        &:after{
+          background: linear-gradient(to right, rgba(255, 255, 255, 0), $brand-blue 15%, $brand-blue);
+        }
+      }
+    }
+    .read-more {
+      display: none; //shown in multiline mixin
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .read-less {
+      display: block;
+      width: 100%;
+      background: $brand-blue;
+      color: $white;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+
+  .tl {
+    margin-top: 20px;
+  }
+
+  .loading-indicator {
+    margin-top: 25%;
+    margin-left: 50%;
+
+    i {
+      margin-top: -16px;
+      margin-left: -16px;
+      font-size: 32px;
+    }
+  }
+
+  .related-button-container {
+    padding-bottom: 15px;
+
+    .related-button {
+      width: 212.3px;
+      height: 42.5px;
+      border-radius: 6px;
+      background-color: $hover-blue;
+      border: solid 1px $hover-blue;
+
+      &:hover, &:active {
+        background-color: $white;
+        color: $hover-blue;
+        border: solid 1px $hover-blue;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+    a {
+      text-decoration: none !important;
+    }
+  }
+
+  .document-summary-tags {
+    width: 100%;
+    display: flex;
+    &.ie10 {
+      padding-right: 95px;
+    }
+    .label-container {
+      width: 90px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .tag-container {
+      width: 100%;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-bottom: 5px;
+        &.ie10 {
+          display: inline-block;
+        }
+        li {
+          display: inline;
+          background-color: $primary-action-blue;
+          color: $white;
+          border-radius: 5px;
+          margin-bottom: 5px;
+          margin-left: 5px;
+          &.ie10 {
+            display: inline-block;
+          }
+          &.add {
+            cursor: pointer;
+            margin-right: 100%; // make sure it gets its own line
+          }
+
+          & > * {
+            padding: 5px;
+            display: table-cell;
+            vertical-align: middle;
+          }
+          span {
+            padding-left: 10px
+          }
+          i {
+            font-size: 10px;
+            width: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .add-tag-container {
+        padding-bottom: 120px; // make sure there is room to open the select
+
+        .input-group {
+          padding-top: 10px;
+
+          input {
+            background-color: $brand-blue;
+            color: $white;
+            border: 1px solid $primary-action-blue;
+            border-right: none;
+
+            &:focus {
+              box-shadow: none;
+            }
+
+            &::-ms-clear {
+              display: none;
+            }
+          }
+
+          .input-group-addon {
+            color: $white;
+            background-color: $brand-blue;
+            border-color: $primary-action-blue;
+            border-left: none;
+            cursor: pointer;
+
+            .material-icons {
+              font-size: 14px;
+            }
+          }
+        }
+        .Select {
+          max-width: 100%;
+
+          .Select-control {
+            border: 1px solid $primary-action-blue;
+            background-color: $brand-blue;
+            color: $white;
+
+            .Select-placeholder, .Select-clear-zone {
+              color: $white;
+            }
+
+            .Select-arrow {
+              border-top-color: $white;
+            }
+          }
+
+          .Select-menu-outer { // dropdown contents
+            background-color: $brand-blue;
+            border-color: $primary-action-blue;
+
+            .Select-option {
+              color: $white;
+              &.is-focused {
+                color: $dark-grey;
+                background-color: $white;
+              }
+            }
+          }
+        }
+
+        .error-container {
+          margin: 10px 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.docket-timeline {
+
+  .docket-timeline-button-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    #docket-timeline-dropdown {
+      min-width: 172px;
+      font-weight: bold;
+      font-size: 13px;
+      height: 30px;
+      border: 1px solid $primary-action-blue;
+      background-color: $brand-blue;
+      color: $white;
+      margin-top: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .caret {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      .timeline-docket {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $brand-blue;
+        }
+      }
+    }
+  }
+
+  .timeline {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 0;
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+
+    li {
+      padding-bottom: 20px;
+      position: relative;
+      width: 50%;
+      margin-left: 50%;
+
+      &.timeline-marker {
+        div {
+          position: absolute;
+          left: -75%;
+          width: 75%;
+          padding-right: 10px;
+          text-align: right;
+          color: $hover-blue;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+
+      &.gap-above {
+        margin-top: 30%;
+        &:before {
+          height: 100%;
+        }
+      }
+
+      &:before {
+        content: " ";
+        display: block;
+        height: 100%;
+        border-left: 1px dashed $white;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &.today ~ li {
+        &:before {
+          border-left-style: none;
+        }
+      }
+
+      &.today:after {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: 10000px;
+        position: absolute;
+        background-image: url('../images/diagonal-stripe.svg');
+        top: 100%;
+      }
+
+      .well {
+        margin: 0;
+        background-color: $primary-action-blue;
+        margin-left: 4px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+
+        .current-text {
+          color: $hover-blue;
+        }
+      }
+
+      .timeline-type {
+        color: $white;
+        position: absolute;
+        left: -75%;
+        width: 75%;
+        padding-right: 10%;
+        text-align: right;
+        top: calc(50% - 10px);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// XXX move this up
+.rule-detail-content {
+  margin-top: 30px;
+
+  a {
+    color: $white;
+    cursor: pointer;
+  }
+
+  table {
+    margin-top: 14px;
+    margin-bottom: 14px;
+
+    &.location-table {
+      tr {
+        display: flex;
+        flex-direction: column;
+
+        td {
+          padding-top: 0;
+          width: 400px;
+
+           &.location-name {
+             padding-right: 90px; //hack to fix IE text overflow
+           }
+
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    tr {
+      td {
+        vertical-align: top;
+        padding-right: 14px;
+        padding-left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &:first-child { // label
+          color: $white;
+          font-weight: bold;
+          width: 90px;
+        }
+
+        &.doc-summary-topics-list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .topic-btn-vote-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .topic-list-btn {
+              width: 100%;
+              height: auto;
+              font-size: 14px;
+              border-radius: 4px;
+              background-color: $light-grey;
+              border: solid 1px $light-grey;
+              color: $black;
+              margin: 5px 5px 0 0;
+
+              &:hover, &:active {
+                background-color: $white;
+              }
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .relevance-topic-vote-icons {
+              display: flex;
+              flex-direction: row;
+
+              .material-icons {
+                margin-left: 10px;
+                font-size: 22px;
+                cursor: pointer;
+
+                &.relevant-vote {
+                  &:hover, &.relevant {
+                    color: $icon-green;
+                  }
+                }
+
+                &.not-relevant-vote {
+                  &:hover, &.not-relevant  {
+                    color: $icon-purple;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        a {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}

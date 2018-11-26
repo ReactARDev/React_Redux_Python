@@ -1,0 +1,16 @@
+.new-feature-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#new-feature-tooltip {
+  z-index: 105;
+
+  &.folder_action_pop_over {
+    width: 200px !important;
+
+    .folder_action_content {
+      text-align: center;
+    }
+  }
+}

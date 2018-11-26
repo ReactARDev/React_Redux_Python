@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>148 - new folder</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">148 - new folder</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=create_new_folderAdd New Folder</td>
+	<td>create_new_folderAdd New Folder</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.folder-input</td>
+	<td>New Folder Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.material-icons.done</td>
+	<td>done</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=create_new_folderAdd New Folder</td>
+	<td>create_new_folderAdd New Folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.folder-input</td>
+	<td>New Folder Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.material-icons.done</td>
+	<td>done</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.left-panel-error-container</td>
+	<td>Folder name: New Folder Test is already being used</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.material-icons.cancel</td>
+	<td>clear</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=bookmarkBookmarked</td>
+	<td>bookmarkBookmarked</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[type=&quot;checkbox&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.material-icons.doc-action-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.add-folder-control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li</td>
+	<td>New Folder Test</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.title &gt; span</td>
+	<td>U.S. Treasury Department Releases Report to Reform U.S. Financial System</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.dropdown.btn-group &gt; button.btn.btn-primary</td>
+	<td>View PDF</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[type=&quot;checkbox&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.folder-delete-buttons &gt; button</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

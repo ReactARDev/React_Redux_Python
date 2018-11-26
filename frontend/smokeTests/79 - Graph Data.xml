@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>79 - Graph Data</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">79 - Graph Data</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=html body div#root div#top.auth div.main-container div.center-container div.content-container div.newDashboardContainer.container-fluid.loading-overlay-light div.col-md-4 div.summaryContainer.documentVolume div.summary div.donut-chart div.nv-chart svg.nvd3-svg g.nvd3.nv-wrap.nv-pieChart g g.nv-pieWrap.nvd3-svg g.nvd3.nv-wrap.nv-pie.nv-chart-my_chart g g.nv-pie g.nv-slice path</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=/html/body/div[2]/table/tbody/tr/td[2]</td>
+	<td>Agency Update</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3 &gt; span.days</td>
+	<td>last 12 months</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=html body div#root div#top.auth div.main-container div.center-container div.content-container div.newDashboardContainer.container-fluid.loading-overlay-light div.col-md-4 div.summaryContainer.documentVolume div.summary div.donut-chart div.nv-chart svg.nvd3-svg g.nvd3.nv-wrap.nv-pieChart g g.nv-legendWrap.nvd3-svg g.nvd3.nv-legend g</td>
+	<td>Agency UpdateRegulatory DocumentState CodeFederal CodeNewsWhitepaperUS Public Law</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=html body div#root div#top.auth div.main-container div.center-container div.content-container div.newDashboardContainer.container-fluid.loading-overlay-light div.col-md-4 div.summaryContainer.documentVolume div.summary div.donut-chart div.nv-chart svg.nvd3-svg g.nvd3.nv-wrap.nv-pieChart g g.nv-legendWrap.nvd3-svg g.nvd3.nv-legend g g.nv-series circle.nv-legend-symbol</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=html body div#root div#top.auth div.main-container div.center-container div.content-container div.newDashboardContainer.container-fluid.loading-overlay-light div.col-md-4 div.summaryContainer.documentVolume div.summary div.donut-chart div.nv-chart svg.nvd3-svg g.nvd3.nv-wrap.nv-pieChart g g.nv-legendWrap.nvd3-svg g.nvd3.nv-legend g g.nv-series circle.nv-legend-symbol</td>
+	<td></td>
+</tr>
+<tr>
+	<td>doubleClickAt</td>
+	<td>css=html body div#root div#top.auth div.main-container div.center-container div.content-container div.newDashboardContainer.container-fluid.loading-overlay-light div.col-md-4 div.summaryContainer.documentVolume div.summary div.donut-chart div.nv-chart svg.nvd3-svg g.nvd3.nv-wrap.nv-pieChart g g.nv-legendWrap.nvd3-svg g.nvd3.nv-legend g g.nv-series circle.nv-legend-symbol</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=html body div#root div#top.auth div.main-container div.center-container div.content-container div.newDashboardContainer.container-fluid.loading-overlay-light div.col-md-4 div.summaryContainer.documentVolume div.summary div.donut-chart div.nv-chart svg.nvd3-svg g.nvd3.nv-wrap.nv-pieChart g g.nv-legendWrap.nvd3-svg g.nvd3.nv-legend g g.nv-series circle.nv-legend-symbol</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,698 @@
+.register-container {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+  background-color: #e8eeef !important;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+  -ms-overflow-style: none; //IE 11
+
+  .container {
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+    -ms-overflow-style: none; //IE 11
+  }
+
+  input {
+    max-width: none;
+  }
+
+  p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  label {
+    font-weight: normal;
+  }
+  .name-container {
+    .form-group {
+      width: 50%;
+      display: inline-flex;
+      align-content: center;
+      .input-container {
+        flex-grow: 1;
+        margin-right: 1em;
+        input {
+          width: 100%;
+        }
+      }
+      label {
+        margin-right: 1em;
+        margin-bottom: 0;
+        align-self: center;
+      }
+    }
+  }
+  span {
+    strong,
+    a {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  .industries-container {
+    /* XXX media queries */
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    .checkbox-inline {
+      width: auto;
+      display: table;
+    }
+  }
+
+  .logo-row {
+    height: 80px;
+    .logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: auto;
+      z-index: 1000;
+    }
+  }
+  .logo {
+    background: url('../images/Logo-Mobile.svg') no-repeat 0 0px/200px;
+    height: 80px;
+    width: 100%;
+    background-position: center;
+    background-color: $black;
+  }
+
+  .text-danger {
+    font-weight: bold;
+  }
+
+  .bg-danger {
+    padding: 1em;
+  }
+
+  .input-row {
+    input {
+      border-radius: 0px;
+    }
+    span {
+      @extend .label;
+      color: black;
+      display: block;
+      text-align: left;
+      padding-left: 2px;
+      padding-bottom: 5px;
+    }
+    .big-label {
+      width: 330px;
+    }
+
+    .input-container {
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  h4 {
+    margin-top: 0;
+    color: gray;
+  }
+
+  .required {
+    position: relative;
+  }
+
+  .frequency-group {
+    > span {
+      display: inline-block;
+      padding-right: 0.5em;
+    }
+  }
+
+  .bottom-container {
+    color: #fff;
+  }
+
+  .step-container {
+    text-align: center;
+    padding: 15px;
+
+    circle {
+      fill: $brand-blue;
+      stroke: $brand-blue;
+      stroke-width: 2px;
+
+      &.active ~ circle {
+        fill: $white;
+        stroke: $brand-blue;
+      }
+    }
+    line {
+      stroke: $brand-blue;
+      stroke-width: 2px;
+    }
+    ul {
+      li {
+        display: inline-block;
+        width: 70px;
+        text-indent: -9999px;
+        color: $brand-primary;
+        &:before {
+          content: '•';
+          display: block;
+          font-size: 50px;
+          text-indent: 0;
+        }
+        &.active {
+          color: $brand-success;
+        }
+      }
+    }
+  }
+  .next-section-arrow {
+    vertical-align: middle;
+    padding-left: 5px;
+  }
+
+  .success-container {
+    margin: auto;
+    p {
+      padding: 1em;
+    }
+  }
+
+  .personalize-container {
+    .panel {
+      width: 100%;
+      box-shadow: none;
+      .all {
+        color: $hover-blue;
+        margin-left: 20px;
+        .click {
+          cursor: pointer;
+        }
+      }
+    }
+
+    text-align: center;
+
+    .row {
+      margin: 15px; // override bootstrap neg margin
+
+      &.logo-row {
+        margin-top: 0;
+      }
+
+      p,
+      h2,
+      h3 {
+        display: inline;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &.text-center {
+          display: inline;
+          max-width: none;
+        }
+      }
+      &.coming-soon {
+        color: grey;
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+    }
+    .selection-container {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+
+      .well {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        width: 112px;
+        height: 112px;
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+        background-color: $right-panel-blue;
+        color: $white;
+        border-radius: 8px;
+
+        &.squish {
+          letter-spacing: -0.05em;
+        }
+
+        label {
+          font-weight: bold;
+        }
+
+        &.other {
+          color: $brand-blue;
+          background-color: $white;
+          border: 1px solid $primary-action-blue;
+
+          &:hover {
+            color: white;
+          }
+          i {
+            display: none;
+          }
+        }
+
+        &.selected {
+          background-color: $brand-blue;
+
+          i {
+            opacity: 1;
+          }
+        }
+
+        &:hover {
+          background-color: $primary-action-blue;
+
+          i {
+            opacity: 1;
+          }
+        }
+
+        label {
+          text-align: center;
+          vertical-align: middle;
+          display: table-cell;
+          cursor: pointer;
+        }
+        input {
+          display: none;
+        }
+        i {
+          position: absolute;
+          text-align: center;
+          left: 0;
+          width: 100%;
+          bottom: 10px;
+          opacity: 0.54;
+        }
+      }
+    }
+  }
+
+  .invite-controls {
+    .form-inline {
+      label {
+        width: 100px;
+        margin-right: 0;
+      }
+      .form-group:last-child {
+        .input-container {
+          margin-right: 0;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+
+  .activate-container {
+    margin: auto;
+    margin-top: 0px;
+
+    @media screen and (max-width: 993px) {
+      width: 340px;
+      .form-explainer-container {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .activate-user-explainer-container {
+          order: 2;
+          margin: 0 !important;
+          padding-top: 30px;
+
+          .activate-user-explainer-card {
+            display: flex;
+            justify-content: baseline !important;
+            align-items: center !important;
+            width: 300px;
+
+            .explainer-text-container {
+              display: flex;
+              flex-direction: row;
+
+              .explainer-text {
+                display: none;
+              }
+            }
+          }
+          .desktop-img {
+            max-width: 100%;
+          }
+        }
+        .user-form-container {
+          order: 1;
+          margin: 0 !important;
+          padding-bottom: 30px;
+
+          .contributorText {
+            a {
+              display: inline-block !important;
+            }
+          }
+        }
+      }
+    }
+
+    .panel {
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      position: relative;
+      overflow: hidden;
+      padding: 15px;
+      box-shadow: none;
+      background-color: #e8eeef;
+
+      .logo-row {
+        margin-top: -15px;
+        height: 70px;
+        .logo {
+          height: 70px;
+        }
+      }
+    }
+
+    .form-explainer-container {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 20px;
+
+      .activate-user-explainer-container {
+        margin: 0 20px;
+        cursor: default;
+        .activate-user-explainer-card {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          padding-bottom: 30px;
+
+          .explainer-text-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+
+            .explainer-header {
+              margin: 0;
+              font-size: 18px;
+              font-weight: bold;
+              color: $black;
+            }
+
+            .explainer-text {
+              font-size: 14px;
+              margin-top: 10px;
+              margin-left: 0;
+            }
+          }
+
+          i {
+            color: $black;
+            font-size: 35px;
+          }
+        }
+
+        .desktop-img {
+          background-repeat: no-repeat;
+          background-size: contain;
+          max-height: 250px;
+          max-width: 100%;
+        }
+      }
+
+      .user-form-container {
+        margin: 0 20px;
+        background-color: #f6f8f8;
+        color: #5898ce;
+        padding: 15px 20px 15px 15px;
+        height: 100%;
+
+        &.reset_pass {
+          width: 350px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+
+        label {
+          display: inline;
+        }
+
+        a {
+          font-size: 14px;
+          color: $primary-action-blue;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .error {
+          border: solid 1px $danger-red;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+          @media screen and (max-width: 993px) {
+            width: 104%;
+          }
+        }
+        .btn-row {
+          display: flex;
+          align-items: center;
+
+          .sign-up-btn {
+            width: 100%;
+            height: 48px;
+            margin-left: 10px;
+            border-radius: 0px;
+            background-color: white;
+            border: solid 1px $hover-blue;
+            color: $hover-blue;
+
+            &:hover {
+              color: $white;
+              background-color: $hover-blue;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+          .signUpWithEmail {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 48px;
+            margin-left: 10px;
+            border-radius: 0px;
+            background-color: white;
+            border: solid 1px $hover-blue;
+            color: $hover-blue;
+
+            &:hover {
+              color: $white;
+              background-color: $hover-blue;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        .form-group {
+          margin-left: 8px;
+        }
+
+        .pwd-indicator {
+          display: none;
+        }
+
+        .weak-pwd-indicator,
+        .normal-pwd-indicator,
+        .strong-pwd-indicator {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding-bottom: 40px;
+          margin-top: 8px;
+          height: 100%;
+          width: 100%;
+        }
+
+        .weak-pwd-indicator {
+          background-image: url('../images/registration-weak-pwd-indicator.png');
+        }
+        .normal-pwd-indicator {
+          background-image: url('../images/registration-normal-pwd-indicator.png');
+        }
+        .strong-pwd-indicator {
+          background-image: url('../images/registration-strong-pwd-indicator.png');
+        }
+
+        .pwd-feedback {
+          padding: 0;
+          .activation-form-pwd-feedback {
+            margin-left: 2px;
+            font-size: 12px;
+            list-style-type: none;
+          }
+        }
+
+        input[type='checkbox'] {
+          display: inline-block;
+          cursor: pointer;
+        }
+        .contributorText {
+          display: inline-block;
+          margin-left: 10px;
+          a {
+            margin-left: 5px;
+          }
+        }
+
+        .sign-up-btn {
+          width: 400px;
+          height: 48px;
+          border-radius: 6px;
+          background-color: #ffffff;
+          border: solid 1px #2c6ddf;
+        }
+      }
+    }
+
+    .oauth-and-or-line-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .terms {
+        align-self: start;
+      }
+
+      .oauth-btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .googleBtnContainer {
+          width: 100%;
+        }
+        .google_btn {
+          &:hover {
+            background-color: $josue-grey;
+          }
+          opacity: 1 !important;
+          font-size: 16px;
+          margin-bottom: 20px;
+          width: 100%;
+          height: 48px;
+          border-radius: 0px;
+          background-color: $white;
+          border: solid 1px $light-grey;
+          cursor: pointer;
+          color: $dark-grey;
+
+          .googleLogo {
+            height: 85%;
+            margin-right: 10px;
+          }
+        }
+
+        .linkedin_btn {
+          &:hover {
+            opacity: 0.5;
+          }
+          font-size: 16px;
+          margin-bottom: 10px;
+          width: 100%;
+          height: 48px;
+          border-radius: 0px;
+          color: white;
+          background-color: $linkedin-blue;
+          border-color: $linkedin-blue;
+          .linkedinLogo {
+            height: 100%;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .or-line {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .black-line {
+          margin: 0 5px 0 5px;
+          width: 160px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.personalize-modal {
+  textarea {
+    width: 100%;
+  }
+}
+
+.terms-modal {
+  .terms-of-service {
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
+}
+
+.invite-flow.step-0,
+.sign_up-flow.step-0,
+.password-flow {
+  @extend %city-background;
+
+  .container {
+    height: 700px; // needed to fix IE vertical centering: http://stackoverflow.com/a/25386261
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.invite-flow,
+.sign_up-flow,
+.password-flow {
+  min-height: 100vh;
+  margin-bottom: -1 * $anon-footer-height;
+
+  .container {
+    padding-bottom: $anon-footer-height;
+  }
+}
+
+.password-flow.step-0 {
+  height: 100vh;
+}

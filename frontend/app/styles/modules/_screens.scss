@@ -1,0 +1,6 @@
+$large: 1200px;
+$medium: 992px;
+$small: 767px; // HACK: changed from 768px to fix style bug when viewing at EXACTLY 768px,
+               // which is the width of the non-pro iPad. Future: find source of issue.
+$insightsGraphHeight: 550px;
+$insightsGraphWidth: 600px;

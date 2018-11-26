@@ -1,0 +1,78 @@
+.sourcesContainer {
+  height: 100%;
+  overflow: scroll;
+  padding-bottom: 200px;
+
+  .header {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .tabs-feedback-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .description {
+    margin-bottom: 56px;
+
+  }
+
+  .tabs {
+    text-align: center;
+    margin-bottom: 60px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .tab {
+    margin-right: 32px;
+    &.comingSoon {
+      cursor: auto;
+    }
+  }
+
+  .selectedTab {
+    color: $hover-blue;
+    border-bottom: solid 4px $hover-blue;
+    margin-right: 32px;
+  }
+
+  .all {
+    color: $hover-blue;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    .click {
+      cursor: pointer;
+    }
+  }
+  .btn {
+    margin-right: 24px;
+    margin-bottom: 32px;
+    border-color: #2ea87f;
+    background-color: #ffffff;
+    color: #2ea87f;
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(46, 168, 127, .5);
+    }
+    img {
+      margin-top: -4px;
+      height: 33px;
+      border-radius: 33px;
+      margin-right: 4px;
+      margin-left: -2px
+    }
+  }
+  .following {
+    color: white;
+    background-color: #2ea87f;
+  }
+}
+#sourceButtonPopover {
+  .popover-content {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>127 - Saved Searches</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">127 - Saved Searches</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[3]/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=th</td>
+	<td>Namekeyboard_arrow_downkeyboard_arrow_up</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/thead/tr/th[2]</td>
+	<td>Search Criteriakeyboard_arrow_downkeyboard_arrow_up</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/thead/tr/th[3]</td>
+	<td>Date Updatedkeyboard_arrow_down</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/thead/tr/th[4]</td>
+	<td>Actions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.saved-search-header</td>
+	<td>Saved Searches</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.sort-icons &gt; i.material-icons.header-arrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.search-name</td>
+	<td>Regulation DDEdit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/thead/tr/th[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/tbody/tr[2]/td</td>
+	<td>Regulation ZEdit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/thead/tr/th[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/thead/tr/th[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.search-name</td>
+	<td>Regulation ZEdit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.clickable.edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/table/tbody/tr[1]/td[1]/input</td>
+	<td>Regulation DD practice</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/table/tbody/tr[1]/td[1]/span/i[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.search-name</td>
+	<td>Regulation DD practiceEdit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/table/tbody/tr[1]/td[4]/i[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.form-control</td>
+	<td>Copy of Regulation DD practice copy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.search-name</td>
+	<td>Copy of Regulation DD practice copyEdit</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/tbody/tr[2]/td</td>
+	<td>Regulation DD practiceEdit</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/tbody/tr[3]/td</td>
+	<td>Regulation ZEdit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/table/tbody/tr/td[4]/i[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.clickable.edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/table/tbody/tr[1]/td[1]/input</td>
+	<td>Regulation DD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div/div/table/tbody/tr[1]/td[1]/span/i[1]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

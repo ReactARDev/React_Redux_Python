@@ -1,0 +1,2 @@
+export const REQUIRED_REVIEWS_NUM_MONTHLY = 20;
+export const REQUIRED_REVIEWS_NUM_TODAY = 10;

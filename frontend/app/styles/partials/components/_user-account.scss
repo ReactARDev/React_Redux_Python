@@ -1,0 +1,213 @@
+.account-settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 95px;
+
+  .account-selections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+
+    span {
+      width: auto;
+      height: 24px;
+      font-family: CircularStd;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    span:first-child {
+      margin-right: 104px; //brings selections closer
+    }
+
+    .selected {
+      color: $hover-blue;
+      border-bottom: solid 4px $hover-blue;
+    }
+  }
+  .btn {
+    border-color: #2c6ddf;
+    color: #2254d7;
+    margin-top: 28px;
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(34, 84, 215, .5);
+    }
+  }
+  .outter-subscription-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 328px;
+    border-radius: 6px;
+    border: solid 1px $border-line-grey;
+    margin-top: 66px;
+
+    .inner-subscription-card {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      width: 280px;
+      height: 288px;
+      background-color: $compliance_ai_bkgrd;
+      .proEdition {
+        margin-top: 60px;
+      }
+      .paid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .check {
+        margin: auto;
+      }
+    
+      .freeTrial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        .trialInfo {
+          text-align: center;
+          margin: -37px auto 0 auto;
+        }
+        .red {
+          color: $notif-red;
+          font-weight: bold;
+        }
+      }
+      h1 {
+        font-family: CircularStd;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      i {
+        font-size: 48px;
+        color: $hover-blue;
+      }
+
+      p {
+        font-size: 14px;
+      }
+      .currentPlan {
+        text-align: center;
+        margin-top: 24px;
+      }
+      .billing {
+        text-align: center;
+        margin-bottom: 39px;
+      }
+    }
+  }
+
+  .subText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 16px;
+    .taskStatus {
+      background-color: $status-green;
+      vertical-align: middle;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      margin: auto;
+      width: 320px;
+      font-size: 14px;
+    }
+    .questions {
+      margin-top: 46px;
+    }
+
+    .upgradeFromContrib {
+      margin-top: 20px;
+      .btn {
+        vertical-align: unset;
+        margin-left: 28px;
+        margin-top: 0px;
+      }
+    }
+  }
+  .profile-container {
+    max-height: 100%;
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    overflow: visible;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - #{$navbar-height});
+    margin-top: 34px;
+
+    .weak-pwd-indicator,
+    .normal-pwd-indicator,
+    .strong-pwd-indicator {
+      background-repeat: no-repeat;
+      background-size: 80%;
+      padding-bottom: 50px;
+      margin-top: 8px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .weak-pwd-indicator {
+      background-image: url('../images/settings-weak-pwd-indicator.png');
+    }
+    .normal-pwd-indicator {
+      background-image: url('../images/settings-normal-pwd-indicator.png');
+    }
+    .strong-pwd-indicator {
+      background-image: url('../images/settings-strong-pwd-indicator.png');
+    }
+
+    .pwd-feedback {
+      padding: 0;
+      .settings-form-pwd-feedback {
+        margin-left: 2px;
+        font-size: 12px;
+        list-style-type: none;
+      }
+    }
+
+    h1 {
+      padding-bottom: 16px;
+    }
+
+    input,
+    .Select {
+      max-width: none;
+    }
+
+    .btn-container {
+      button {
+        color: $white;
+        background-color: $hover-blue;
+
+        &:hover {
+          color: $hover-blue;
+          background-color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.buyNowBanner {
+  color: white;
+  font-size: 16px;
+}

@@ -1,0 +1,167 @@
+.left-nav-submenu-container {
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 95;
+  left: 96px;
+  background-color: $white;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.5);
+  color: $brand-blue;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &.user_folders {
+    height: 208px;
+
+    //forces chrome on OSX to display scroll bar
+    &::-webkit-scrollbar {
+      width: 11px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      border: 2px solid white; /* should match background, can't be transparent */
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #fff;
+      border-radius: 8px;
+    }
+  }
+
+  &.timeline {
+    height: auto;
+  }
+
+  &.state_code {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+
+  .left-panel-error-container {
+    @extend .bg-danger;
+    z-index: 1000;
+    line-height: 18px;
+    cursor: pointer;
+  }
+
+  .left-panel-account-settings {
+    width: 100%;
+    .notif-bubble {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: $notif-red;
+      border-radius: 50%;
+    }
+    .left-panel-account-setting {
+      display: block;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 10px 40px;
+      text-decoration: none;
+      width: 100%;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+        color: $white;
+        background: $hover-blue;
+      }
+    }
+  }
+
+  .left-panel-folders {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: $brand-blue;
+
+    .left-panel-folder-title {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 0 10px;
+      line-height: 40px;
+      height: 40px;
+      list-style: none;
+
+      &:hover, &:active {
+        text-decoration: none;
+        color: $white;
+        background: $hover-blue;
+
+        i {
+          color: $white;
+        }
+      }
+
+      i {
+        color: $insights-light-blue;
+        margin-right: 15px;
+        font-size: 24px;
+        line-height: 40px;
+      }
+
+      .folder-input {
+        border: 1px solid $medium-grey;
+        border-radius: 3px;
+        background-color: $brand-grey;
+        height: 28px;
+        width: 100px;
+        line-height: 22px;
+        padding-left: 5px;
+        margin-right: 10px;
+        align-self: center;
+        color: $brand-blue;
+
+        &:focus {
+          outline: none;
+          background-color: $white;
+        }
+      }
+
+      .done {
+        color: $insights-light-blue;
+        &:hover {
+          color: $insights-light-blue;
+        }
+      }
+
+      .cancel {
+        &:hover {
+          color: $insights-light-blue;
+        }
+      }
+
+      span {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .left-panel-timeline-menu {
+    display: flex;
+    flex-direction: column;
+
+    .left-panel-timeline-option {
+      cursor: pointer;
+      font-size: 14px;
+      padding: 5px 40px;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+        color: $white;
+        background: $hover-blue;
+      }
+    }
+
+    .displayed {
+      text-decoration: none;
+      color: $white;
+      background: $hover-blue;
+    }
+  }
+}

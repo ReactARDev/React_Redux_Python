@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>144 - Read docs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">144 - Read docs</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=bookmarkBookmarked</td>
+	<td>bookmarkBookmarked</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[3]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=remove_red_eyeRead</td>
+	<td>remove_red_eyeRead</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.title &gt; span</td>
+	<td>U.S. Treasury Department Releases Report to Reform U.S. Financial System</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td>test search</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='top']/div/div/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.title &gt; span</td>
+	<td>U.S. Treasury Department Releases Report to Reform U.S. Financial System</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=bookmarkBookmarked</td>
+	<td>bookmarkBookmarked</td>
+</tr>
+</tbody></table>
+</body>
+</html>

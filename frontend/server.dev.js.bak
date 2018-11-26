@@ -1,0 +1,55 @@
+/* eslint-disable no-console */
+
+const favicon = require('serve-favicon');
+const path = require('path');
+const express = require('express');
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
+const appConfig = require('./webpack.app.config.dev.js');
+// const adminConfig = require('./webpack.admin.config.dev.js');
+
+const PORT = process.env.PORT;
+const app = express();
+
+function mountApp(app, config) { // eslint-disable-line no-shadow
+  const compiler = webpack(config);
+  app.use(webpackDevMiddleware(webpack(compiler), {
+    publicPath: config.output.publicPath,
+    noInfo: true,
+    hot: true,
+    historyApiFallback: true,
+    stats: {
+      colors: true,
+      hash: false,
+      version: false,
+      chunks: false,
+      children: false,
+    },
+  }));
+
+  app.use(webpackHotMiddleware(compiler, { log: console.log }));
+}
+
+app.use(favicon(`${__dirname}/public/favicon.ico`));
+
+mountApp(app, appConfig);
+// mountApp(app, adminConfig);
+
+app.use('/', (req, res) => {
+  const subdomains = req.hostname.split('.');
+
+  if (subdomains[0] === 'admin') {
+    res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+  } else {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  }
+});
+
+app.listen(PORT, 'localhost', (err) => {
+  if (err) {
+    console.log(`🙀 ${err}`);
+    return;
+  }
+  console.log(`🔥  App is now running on http://localhost:${PORT}`);
+});

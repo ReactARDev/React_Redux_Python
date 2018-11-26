@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>71 - Links</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">71 - Links</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.summaryContainer.commonSearches &gt; div.summary &gt; div &gt; h5</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[1]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>name2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name1']==storedVars['name2']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[2]/h5</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[2]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>name2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[2]/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name1']==storedVars['name2']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[3]/h5</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[3]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>name2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name1']==storedVars['name2']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[4]/h5</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[4]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>name2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name1']==storedVars['name2']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[5]/h5</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/div[4]/div/div[5]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>name2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['name1']==storedVars['name2']</td>
+	<td>true</td>
+</tr>
+</tbody></table>
+</body>
+</html>

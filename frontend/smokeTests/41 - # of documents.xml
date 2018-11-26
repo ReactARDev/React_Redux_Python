@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+
+</tbody></table>
+</body>
+</html>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>b</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3</td>
+	<td>c</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>4</td>
+	<td>d</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>5</td>
+	<td>e</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>6</td>
+	<td>f</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7</td>
+	<td>g</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>8</td>
+	<td>h</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>9</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=h5.tabText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[1]/div/div/div/div</td>
+	<td>divcount</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>class=slick-slide slick-active agencyTab currentTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${trcount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=span.documentCount</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['a'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=material-icons icon nextArrow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>class=slick-slide slick-active agencyTab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['b'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['c'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[4]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[4]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['d'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['e'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['f'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['g'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['h'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['i'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]/h5/span[2]</td>
+	<td>num</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>xpath=//body/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr</td>
+	<td>trcount</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['trcount']==storedVars['num']</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>END</td>
+	<td></td>
+</tr>

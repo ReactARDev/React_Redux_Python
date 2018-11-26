@@ -1,0 +1,157 @@
+.visualInsights {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: lighten($light-grey, 10%);
+  padding-bottom: 200px;
+  height: 100%;
+  overflow: auto;
+
+  h2 {
+    color: $black;
+  }
+
+  .insights-chart {
+    @media screen and (min-width: $medium) {
+      height: $insightsGraphHeight;
+      min-width: $insightsGraphWidth;
+    }
+    @media screen and (max-width: $medium) {
+      width: 100%;
+    }
+    background-color: $white;
+    padding: 0 0 10px 10px;
+    margin-top: 10px;
+
+    .nv-chart {
+      height: 400px;
+      margin-right: 50px;
+      margin-top: 20px;
+    }
+    table {
+      margin-bottom: 10px;
+      width: 80%;
+      height: 350px;
+    }
+    .label {
+      display: block;
+      white-space: normal;
+    }
+    .loadingContainer {
+      .imageContainer {
+        color: $logo-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        align-self: center;
+      }
+      height: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  #GraphPresidentialExecutiveOrders,
+  #GraphActiveAgencies,
+  #GraphFinancialAgencyTrends,
+  #GraphFinalAndProposedRules {
+    .nv-x {
+      .tick {
+        line {
+          display: none;
+        }
+      }
+    }
+  }
+  .Select-clear-zone {
+    display: none;
+  }
+
+  .export-button {
+    cursor: pointer;
+  }
+
+  .heatmap {
+    @media screen and (min-width: $medium) {
+      height: $insightsGraphHeight;
+    }
+    background-color: $white;
+    tr {
+      min-height: 42px;
+
+      & > * {
+        width: 60px;
+        border: 1px solid white;
+        padding: 10px 0;
+        text-align: center;
+
+        &:first-child {
+          width: 200px;
+          padding-right: 10px;
+          text-align: left;
+        }
+      }
+      .high {
+        background-color: $insights-heatmap-high;
+      }
+      .medium {
+        background-color: $insights-heatmap-medium;
+      }
+      .low {
+        background-color: $insights-heatmap-low;
+      }
+      .not-available {
+        background-color: $light-grey;
+      }
+    }
+  }
+
+  .datepickerTo {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #GraphActiveAgencies {
+    h3 {
+      margin-right: 5px;
+      display: inline-block;
+    }
+    .selectorContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 10px;
+      .selectSource {
+        .form-control,
+        .Select {
+          width: 125px;
+        }
+      }
+    }
+    .graphDatepicker {
+      .date-ranges {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        .react-datepicker__input-container {
+          input {
+            width: 80px;
+          }
+        }
+        .react-datepicker__close-icon {
+          display: none;
+        }
+        .react-datepicker__month-container {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

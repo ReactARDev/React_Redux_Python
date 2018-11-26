@@ -1,0 +1,267 @@
+.document-search-list-container {
+  padding-right: 10px;
+  padding-left: 10px;
+  .document-search-list {
+    padding: 0;
+    margin-top: 1%;
+    width: auto;
+
+    &:before {
+      display: none; // override .row pseudo element for tighter spacing
+    }
+
+    .document-result-row {
+      padding: 5px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-content: space-between;
+      position: relative;
+
+      &.header {
+        @media screen and (max-width: 600px) {
+          .title-topic-img-container {
+            display: flex;
+            flex-direction: column !important;
+
+            .mainstream-news-img {
+              max-width: 100px !important;
+              max-height: 50px !important;
+              margin: 10px 0 !important;
+            }
+          }
+        }
+
+        .title-topic-img-container{
+          display: flex;
+          flex-direction: row;
+
+          .title-topic-btns {
+            display: flex;
+            flex-direction: column;
+            width: 66%;
+
+            .document-result-title {
+              font-size: 18px;
+              color: $brand-blue;
+              float: left;
+            }
+
+            .document-topics-list {
+              display: flex;
+              flex-direction: row;
+
+              .topic-list-btn {
+                width: auto;
+                height: auto;
+                font-size: 14px;
+                border-radius: 4px;
+                background-color: $light-grey;
+                border: solid 1px $light-grey;
+                margin: 10px 10px 0 0;
+
+                &:hover, &:active {
+                  background-color: $white;
+                }
+
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+          }
+
+          .mainstream-news-img {
+            width: 100%;
+            height: 100%;
+            max-width: 100px;
+            margin: 0 10px;
+            left: 66%;
+          }
+        }
+
+        #vote-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 14px;
+          z-index: 10;
+          position: absolute;
+          right: 0;
+
+          h5 {
+            margin: 0;
+            font-family: $font-family-sans-serif;
+            text-align: center;
+          }
+
+          .relevance-vote-icons {
+            display: flex;
+            flex-direction: row;
+
+            .relevant-vote {
+              &:hover, &.relevant {
+                background: $icon-green;
+              }
+            }
+
+            .not-relevant-vote {
+              &:hover, &.not-relevant  {
+                background: $icon-purple;
+              }
+            }
+
+            span {
+              line-height: 24px;
+              text-align: center;
+              border-radius: 50%;
+              font-size: 16px;
+              font-weight: lighter;
+              font-family: $font-family-sans-serif;
+              width: 24px;
+              height: 24px;
+              background: $light-grey;
+              color: $white;
+              margin: 10px 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .document-result {
+      cursor: pointer;
+      padding: 4px 20px;
+      border-bottom: 0.5px solid $bottom-border-grey;
+      list-style-type: none;
+
+      .document-result-controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding:0;
+        margin-right: 18px;
+
+        div {
+          color: $medium-grey;
+          // override checkbox style with this method:
+          // http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
+          label {
+            height: 22px;
+            padding-left: 0;
+            input {
+              display: none;
+            }
+            .checked, .unchecked {
+              font-size: 22px;
+              display: none;
+              margin: 0;
+              &:hover {
+                color: $hover-blue;
+                text-decoration: none;
+              }
+            }
+            input + .unchecked {
+              display: inline-block;
+            }
+            input:checked ~ .checked {
+              display: inline-block;
+            }
+            input:checked ~ .unchecked {
+              display: none;
+            }
+          }
+        }
+        .bookmark {
+          cursor: pointer;
+          font-size: 22px;
+          padding-left: 10px;
+          color: $medium-grey;
+
+          &:hover {
+            text-decoration: none;
+            color: $hover-blue;
+          }
+        }
+      }
+
+      .dates {
+        font-weight: bold;
+
+        & > span {
+          padding-left: 0;
+          padding-right: 2px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .key-dates {
+          display: inline-block;
+
+          & > div{
+            color: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            display: inline-block;
+            padding: 0 2px;
+          }
+        }
+      }
+
+      &:hover{
+        background: fade-out($primary-action-blue, 0.84);
+      }
+
+      &.selected {
+        background: fade-out($primary-action-blue, 0.84);
+      }
+
+      &.read_document {
+        font-weight: normal;
+
+        .document-result-summary-text, .document-result-agency, .document-result-category, .dates{
+          font-weight: normal;
+        }
+      }
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+    .clickable:hover {
+      text-decoration: underline;
+    }
+
+    .document-result-agency , .document-result-category{
+      display: inline-block; // https://github.com/twbs/bootstrap/issues/13219
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 5px;
+    }
+
+    em {
+      background-color: $highlight-green;
+      font-style: normal;
+    }
+  }
+  .link-to-agency-page {
+    color: white;
+    text-decoration: inherit;
+  }
+  .blue-color {
+    height: 100px;
+    border-radius: 10px;
+    border: 0.5px solid #c2c2c2;
+    background-color: #112e61;
+  }
+  .chart-img-container  {
+    height: 80px;
+    width: 80px;
+  }
+  .chart-img-container img {
+    height: 100%;
+    padding-left: 10px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

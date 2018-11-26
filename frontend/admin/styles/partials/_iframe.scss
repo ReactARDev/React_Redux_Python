@@ -1,0 +1,130 @@
+body {
+  background-color: transparent!important;
+}
+
+.complianceAIIframe {
+  text-align: center;
+  background: transparent!important;
+  .item {
+    cursor: pointer;
+  }
+  input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    font-family: source sans pro;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 13px;
+    width: 600px;
+    background: #fff url("https://staging.compliance.ai/wp-content/uploads/2017/05/Compliance-searchicon.png") no-repeat scroll right center;
+  }
+  .modal-container {
+    position: relative;
+    /*height: 700px;*/
+  }
+  .modal-container.modal-open {
+    height: 800px;
+  }
+  .modal-container .modal-backdrop, .modal-container .modal {
+      position: absolute !important;
+  }
+
+  .complianceAIDocContainer {
+    .doc {
+      cursor: pointer;
+      em {
+        background-color: yellow;
+      }
+    }
+    .pdfContainer {
+      iframe {
+        width: 100%;
+        height: 750px;
+      }
+    }
+  }
+  .augosuggestDropdown {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .augosuggestDropdown .item {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 9px;
+    .roundLogo {
+      max-height: 19px;
+      margin-right: 5px;
+    }
+  }
+  .augosuggestDropdown .item:hover, .augosuggestDropdown .item:active {
+    background-color: #0088cc;
+    background-image: none;
+    color: #ffffff;
+  }
+
+  .modal-footer {
+    display: none;
+  }
+  .modal-header {
+    display: none;
+  }
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .augosuggestDropdown {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: left;
+    width: 600px;
+  }
+  .modal-content {
+    border-radius: 0;
+    text-align: left;
+  }
+  .modal-container {
+    text-align: left;
+  }
+  .modal-content {
+    background: #1f1f1f!important;
+    color: #fff;
+  }
+  .complianceAIDocContainer .doc em {
+    background-color: #1c555e!important;
+    padding: 2px!important;
+  }
+
+  .pdfContainer div span, .pdfContainer div .material-icons {
+    color: #fff;
+    float: left;
+  }
+  .table-hover > tbody > tr:hover {
+    background-color: rgba(245,245,245,0.18)!important;
+  }
+  #root {
+    background: transparent!important;
+  }
+  .complianceAIDocContainer .doc td {
+    border-bottom: 1px solid #ddd!important;
+    border-top: medium none!important;
+  }
+  .fade.in.modal {
+    background: #1f1f1f!important;
+  }
+  .pdfContainer div span:hover, .pdfContainer div .material-icons:hover {
+    cursor: pointer!important;
+  }
+  .modal-backdrop.fade.in {
+    background: #1f1f1f none repeat scroll 0 0;
+  }
+
+}
+
+#iframe2 .complianceAIIframe {
+  width: 100%!important;
+}

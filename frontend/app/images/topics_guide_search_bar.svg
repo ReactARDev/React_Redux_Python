@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="220px" viewBox="0 0 284 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Search Bar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="178" height="80"></rect>
+        <polygon id="path-2" points="9.02892709 12.3448089 9.7560616 11.4910603 10.736255 11.5026717 11.5874881 12.464847 11.6885038 17.9637632 9.20677139 17.9938302"></polygon>
+        <rect id="path-3" x="8" y="11" width="1" height="1"></rect>
+        <filter x="-6.5%" y="-6.0%" width="116.0%" height="116.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="3" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-5" cx="100" cy="100" r="100"></circle>
+        <path d="M0,0 L164.370303,2.4158453e-13 C169.324914,9.06772317 172.551499,15.9328277 174.050058,20.5953137 C177.055691,29.9467785 178.085971,40.7166414 178.155527,46.8799817 C178.224976,53.0338725 178.487682,62.6648137 175.71998,73.6089856 C174.335097,79.0851513 170.551871,88.304097 164.370303,101.265823 L0,101.265823 L0,0 Z" id="path-7"></path>
+    </defs>
+    <g id="Topics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Topics---Beta-Intro" transform="translate(-888.000000, -1060.000000)">
+            <g id="Search-Bar" transform="translate(888.000000, 1061.000000)">
+                <path d="M31.5,20.5 L207.5,20.5" id="Line" stroke="#000000" stroke-linecap="square"></path>
+                <text id="lend" font-family="CircularStd-Book, Circular Std" font-size="13" font-weight="300" fill="#000000">
+                    <tspan x="30" y="13">lend</tspan>
+                </text>
+                <g id="Group-15-Copy-2" transform="translate(30.000000, 25.000000)">
+                    <g id="Rectangle-15">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#D8D8D8" stroke-width="1" x="0.5" y="0.5" width="177" height="79"></rect>
+                    </g>
+                    <text id="Lend-Lease-Act-(act)" font-family="CircularStd-Book, Circular Std" font-size="13" font-weight="300">
+                        <tspan x="5" y="25" fill="#000000">Lend-Lease Act </tspan>
+                        <tspan x="99.445" y="25" fill="#D8D8D8">(act)</tspan>
+                    </text>
+                    <text id="Lending-(topics)" font-family="CircularStd-Book, Circular Std" font-size="13" font-weight="300">
+                        <tspan x="5" y="49" fill="#000000">Lending </tspan>
+                        <tspan x="55.414" y="49" fill="#D8D8D8">(topics)</tspan>
+                    </text>
+                </g>
+                <g id="Group-15" transform="translate(11.000000, 11.500000) rotate(-16.000000) translate(-11.000000, -11.500000) translate(4.000000, 2.000000)">
+                    <circle id="Oval-5" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="5.5" cy="5.5" r="5.5"></circle>
+                    <g id="Rectangle-23" transform="translate(10.358715, 14.742445) rotate(-28.000000) translate(-10.358715, -14.742445) ">
+                        <use fill="#000000" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <path stroke="#000000" stroke-width="1" d="M9.53475429,12.5220348 L9.69109206,17.4879258 L11.179347,17.4698951 L11.0909555,12.6581948 L10.5086624,12.0000107 L9.98464719,11.9938032 L9.53475429,12.5220348 Z"></path>
+                    </g>
+                    <g id="Rectangle-23-Copy" transform="translate(8.500000, 11.500000) rotate(-28.000000) translate(-8.500000, -11.500000) ">
+                        <use fill="#000000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#000000" stroke-width="1" x="8.5" y="11.5" width="1" height="1"></rect>
+                    </g>
+                </g>
+                <rect id="Rectangle-16" fill="#FFFFFF" opacity="0.649999976" x="0" y="0" width="256" height="105"></rect>
+                <g id="Group-15-Copy-3" filter="url(#filter-4)" transform="translate(71.000000, 5.000000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" stroke="#D8D8D8" stroke-width="4" fill="#FFFFFF" xlink:href="#path-5"></use>
+                    <g mask="url(#mask-6)">
+                        <g transform="translate(20.253165, 49.367089)">
+                            <g id="Rectangle-15">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                <path stroke="#D8D8D8" stroke-width="1" d="M0.5,0.5 L0.5,100.765823 L164.054713,100.765823 C170.142493,87.9820145 173.870842,78.8815653 175.23524,73.4863985 C177.343959,65.1480108 177.798682,58.496911 177.669444,48.029946 C177.662158,47.4458343 177.658753,47.1687132 177.655559,46.885624 C177.566036,38.9530452 176.156484,28.7831 173.574041,20.7483093 C172.101619,16.1671449 168.933904,9.41336769 164.073587,0.5 L0.5,0.5 Z"></path>
+                            </g>
+                            <text id="Lend-Lease-Act-(act)" font-family="CircularStd-Book, Circular Std" font-size="13" font-weight="300">
+                                <tspan x="10.1265823" y="28.1898734" fill="#000000">Lend-Lease Act </tspan>
+                                <tspan x="104.571582" y="28.1898734" fill="#D8D8D8">(act)</tspan>
+                            </text>
+                            <text id="Lending-(topics)" font-family="CircularStd-Book, Circular Std" font-size="13" font-weight="300">
+                                <tspan x="10.1265823" y="58.5696203" fill="#000000">Lending </tspan>
+                                <tspan x="60.5405823" y="58.5696203" fill="#D8D8D8">(topics)</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

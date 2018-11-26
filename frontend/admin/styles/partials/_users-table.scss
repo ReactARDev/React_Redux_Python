@@ -1,0 +1,97 @@
+$table_width: 5000px;
+$table_body_height: 500px;
+$column_one_width: 300px;
+$column_two_width: 200px;
+$column_three_width: 55px;
+$column_four_width: 80px;
+$column_five_width: 80px;
+$column_six_width: 110px;
+$column_seven_width: 110px;
+$column_eight_width: 120px;
+$column_nine_width: 120px;
+$column_ten_width: 100px;
+$column_eleven_width: 80px;
+$column_twelve_width: 120px;
+$column_thirteen_width: 150px;
+$column_fourteen_width: 135px;
+$column_fifteen_width: 135px;
+$column_sixteen_width: 135px;
+$column_seventeen_width: 135px;
+$column_eighteen_width: 100px;
+$column_nineteen_width: 200px;
+$column_twenty_width: 100px;
+$column_twentyone_width: 100px;
+$column_twentytwo_width: 120px;
+
+
+.users-container {
+  padding: 0 50px;
+  overflow-x: scroll;
+  /*
+    Fixed table header technique from https://codepen.io/tjvantoll/pen/JEKIu
+  */
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+
+    td:nth-child(1), th:nth-child(1) { width: $column_one_width; max-width: $column_one_width; }
+    td:nth-child(2), th:nth-child(2) { width: $column_two_width; max-width: $column_two_width; }
+    td:nth-child(3), th:nth-child(3) { width: $column_three_width; max-width: $column_three_width; }
+    td:nth-child(4), th:nth-child(4)  { width: $column_four_width; max-width: $column_four_width; }
+    td:nth-child(5), th:nth-child(5) { width: $column_five_width; max-width: $column_five_width; }
+    td:nth-child(6), th:nth-child(6) { width: $column_six_width; max-width: $column_six_width; }
+    td:nth-child(7), th:nth-child(7) { width: $column_seven_width; max-width: $column_seven_width; }
+    td:nth-child(8), th:nth-child(8) { width: $column_eight_width; max-width: $column_eight_width; }
+    td:nth-child(9), th:nth-child(9) { width: $column_nine_width; max-width: $column_nine_width; }
+    td:nth-child(10), th:nth-child(10) { width: $column_ten_width; max-width: $column_ten_width; }
+    td:nth-child(11), th:nth-child(11) { width: $column_eleven_width; max-width: $column_eleven_width; }
+    td:nth-child(12),th:nth-child(12) { width: $column_twelve_width; max-width: $column_twelve_width; }
+    td:nth-child(13), th:nth-child(13) { width: $column_thirteen_width; max-width: $column_thirteen_width; }
+    td:nth-child(14), th:nth-child(14) { width: $column_fourteen_width; max-width: $column_fourteen_width; }
+    td:nth-child(15), th:nth-child(15) { width: $column_fifteen_width; max-width: $column_fifteen_width; }
+    td:nth-child(16), th:nth-child(16) { width: $column_sixteen_width; max-width: $column_sixteen_width; }
+    td:nth-child(17), th:nth-child(17) { width: $column_seventeen_width; max-width: $column_seventeen_width; }
+    td:nth-child(18), th:nth-child(18) { width: $column_eighteen_width; max-width: $column_eighteen_width; }
+    td:nth-child(19), th:nth-child(19) { width: $column_nineteen_width; max-width: $column_nineteen_width; }
+    td:nth-child(20), th:nth-child(20) { width: $column_twenty_width; max-width: $column_twenty_width; }
+    td:nth-child(21), th:nth-child(21) { width: $column_twentyone_width; max-width: $column_twentyone_width; }
+    td:nth-child(22), th:nth-child(22) { width: $column_twentytwo_width; max-width: $column_twentytwo_width; }
+
+
+    thead {
+      tr {
+        display: block;
+        position: relative;
+        width: $table_width;
+
+        .user-header {
+          cursor: pointer;
+          &:hover {
+            color: blue;
+          }
+
+          .header-arrow {
+            vertical-align: middle;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      height: $table_body_height;
+      display: block;
+      overflow: auto;
+      width: $table_width;
+    }
+  }
+
+  .hide_btn {
+    width: 200px;
+  }
+}

@@ -1,0 +1,28 @@
+.settings {
+
+  .settings-container{
+    max-height: 100%;
+    width: 100%;
+    margin-left:  0;
+    position: relative;
+    overflow: visible;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - #{$navbar-height});
+
+    h1 {
+      padding-bottom: 16px;
+    }
+
+    .control-label {
+      margin: 10px 0;
+    }
+
+    input, .Select {
+      max-width: none;
+    }
+  }
+}

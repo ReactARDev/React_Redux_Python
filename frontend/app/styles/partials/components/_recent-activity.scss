@@ -1,0 +1,61 @@
+#recent-activity {
+  .update-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+    .agency-update {
+      width: 100%;
+      margin: 20px 0 0;
+      padding: 10px;
+      border-radius: 6px;
+      background-color: $brand-blue;
+      border: 1px solid  $primary-action-blue;
+
+      .new-sources {
+        width: 100%;
+        max-width: 200px;
+        padding-bottom: 15px;
+
+        div, li {
+          cursor: pointer;
+          z-index: 1000;
+
+          &:hover {
+            color: $hover-blue;
+          }
+        }
+      }
+
+      .new-features {
+        li {
+          cursor: pointer;
+          z-index: 1000;
+
+          &:hover {
+            color: $hover-blue;
+          }
+        }
+      }
+
+      &.enabled {
+        cursor: pointer;
+
+        &:hover {
+          background-color: $primary-action-blue;
+        }
+      }
+
+      // cute trick to make it square: http://stackoverflow.com/a/19448481/1003950
+      .square {
+        height: 0;
+        padding-bottom: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>99 - Bookmark</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">99 - Bookmark</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td>PART 241-SECURITIES HOLDING COMPANIES (REGULATION OO)</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[type=&quot;checkbox&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.action-bar-container.remove-transperancy &gt; i.material-icons.doc-action-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.material-icons.doc-action-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=New Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.folder-input</td>
+	<td>New Folder</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.folder-input</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.add-folder-control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div[2]/div/div/ul/li/div/div[4]/div/div/label/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=bookmark_border</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.document-result-title</td>
+	<td>name1</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=bookmarkBookmarked</td>
+	<td>bookmarkBookmarked</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[6]/td[4]/span</td>
+	<td>${name1}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'bookmark')])[3]</td>
+	<td>bookmark</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//html/body/div/div/div/div[1]/div/div[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li</td>
+	<td>New Folder</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.title &gt; span</td>
+	<td>${name1}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.folder-delete-buttons &gt; button</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

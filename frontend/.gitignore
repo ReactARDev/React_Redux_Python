@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+npm-debug.log
+dist
+.env
+.idea
+.remote-sync.json
+.env-data-local
+.env-data-remote
+.vscode

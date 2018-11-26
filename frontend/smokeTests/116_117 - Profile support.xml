@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>116:117 - Profile support</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">116:117 - Profile support</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td></td>
+	<td>/dashboard</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.material-icons</td>
+	<td>account_circle</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Support</td>
+	<td>Support</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[3]/li[2]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=ul.support-answer.show &gt; li &gt; p</td>
+	<td>We aim to ensure Compliance.ai works on a whole host of Operating Systems and Browsers.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[3]/li/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=ul.support-answer.show &gt; li &gt; p</td>
+	<td>We want to ensure you're having a great experience with Compliance.ai! There are several ways you can contact us if something isn't working:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul/li[2]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul/li[2]/ul/li/p</td>
+	<td>Send us their email through the suggestion box above, or email it directly at&nbsp;&nbsp;support@compliance.ai be sure to note in your message that the co-worker would like to be invited and we will email them an invitation to use Compliance.ai</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul/li[3]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul/li[3]/ul/li</td>
+	<td>We love feedback, and are eager to quickly resolve any problems you are having. Send us an email through the suggestion box above or email us any bugs directly with information on the problem to support@compliance.ai. We'll review the information, and incorporate any fixes required into our product roadmap for a future release.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[2]/li/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[2]/li[2]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul/li[2]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul/li[3]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[2]/li/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[2]/li[2]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[3]/li/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[3]/li[2]/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/ul[3]/li/ul/li/ul/li[2]/p</td>
+	<td>If those views aren't loading after refresh, verify you have network access (checking cables, verifying that access to another website is working, etc.). You may have a local IT issue to resolve with your network.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.support-top-header</td>
+	<td>Support</td>
+</tr>
+</tbody></table>
+</body>
+</html>

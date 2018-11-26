@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>82 - autosearch</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">82 - autosearch</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td>regulation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.item.item-header</td>
+	<td>Saved Searches</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>regulation z</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.entity-span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>Regulation Z</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>dodd</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.entity-span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>Dodd-Frank Wall Street Reform and Consumer Protection Act</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>bank of washington</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.entity-span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>Bank of Washington</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.search-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.search-input</td>
+	<td>lending</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.entity-span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/h4[2]</td>
+	<td>Lending</td>
+</tr>
+</tbody></table>
+</body>
+</html>

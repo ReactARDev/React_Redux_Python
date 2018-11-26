@@ -1,0 +1,36 @@
+.socialCallbackContainer {
+  margin-top: 50px;
+  .checkbox-inline {
+    a {
+      font-size: 14px;
+      color: $primary-action-blue;
+      margin-left: 10px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .btn-row {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .sign-up-btn {
+      width: 100%;
+      height: 48px;
+      border-radius: 6px;
+      background-color: $hover-blue;
+      border: solid 1px $hover-blue;
+      color: $white;
+
+      &:hover {
+        color: $hover-blue;
+        background-color: $white;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

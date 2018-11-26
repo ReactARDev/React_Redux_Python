@@ -1,0 +1,136 @@
+.folders-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-bottom: 100px;
+
+  h3 {
+    font-weight: bold;
+    margin: 20px 0 10px 10px;
+  }
+
+  i {
+    font-size: 25px;
+    margin: 0 0 5px 10px;
+    color: $black;
+    &:hover {
+      cursor: pointer;
+      color: $hover-blue;
+    }
+  }
+
+  table {
+    font-size: 13px;
+    margin: 0 0 50px 0;
+
+    thead {
+      border-bottom: 3px solid $light-grey;
+      tr {
+        th {
+          position: relative;
+          font-size: 14px;
+          font-weight: bold;
+          white-space: nowrap;
+
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+          -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                              supported by Chrome and Opera */
+
+          .header-arrow {
+            vertical-align: middle;
+            font-size: 18px;
+
+            &:hover {
+              cursor: pointer;
+              color: $hover-blue;
+            }
+          }
+
+          &.owner-header {
+            padding-bottom: 12px;
+          }
+
+          .active {
+            font-weight: bold;
+            color: $hover-blue;
+          }
+
+          .add-circle {
+            font-size: 18px;
+            vertical-align: top;
+            margin-left: 0;
+            color: $hover-blue;
+          }
+          td {
+            position: absolute;
+          }
+        }
+      }
+    }
+    tr {
+      cursor: pointer;
+      td {
+        color: $dark-grey;
+        text-overflow: ellipsis;
+
+        .owner {
+          font-weight: bold;
+        }
+
+        &.folder-name {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .folder-icon {
+            font-size: 18px;
+            margin: 0 10px 0 0;
+            color: $hover-blue;
+          }
+
+          .edit {
+            font-size: 14px;
+            color: $medium-grey;
+            &:hover {
+              color: $hover-blue;
+            }
+          }
+
+          .check, .clear{
+            font-size: 18px;
+            &:hover {
+              color: $hover-blue;
+            }
+
+            &.disable {
+              cursor: not-allowed;
+            }
+          }
+        }
+
+        &.table-icons {
+          i {
+            font-size: 20px;
+            color: $dark-grey;
+
+            &:hover {
+              color: $hover-blue;
+            }
+          }
+
+          .delete {
+            color: $dark-grey;
+          }
+
+          .disable {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

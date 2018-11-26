@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>120:121 - profile legal</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">120:121 - profile legal</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=i.material-icons</td>
+	<td>account_circle</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Legal</td>
+	<td>Legal</td>
+</tr>
+<tr>
+	<td>verifyLocation</td>
+	<td>https://pro.compliance.ai/legal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2</td>
+	<td>Compliance.ai Terms of Service</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>A. License Grant</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[2]</td>
+	<td>B. Permitted Use of Introductory Services</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[3]</td>
+	<td>C. Permitted Use of Subscription Services</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[4]</td>
+	<td>D. Permitted Use of Pre-Subscription Trial Services</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[5]</td>
+	<td>E. License Restrictions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[6]</td>
+	<td>F. Access Restrictions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[7]</td>
+	<td>G. Proprietary Rights</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[8]</td>
+	<td>H. Prohibited Activities</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[9]</td>
+	<td>I. User Information and Privacy Policy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[10]</td>
+	<td>J. No Legal Services</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[11]</td>
+	<td>K. Third-Party Materials</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[12]</td>
+	<td>L. Warranty Disclaimers and Exclusion of Liability</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[13]</td>
+	<td>M. Governing Law; Jurisdiction and Venue</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[2]/h3[14]</td>
+	<td>N. Amendment and Waiver; Severability</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.privacy-policy-container &gt; h2</td>
+	<td>Compliance.ai Privacy Policy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div[3]/h3[3]</td>
+	<td>Security</td>
+</tr>
+</tbody></table>
+</body>
+</html>

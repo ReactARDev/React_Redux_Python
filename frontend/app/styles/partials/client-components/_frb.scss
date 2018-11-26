@@ -1,0 +1,242 @@
+.first-republic {
+
+  .left-panel {
+    background: $frb-background-grey;
+
+  .left-panel-dropdown {
+    color: $dark-grey;
+
+    &:active {
+      background-color: $frb-dark-green-filters-text;
+    }
+
+    &:hover {
+      color: $frb-yellow-active-text;
+      background-color: $frb-dark-green-filters-text;
+    }
+
+    i {
+      &:hover {
+        color: $frb-yellow-active-text;
+        background-color: $frb-dark-green-filters-text;
+      }
+    }
+
+    &.active-top-of-left-panel {
+      color: $frb-yellow-active-text;
+      background-color: $frb-dark-green-filters-text;
+    }
+
+    &.active-news, &.active-state {
+      color: $frb-yellow-active-text;
+      background-color: $frb-dark-green-filters-text;
+    }
+  }
+
+    .left-panel-account-settings {
+
+      .left-panel-account-setting {
+        color: $frb-dark-green-filters-text;
+
+        &:active {
+          background-color: $frb-dark-green-filters-text;
+        }
+        &:hover {
+          color: $frb-yellow-active-text;
+          background-color: $frb-dark-green-filters-text;
+        }
+      }
+    }
+
+    .top-of-left-nav {
+
+      &:active {
+        background-color: $frb-dark-green-filters-text;
+      }
+      &:hover {
+        color: $frb-yellow-active-text;
+        background-color: $frb-dark-green-filters-text;
+      }
+    }
+
+    .left-panel-header{
+      color: $dark-grey;
+    }
+
+    a {
+      color: $frb-dark-green-filters-text;
+    }
+
+    .left-panel-agency{
+      color: $dark-grey;
+
+      &:hover {
+        color: $frb-yellow-active-text;
+        background-color: $frb-dark-green-filters-text;
+      }
+    }
+
+    .left-panel-sources-timeline{
+
+      .left-panel-new-on-timeline-source {
+        color: $frb-dark-green-filters-text;
+
+        &:active {
+          background-color: $frb-dark-green-filters-text;
+        }
+        &:hover {
+          color: $frb-yellow-active-text;
+          background-color: $frb-dark-green-filters-text;
+        }
+
+        &.active-source  {
+          color: $frb-yellow-active-text;
+          background-color: $frb-dark-green-filters-text;
+        }
+      }
+    }
+
+    .left-panel-folders{
+
+      .left-panel-folder-header{
+        color: $frb-dark-green-filters-text;
+
+        &:active {
+          background-color: $frb-dark-green-filters-text;
+        }
+        &:hover {
+          color: $frb-yellow-active-text;
+          background-color: $frb-dark-green-filters-text;
+        }
+
+        &.active-read-folder, &.active-bookmarked-folder, &.active-folder {
+          color: $frb-yellow-active-text;
+          background-color: $frb-dark-green-filters-text;
+        }
+      }
+    }
+
+    .left-panel-filters{
+      color: $frb-dark-green-filters-text;
+
+       .left-panel-filter{
+
+         .filters-filter{
+           color: $frb-yellow-active-text;
+           background-color: $frb-dark-green-filters-text;
+
+           &:hover{
+             background-color: $frb-light-green;
+           }
+
+           &:focus {
+             color: $frb-yellow-active-text;
+             background-color: $frb-dark-green-filters-text;
+             outline: none;
+           }
+         }
+
+         .filters-clear-all{
+           color: $frb-dark-green-filters-text;
+           border-color: $frb-dark-green-filters-text;
+           background-color: $frb-background-grey;
+
+           &:hover{
+             background-color: $light-grey;
+           }
+
+           &:focus {
+             color: $frb-dark-green-filters-text;
+             border-color: $frb-dark-green-filters-text;
+             background-color: $frb-background-grey;
+             outline: none;
+           }
+         }
+
+         .btn-group {
+           /* n.b. custom button built with http://blog.koalite.com/bbg/ */
+
+           .btn-date-switcher {
+             color: $black;
+             background-color: $frb-background-grey;
+           }
+
+
+           .btn-date-switcher:hover,
+           .btn-date-switcher:focus,
+           .btn-date-switcher:active,
+           .btn-date-switcher.active,
+           .open .dropdown-toggle.btn-date-switcher {
+             color: $black;
+             background-color: $white;
+           }
+
+           .btn-date-switcher.disabled,
+           .btn-date-switcher[disabled],
+           fieldset[disabled] .btn-date-switcher,
+           .btn-date-switcher.disabled:hover,
+           .btn-date-switcher[disabled]:hover,
+           fieldset[disabled] .btn-date-switcher:hover,
+           .btn-date-switcher.disabled:focus,
+           .btn-date-switcher[disabled]:focus,
+           fieldset[disabled] .btn-date-switcher:focus,
+           .btn-date-switcher.disabled:active,
+           .btn-date-switcher[disabled]:active,
+           fieldset[disabled] .btn-date-switcher:active,
+           .btn-date-switcher.disabled.active,
+           .btn-date-switcher[disabled].active,
+           fieldset[disabled] .btn-date-switcher.active {
+             background-color: $frb-background-grey;
+           }
+
+           .btn-date-switcher .badge {
+             color: $frb-background-grey;
+           }
+         }
+       }
+     }
+
+    .left-panel-logo{
+      background-image: url('../images/left-nav-frb-logo@2x.png');
+    }
+
+
+    .left-panel-date-range{
+      div{
+        input{
+          background-color: $frb-background-grey;
+          &:hover {
+            background-color: $white;
+            border-color: $white;
+          }
+        }
+        input.active{
+          background-color: $white;
+        }
+      }
+    }
+
+    .left-panel-filter-select{
+      div.Select{
+        div.Select-placeholder{
+          background-color: $frb-background-grey;
+
+          &:hover {
+            background-color: $white;
+            border-color: $white;
+          }
+        }
+      }
+      div.Select.active {
+        div.Select-placeholder{
+          background-color: $white;
+          border-color: $white;
+        }
+      }
+    }
+
+    ul > li{
+      color: #15362C;
+    }
+  }
+}

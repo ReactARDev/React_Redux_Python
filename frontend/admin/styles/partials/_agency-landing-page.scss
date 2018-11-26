@@ -1,0 +1,193 @@
+.agency-landing-container {
+	background-color: #f2f2f2;
+	color: #4a4a4a;
+
+	.agenda-items-container {
+		border: 1px solid grey;
+		padding-right: 20px;
+	    padding-left: 10px;
+	}
+
+	.agencies-container h2 {
+		font-size: 24px;
+	}
+
+	.agenda-items-container {
+	    background-color: #fff;
+	    border-radius: 2px;
+	    border: solid 1px #d8d8d8;
+	    margin-top: 15px;
+
+	    .parent-title {
+		    font-size: 14px;
+		    font-weight: 500;
+		    cursor: pointer;
+
+		    span {
+		    	font-size: 14px;
+		    	font-weight: normal;
+		    	color: #a0a0a0;
+		    }
+	    }
+
+	    .arrow-drop-down-container {
+	    	float: left;
+	    }
+
+	    td, th {
+	    	padding-top: 10px;
+	    	padding-bottom: 5px;
+	    }
+
+	    .pub_date {
+	    	color: #a0a0a0;
+	    }
+
+	}
+
+	.agency-landing-header {
+		color: #a0a0a0;
+	    font-size: 16px;
+	    white-space: nowrap;
+	}
+	.first-header {
+	}
+
+
+	.cfpb-years-on-agenda svg {
+	    height: 250px;
+    }
+
+    .cfpb-years-on-agenda {
+    	background-color: #fff;
+	    border-radius: 2px;
+	    border: solid 1px #d8d8d8;
+	    padding: 15px;
+	    min-height: 350px;
+	    height: 100%;
+        box-shadow: 0px 0px 6px 1px #d8d8d8;
+        text-align: center;
+    }
+
+    .agency-info {
+    	background-color: #fff;
+	    border-radius: 2px;
+	    border: solid 1px #d8d8d8;
+	    padding: 15px;
+	    min-height: 350px;
+	    height: 100%;
+        box-shadow: 0px 0px 6px 1px #d8d8d8;
+
+        h2 {
+	        text-align: center;
+        }
+        p {
+	        margin-top: 25px;
+	        font-size: 16px;
+	        padding: 20px;
+        }
+
+    }
+
+     .agency-landing-table {
+    border: grey solid 1px;
+ }
+
+.agenda-item-child-row {
+  background-color: #f2f2f2;
+}
+
+.child-title {
+  padding-left: 48px!important;
+}
+
+.agencies-container {
+  font-family: "CircularStd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+}
+
+.back-to-agency-link {
+	background-color: #000;
+	height: 40px;
+
+	i {
+		font-size: 30px;
+	    color: #fff;
+	    cursor: pointer;
+	    float: left;
+	    margin: 5px;
+	}
+
+	span {
+		font-size: 16px;
+	    color: #fff;
+	    cursor: pointer;
+	    display: inline-block;
+	    margin-top: 10px;
+	}
+    
+}
+
+.view-all-button {
+	width: 12%;
+    margin: auto;
+    color: #2C6DDF;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+    i {
+	    float: left;
+    }
+}
+.chart-footer {
+	color: #4a4a4a;
+    text-align: center;
+    font-size: 14px;	
+}
+
+.card-container {
+	box-sizing: content-box;
+	min-height: 350px;	
+}
+
+.recent-docs-list {
+	list-style-type: none;
+	margin: 20px;
+	padding: 0px;
+    border-top: solid 1px #d8d8d8;
+    border-bottom: solid 1px #d8d8d8;
+
+	li {
+		padding: 10px;
+		cursor: pointer;
+		border-bottom: solid 1px #d8d8d8;
+	}
+
+	li:hover {
+		background-color: #f2f2f2;
+	}
+}
+
+.view-pdf-icon {
+	cursor: pointer;
+	i {
+		color: #a0a0a0;
+	    font-size: 28px;
+	}
+	i:hover {
+		color: #ba3d3d;
+	}
+	
+}
+
+.row-margin {
+	margin-top: 30px;
+}
+
+.news-container {
+	height: 250px;
+	overflow-y: scroll;
+}
+

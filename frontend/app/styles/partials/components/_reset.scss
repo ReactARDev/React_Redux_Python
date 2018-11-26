@@ -1,0 +1,52 @@
+.reset-password {
+  @extend %city-background;
+  height: 100vh;
+  margin-bottom: -1 * $anon-footer-height;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: $anon-footer-height;
+  }
+
+  .panel {
+    padding: 15px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 440px;
+    position: relative;
+    padding-top: 0;
+    margin: 30px;
+    overflow: hidden;
+
+    label {
+      width: 100%;
+
+      span {
+        color: $black;
+      }
+    }
+
+    .logo-row {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+      width: 180px;
+      display: block;
+    }
+  }
+
+}

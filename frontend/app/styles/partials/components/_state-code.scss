@@ -1,0 +1,321 @@
+.outer-state-code-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 30px;
+  border-top: 1px solid $bottom-border-grey;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none; //IE 11
+
+  .state-code-menu-header {
+    font-size: 24px;
+  }
+
+  .inner-state-code-container {
+    width: 100%;
+    width: -moz-available;
+
+    .state-code-children-container {
+      width: 100%;
+      border: none;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0;
+
+      div {
+        &.outer-border {
+          border-bottom: 1px solid $bottom-border-grey;
+          border-right: 1px solid $bottom-border-grey;
+          border-left: 1px solid $bottom-border-grey;
+          border-top: none;
+
+          &.div-selected {
+            border-top: none;
+            padding: 10px 0;
+
+            &:first-of-type {
+              border-top: 1px solid $bottom-border-grey;
+            }
+          }
+        }
+
+        .last-leaf {
+          width: 100%;
+          height: 100%;
+          min-height: 40px;
+          border-radius: 1px;
+
+          &.selected {
+            background-color: fade-out($primary-action-blue, 0.84);
+
+            .check-box {
+              display: flex;
+            }
+
+            .doc-icon {
+              display: none;
+            }
+
+            &:hover {
+              background-color: fade-out($primary-action-blue, 0.84);
+            }
+          }
+
+          &:hover {
+            background-color: $active-grey;
+
+            .check-box {
+              display: flex;
+            }
+
+            .doc-icon {
+              display: none;
+            }
+          }
+
+          &.mixed-child {
+            .icon-container {
+              display: flex;
+              height: 40px;
+              width: 40px;
+            }
+          }
+        }
+
+        .selected {
+          &.branch {
+            margin: 0 20px;
+            margin-top: 10px;
+            background-color: $primary-action-blue;
+            border-radius: 6px 6px 0 0;
+            border-color: $primary-action-blue;
+            i {
+              color: $white;
+            }
+
+            .state-code-chapter {
+              color: $white;
+              text-decoration: underline;
+            }
+          }
+
+          /* n.b. to make sure last-child's hover doesn't override this */
+          &:hover {
+            background-color: $primary-action-blue;
+
+            &.branch {
+              .icon-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                i {
+                  padding-left: 0px;
+                }
+              }
+            }
+          }
+        }
+
+        .last-child-container {
+          div {
+            padding: 0;
+            margin-top: 0;
+          }
+
+          border: none;
+        }
+      }
+
+      div > ul {
+        padding: 0 20px;
+      }
+
+      div > div {
+        color: $dark-grey;
+        list-style: none;
+        cursor: pointer;
+
+        &:hover {
+          .icon-container {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            width: 40px;
+
+            .caret-icon {
+              display: inline-block;
+              font-size: 18px;
+              align-self: center;
+            }
+
+            .list-icon {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .state-code-child {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+
+        &:hover {
+          background-color: fade-out($primary-action-blue, 0.84);
+        }
+
+        .state-code-chapter {
+          display: flex;
+          align-items: center;
+          width:100%;
+          height: 100%;
+          min-height: 40px;
+          font-size: 13px;
+          padding: 10px 0;
+        }
+
+        .check-box {
+          display: none;
+          flex-direction: row;
+          width: 20px;
+          justify-content: center;
+          color: $medium-grey;
+          vertical-align: middle;
+          // override checkbox style with this method:
+          // http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953
+          label {
+            padding-left: 0;
+            vertical-align: middle;
+            align-self: center;
+
+            input {
+              display: none;
+            }
+            .checked, .unchecked {
+              font-size: 18px;
+              margin-right: 40px;
+              display: none;
+              &:hover {
+                color: $hover-blue;
+                text-decoration: none;
+              }
+            }
+            input + .unchecked {
+              display: inline-block;
+            }
+            input:checked ~ .checked {
+              display: inline-block;
+              margin-bottom: -15px;
+            }
+            input:checked ~ .unchecked {
+              display: none;
+            }
+            i {
+              vertical-align: middle;
+            }
+          }
+
+          .clickable {
+            cursor: pointer;
+          }
+          .clickable:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &.unread {
+          font-weight: bold;
+        }
+
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          height: 40px;
+          width: 40px;
+          border: none;
+          margin-right: 5px;
+
+          .caret-icon {
+            display: none;
+            font-size: 18px;
+            align-self: center;
+
+            &.show {
+              display: inline-block !important;
+            }
+          }
+
+          .list-icon {
+            font-size: 18px;
+            align-self: center;
+          }
+
+          .doc-icon {
+            font-size: 18px;
+            align-self: center;
+            color: $medium-grey;
+          }
+        }
+      }
+
+      .hide {
+        display: none;
+      }
+
+      button {
+        display: block;
+        margin: 40px 0;
+        border: 1px solid $light-grey;
+        background-color: $white;
+        color: $dark-grey;
+        height: 25px;
+        line-height: 23px;
+        padding: 0 6px;
+        min-width: auto;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: $primary-action-blue;
+          color: $white;
+          border-color: $primary-action-blue;
+        }
+      }
+
+      .state-code-nonBank-btn {
+        float: left;
+      }
+
+      .state-code-top-btn {
+        float: right;
+      }
+    }
+  }
+
+  .state-code-header-container {
+    display: block;
+
+    .state-code-title {
+      cursor: pointer;
+      word-wrap: break-word;
+      bottom: 0;
+      font-size: 20px;
+
+      &:hover {
+        color: $medium-grey;
+      }
+    }
+  }
+}

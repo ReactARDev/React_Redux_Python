@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="368px" height="49px" viewBox="0 0 368 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Free Trial Banner - Green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="18 0.4 24 0.4 24 40.4 18 40.4"></polygon>
+        <rect id="path-2" x="18.0141602" y="0.4" width="6" height="40"></rect>
+        <polygon id="path-3" points="24 0 344 0 344 40 24 40"></polygon>
+    </defs>
+    <g id="Payments" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="option-1" transform="translate(-386.000000, -645.000000)">
+            <g id="Free-Trial-Banner---Green" transform="translate(386.000000, 645.000000)">
+                <g id="Group-11">
+                    <g id="Group-9" transform="translate(0.000000, 8.600000)">
+                        <polygon id="Rectangle-3-Copy-20" fill="#43DCA9" points="0 0.4 24 0.4 24 40.4 0 40.4 12 20.4"></polygon>
+                        <g id="Rectangle-8">
+                            <use fill="#2EA87F" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <path stroke="#2EA87F" stroke-width="1" d="M18.5,0.9 L18.5,39.9 L23.5,39.9 L23.5,0.9 L18.5,0.9 Z"></path>
+                        </g>
+                    </g>
+                    <g id="Group-9-Copy-2" transform="translate(355.500000, 29.100000) scale(-1, 1) translate(-355.500000, -29.100000) translate(343.000000, 8.600000)">
+                        <polygon id="Rectangle-3-Copy-20" fill="#43DCA9" points="0 0.4 24 0.4 24 40.4 0 40.4 12 20.4"></polygon>
+                        <g id="Rectangle-8">
+                            <use fill="#2EA87F" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <rect stroke="#2EA87F" stroke-width="1" x="18.5141602" y="0.9" width="5" height="39"></rect>
+                        </g>
+                    </g>
+                    <g id="Rectangle-3-Copy-19">
+                        <use fill="#43DCA9" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <path stroke="#43DCA9" stroke-width="1" d="M24.5,0.5 L24.5,39.5 L343.5,39.5 L343.5,0.5 L24.5,0.5 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

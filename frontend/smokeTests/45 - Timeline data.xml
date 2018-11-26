@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>45 - Timeline data</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">45 - Timeline data</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>b</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3</td>
+	<td>c</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>4</td>
+	<td>d</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>5</td>
+	<td>e</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>6</td>
+	<td>f</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7</td>
+	<td>g</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>8</td>
+	<td>h</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>9</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[1]/div/div/div/div</td>
+	<td>divcount</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=html body div#root div#top.auth div.main-container div.center-container div.content-container div.newDashboardContainer.container-fluid.loading-overlay-light div.col-md-8 div.timelineGraph div.agencies-chart div.nv-chart svg.nvd3-svg g.nvd3.nv-wrap.nv-stackedAreaChart g g.nv-focus g.nv-x.nv-axis.nvd3-svg g.nvd3.nv-wrap.nv-axis g.nv-axisMaxMin.nv-axisMaxMin-x.nv-axisMax-x</td>
+	<td>store1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store1}&quot;.split(&quot;-&quot;)[0]</td>
+	<td>num1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${num1}&lt;7</td>
+	<td>LESS1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['a'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['b'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['c'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[4]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['d'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['e'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[6]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['f'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[7]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['g'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[8]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['h'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[9]/h5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['i'] == storedVars['divcount']</td>
+	<td>END</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='top']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[last()]/td[3]</td>
+	<td>store2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${store2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${store2}&quot;.split(&quot;/&quot;)[1]</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${num2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['num1']-storedVars['num2']&lt;=6</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>LESS1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>END</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
