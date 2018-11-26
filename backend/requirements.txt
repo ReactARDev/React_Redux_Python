@@ -15,7 +15,7 @@ editdistance==0.3.1
 elasticsearch==5.3.0
 enum34==1.1.2
 factory-boy==2.8.1
-Flask==0.12.0
+Flask>=0.12.3
 Flask-Assets==0.12
 Flask-Bcrypt==0.7.1
 Flask-Cors==3.0.2
@@ -27,7 +27,7 @@ Flask-Compress==1.3.2
 futures==3.0.5
 gevent==1.2.1
 greenlet==0.4.12
-gunicorn==19.4.5
+gunicorn>=19.5.0
 gevent-websocket==0.10.1
 html2text==2016.9.19
 html5lib==1.0b10
@@ -53,7 +53,7 @@ python-dotenv==0.3.0
 pytz==2015.7
 PySocks==1.5.6
 reportlab==3.3.0
-requests==2.18.4
+requests>=2.20.0
 retrying==1.3.3
 semantic-version==2.6.0
 setuptools==36.7.2
