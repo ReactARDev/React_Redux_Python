@@ -1,0 +1,9 @@
+{
+    "_source":{"exclude":"full_text"},
+    "query":{"filtered":{"filter":{
+	"bool":{"must":[
+	    {"terms": {"category":["Final Rule", "Proposed Rule"]}},
+	    {"terms": {"agencies.id":[164,573]}}
+	]}
+    }}}
+}

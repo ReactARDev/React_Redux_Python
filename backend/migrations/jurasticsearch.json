@@ -1,0 +1,669 @@
+{
+    "settings":{
+	"index":{
+	    "number_of_shards": 6,
+	    "number_of_replicas": 1
+	},
+	"analysis": {
+	    "char_filter": {
+		"mention_normalization": {
+		    "type": "pattern_replace",
+		    "pattern": "\\W+",
+		    "replacement": " "
+		}
+	    },
+	    "filter": {
+		"shingle_filter": {
+		    "type": "shingle",
+		    "min_shingle_size": 2,
+		    "max_shingle_size": 4,
+		    "output_unigrams": false
+		},
+		"autocomplete_filter": {
+		    "type": "edge_ngram",
+		    "min_gram": 1,
+		    "max_gram": 50
+		},
+		"light_english_stemmer": {
+		    "type": "stemmer",
+		    "language": "light_english"
+		},
+		"english_stop": {
+		    "type": "stop",
+		    "stopwords": "_english_"
+		},
+		"english_possessive_stemmer": {
+		    "type": "stemmer",
+		    "language": "possessive_english"
+		}
+	    },
+	    "analyzer": {
+		"autocomplete_index": {
+		    "type": "custom",
+		    "tokenizer": "keyword", 
+		    "filter": [ "lowercase", "autocomplete_filter" ]
+		},
+		"mention_search": {
+		    "type": "custom",
+		    "tokenizer": "keyword",
+		    "char_filter": "mention_normalization",
+		    "filter": [	"lowercase", "asciifolding" ]
+		},
+		"keyword_lower": {
+		    "type": "custom",
+		    "tokenizer": "keyword", 
+		    "filter": "lowercase"
+		},
+		"light_english": {
+		    "type": "custom",
+		    "tokenizer": "standard", 
+		    "filter": [
+			"english_possessive_stemmer",
+			"lowercase",
+			"english_stop",
+			"light_english_stemmer",
+			"asciifolding"
+		    ]
+		},
+		"light_english_shingles": {
+		    "type": "custom",
+		    "tokenizer": "standard", 
+		    "filter": [
+			"english_possessive_stemmer",
+			"lowercase",
+			"english_stop",
+			"light_english_stemmer",
+			"asciifolding",
+			"shingle_filter"
+		    ]
+		}
+	    }
+	}
+    },
+    "mappings":{
+	"_default_": {
+	    "dynamic_templates": [
+		{
+		    "keywords": {
+			"match_mapping_type": "keyword",
+			"mapping": {"type": "keyword", "index": true}
+		    }
+		}
+	    ]
+	},
+	"acts": {
+	    "properties": {
+		"id": {"type":"long"},
+		"name": {"type":"text", "analyzer": "autocomplete_index"},
+		"date": {"type":"date"},
+		"nicknames": {"type":"text", "analyzer":"autocomplete_index"},
+		"times_cited": {"type":"long"},		
+		"citations": {"type":"keyword", "index": true},
+		"doc_ids": {"type": "long"}
+	    }
+	},
+	"agencies": {
+	    "properties": {
+		"id": {"type":"long"},
+		"parent_id": {"type":"long"},
+		"times_cited": {"type":"long"},		
+		"active": {"type":"boolean"},
+		"type": {"type":"keyword", "index": true},
+		"jurisdiction": {"type":"keyword", "index": true},
+		"url": {"type":"keyword", "index": true},
+		"slug": {"type":"keyword", "index": true},
+		"name": {"type":"string", "analyzer":"autocomplete_index"},
+		"short_name": {"type":"string", "analyzer":"autocomplete_index"},
+		"description":{"type":"string", "analyzer":"english"}
+	    }  
+	},
+	"agency_summaries": {
+	    "properties": {
+		"id": {"type":"long"},
+		"agency_id": {"type":"long"},
+		"agenda_id": {"type":"keyword", "index": true},
+		"build": {"type":"keyword", "index": true},			
+		"summary_type": {"type":"keyword", "index": true},
+		"summary_date": {"type":"date"},
+		"counts": {
+		    "properties": {
+			"status": {
+			    "properties": {
+				"Previously Published in The Unified Agenda": {"type":"long"},
+				"First Time Published in The Unified Agenda": {"type":"long"}
+			    }
+			},
+			"major": {
+			    "properties": {
+				"False": {"type":"long"},
+				"True": {"type":"long"}
+			    }
+			},
+			"years on agenda": {
+			    "properties": {
+				"< 1 year": {"type":"long"},
+				"1 year": {"type":"long"},
+				"2 years": {"type":"long"},
+				"3 years": {"type":"long"},
+				"4 years": {"type":"long"},
+				"5+ years": {"type":"long"}
+			    }
+			},
+			"priority": {
+			    "properties": {
+				"Other Significant": {"type":"long"},
+				"Substantive, Nonsignificant": {"type":"long"},
+				"Economically Significant": {"type":"long"},
+				"Info./Admin./Other": {"type":"long"},
+				"Routine and Frequent": {"type":"long"}
+			    }
+			},
+			"cfr": {"type":"keyword", "index": true},
+			"usc": {"type":"keyword", "index": true},
+			"rin_ids": {"type":"keyword", "index": true},
+			"regulation_ids": {"type":"long"},
+			"act_ids": {"type":"long"},
+			"effective_in [avg, mid, max, len] (years to effective date)": {
+			    "properties": {
+				"2017": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2016": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2015": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2014": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2013": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2012": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2011": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2010": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2009": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2008": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2007": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2006": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2005": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2004": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2003": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2002": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2001": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"2000": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"1999": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"1998": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"1997": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"1996": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+				"1995": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }}
+			    }
+			},
+			"started_in [avg, mid, max, len] (years to effective date)": {
+				"properties":{
+					"2017": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2016": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2015": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2014": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2013": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2012": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2011": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2010": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2009": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2008": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2007": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2006": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2005": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2004": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2003": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2002": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2001": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"2000": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"1999": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"1998": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"1997": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"1996": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }},
+					"1995": {"properties": { "raw": {"type":"long"}, "summary": {"type":"float"} }}
+				}
+			},
+			"stage": {
+			    "properties": {
+				"Proposed Rule Stage": {"type":"long"},
+				"Final Rule Stage": {"type":"long"},
+				"Prerule Stage": {"type":"long"}
+			    }
+			}
+		    }
+		}
+	    }
+	},
+	"banks": {
+	    "properties": {
+		"institution_name": {"type":"string", "analyzer":"autocomplete_index"},
+		"name": {"type":"string", "analyzer":"autocomplete_index"},
+		"bank_holding_company_name": {"type":"string", "analyzer":"autocomplete_index"},
+		"nicknames": {"type":"string", "analyzer":"autocomplete_index"},
+		"web_url": {"type":"keyword", "index": true},
+		"is_active": {"type":"boolean"},
+		"is_inactive": {"type":"boolean"},
+		"is_fdic_insured": {"type":"boolean"},
+		"is_federal_charter": {"type":"boolean"},
+		"total_assets": {"type":"long"},
+		"total_deposits": {"type":"long"},
+		"total_bank_equity_capital": {"type":"long"},
+		"net_income": {"type":"long"},
+		"net_quarter_income": {"type":"long"},
+		"number_of_domestic_offices": {"type":"long"},
+		"number_of_foreign_offices": {"type":"long"},
+		"offices_in_insured_other_areas": {"type":"long"},
+		"address_street": {"type":"keyword", "index": true},
+		"address_city": {"type":"keyword", "index": true},
+		"address_state": {"type":"keyword", "index": true},
+		"address_zip": {"type":"keyword", "index": true},
+		"county": {"type":"keyword", "index": true},
+		"metro_area_name": {"type":"keyword", "index": true},
+		"regulator_district": {"type":"keyword", "index": true},
+		"regulator": {"type":"keyword", "index": true},
+		"holding_company_state": {"type":"keyword", "index": true},
+		"bank_charter_class": {"type":"keyword", "index": true},
+		"charter_agent": {"type":"keyword", "index": true},
+		"federal_reserve_field_office": {"type":"keyword", "index": true},
+		"insurer1": {"type":"keyword", "index": true},
+		"insurer2": {"type":"keyword", "index": true},
+		"fdic_certificate_number": {"type":"long"},
+		"federal_reserve_id_number": {"type":"long"},
+		"metro_area_id": {"type":"long"},
+		"site_urls": {"type":"keyword", "index": true}
+	    }
+	},
+	"concepts": {
+	    "properties": {
+		"id": {"type":"long"},
+		"times_cited": {"type":"long"},		
+		"active": {"type":"boolean"},
+		"name": {"type":"string", "analyzer":"autocomplete_index"},
+		"nicknames": {"type":"string", "analyzer":"autocomplete_index"}
+	    }
+	},
+	"dockets": {
+	    "properties": {
+		"docket_id": {"type":"keyword", "index": true},
+		"type": {"type":"keyword", "index": true},
+		"documents": {
+		    "properties": {
+			"id": {"type":"long"},
+			"pub_date": {"type":"date", "format": "yyyy-MM-dd"},
+			"parent_id": {"type":"long"},
+			"official_id":  {"type":"keyword", "index": true},
+			"cite":  {"type":"keyword", "index": true},
+			"category":  {"type":"keyword", "index": true},
+			"jurisdiction":  {"type":"keyword", "index": true},
+			"title": {"type":"keyword", "index": true},
+			"summary_text": {"type":"keyword", "index": true},
+			"web_url": {"type":"keyword", "index": true},
+			"pdf_url": {"type":"keyword", "index": true},
+			"rule": {
+			    "properties": {
+				"id": {"type":"long"},
+				"effective_on": {"type":"date", "format": "yyyy-MM-dd"},
+				"comments_close_on": {"type":"date", "format": "yyyy-MM-dd"},
+				"significant":{"type":"boolean"}
+			    }
+			}
+		    }
+		}
+	    }
+	},
+	"jurisdictions": {
+	    "properties": {
+		"id": {"type":"long"},		
+		"times_cited": {"type":"long"},		
+		"active": {"type":"boolean"},
+		"name": {"type":"string", "analyzer":"autocomplete_index"},
+		"short_name": {"type":"string", "analyzer":"autocomplete_index"},
+		"category": {"type":"keyword", "index": true}
+	    }
+	},
+	"named_regulations": {
+	    "properties": {
+		"id": {"type":"long"},
+		"times_cited": {"type":"long"},		
+		"active": {"type":"boolean"},
+		"name": {"type":"string", "analyzer": "autocomplete_index"},
+		"nicknames": {"type":"string", "analyzer": "autocomplete_index"},
+		"short_name": {"type":"string", "analyzer": "autocomplete_index"},
+		"jurisdiction": {"type":"keyword", "index": true},
+		"agency_ids": {"type": "long"},
+		"act_ids": {"type": "long"},
+		"doc_ids": {"type": "long"}
+	    }
+	},
+	"publications": {
+	    "properties": {
+		"id": {"type":"long"},
+		"root_doc_id":  {"type":"long"},
+		"days_between_crawls":  {"type":"long"},
+		"name": {"type":"string", "analyzer":"autocomplete_index"},
+		"short_name": {"type":"string", "analyzer":"autocomplete_index"},
+		"category": {"type":"keyword", "index": true},
+		"jurisdiction": {"type":"keyword", "index": true},
+		"last_crawled":  {"type":"date"},
+		"created_at": {"type":"date"},
+		"updated_at": {"type":"date"},
+		"active_crawls": {"type":"boolean"},
+		"active_display": {"type":"boolean"}
+	    }
+	},
+	"topics": {
+	    "properties": {
+		"id": {"type":"long"},
+		"name": {"type":"string", "analyzer":"autocomplete_index"},
+		"description": {"type":"string", "analyzer":"english"},
+		"active_streaming": {"type":"boolean"},
+		"active_backfill": {"type":"boolean"},
+		"active_indexer": {"type":"boolean"},
+		"prediction_surfacing_threshold": {"type":"float"}
+	    }
+	},
+	"all_topics": {
+	    "properties": {
+		"id": {"type":"long"},
+		"label": {"type":"keyword", "index": true}
+	    }
+	},
+	"news_sources": {
+	    "properties": {
+		"id": {"type":"long"},
+		"name": {"type":"string", "analyzer":"autocomplete_index"}
+	    }
+	},
+	"document_citations": {
+	    "properties": {
+		"doc_id": {"type": "long"},
+		"act_id":  {"type": "long"},
+		"bank_id":  {"type": "long"},
+		"citation_id":  {"type": "long"},
+		"concept_id":  {"type": "long"},
+		"named_regulation_id":  {"type": "long"},
+		"entity_id": {"type": "double"},
+		"official_id": {"type":"keyword", "index": true},
+		"ref_id": {"type":"keyword", "index": true},
+		"ref_type": {"type":"keyword", "index": true},
+		"mentions": {"type":"keyword", "index": true},
+		"spans": {
+		    "properties": {
+			"act_id":  {"type": "long"},
+			"bank_id":  {"type": "long"},
+			"citation_id":  {"type": "long"},
+			"concept_id":  {"type": "long"},
+			"named_regulation_id":  {"type": "long"},
+			"ref_id": {"type":"keyword", "index": true},
+			"ref_type": {"type":"keyword", "index": true},
+			"label": {"type":"keyword", "index": true},
+			"label_id": {"type": "long"},
+			"start_char": {"type": "long"},
+			"end_char": {"type": "long"},
+			"name_text": {"type":"keyword", "index": true},
+			"span_text": {"type":"keyword", "index": true},
+			"entity_id": {"type": "double"},
+			"official_id": {"type":"keyword", "index": true}
+		    }
+		},
+		"ref_card": {
+		    "properties": {
+			"active": {"type":"boolean"},
+			"address_city": {"type":"keyword", "index": true},
+			"address_state": {"type":"keyword", "index": true},
+			"address_street": {"type":"keyword", "index": true},
+			"address_zip": {"type":"keyword", "index": true},
+			"agency_ids": {"type": "long"},
+			"bank_charter_class": {"type":"keyword", "index": true},
+			"bank_holding_company_name": {"type":"string", "analyzer":"autocomplete_index"},
+			"charter_agent": {"type":"keyword", "index": true},
+			"county": {"type":"keyword", "index": true},
+			"date": {"type":"date"},
+			"doc_ids": {"type": "long"},
+			"fdic_certificate_number": {"type":"long"},
+			"federal_reserve_field_office": {"type":"keyword", "index": true},
+			"federal_reserve_id_number": {"type":"long"},
+			"holding_company_state": {"type":"keyword", "index": true},
+			"institution_name": {"type":"string", "analyzer":"autocomplete_index"},
+			"insurer1": {"type":"keyword", "index": true},
+			"insurer2": {"type":"keyword", "index": true},
+			"is_active": {"type":"boolean"},
+			"is_fdic_insured": {"type":"boolean"},
+			"is_federal_charter": {"type":"boolean"},
+			"is_inactive": {"type":"boolean"},
+			"jurisdiction": {"type":"keyword", "index": true},
+			"metro_area_id": {"type":"long"},
+			"metro_area_name": {"type":"keyword", "index": true},
+			"name": {"type":"string", "analyzer": "autocomplete_index"},
+			"net_income": {"type":"long"},
+			"net_quarter_income": {"type":"long"},
+			"nicknames": {"type":"string", "analyzer":"autocomplete_index"},
+			"number_of_domestic_offices": {"type":"long"},
+			"number_of_foreign_offices": {"type":"long"},
+			"offices_in_insured_other_areas": {"type":"long"},
+			"official_id":  {"type":"keyword", "index": true},
+			"publaw": {"type":"keyword", "index": true},
+			"regulator": {"type":"keyword", "index": true},
+			"regulator_district": {"type":"keyword", "index": true},
+			"short_name": {"type":"string", "analyzer": "autocomplete_index"},
+			"site_urls": {"type":"keyword", "index": true},
+			"statute": {"type":"keyword", "index": true},
+			"times_cited": {"type":"long"},
+			"total_assets": {"type":"long"},
+			"total_bank_equity_capital": {"type":"long"},
+			"total_deposits": {"type":"long"},
+			"type": {"type":"keyword", "index": true},
+			"url": {"type":"keyword", "index": true},
+			"usc": {"type":"keyword", "index": true},
+			"web_url": {"type":"keyword", "index": true}
+		    }
+		}
+	    }
+	},
+	"documents": {
+	    "properties": {
+		"light_stem": {"type":"string", "analyzer":"light_english"},
+		"shingled": {"type":"string", "analyzer":"light_english_shingles"},
+		"id":{"type":"long"},
+		"spider_name": {"type":"keyword", "index": true},
+		"publisher": {"type":"keyword", "index": true},
+		"official_id": {"type":"keyword", "index": true},
+		"jurisdiction": {"type":"keyword", "index": true},
+		"publication_date": {"type":"date"},
+		"created_at": {"type":"date"},
+		"updated_at": {"type":"date"},
+		"category":  {"type":"keyword", "index": true},
+		"provenance": {"type":"keyword", "index": true},
+		"meta_table": {"type":"keyword", "index": true},
+		"full_text_hash": {"type":"keyword", "index": true},
+		"pdf_hash": {"type":"keyword", "index": true},
+		"full_xml_hash": {"type":"keyword", "index": true},
+		"pdf_url": {"type":"keyword", "index": true},
+		"web_url": {"type":"keyword", "index": true},		
+		"title": {"type":"string", "analyzer":"english", "copy_to":["light_stem", "shingled"]},   
+		"summary_text": {"type":"string", "analyzer":"english", "copy_to":["light_stem", "shingled"]},
+		"full_text": {"type":"string", "analyzer":"english", "copy_to":["light_stem", "shingled"]},
+		"full_path": {"type":"keyword", "index": true},
+		"total_citation_count": {"type":"long"},
+		"unique_citation_count": {"type":"long"},
+		"times_cited": {"type":"long"},
+		"clean_citations": {"type": "keyword", "index": true},
+		"incoming_citation_ids": {"type": "long"},
+		"agency_ids": {"type": "long"},
+		"alt_summaries": {
+		    "properties": {
+			"doc_id": {"type":"long"},
+			"summary_type": {"type":"keyword", "index": true},
+			"details": {"type":"string", "analyzer":"english"},
+			"summary": {"type":"string", "analyzer":"english"},
+			"machine_summary": {"type":"string", "analyzer":"english"},
+			"machine_sentences": {"type":"long"},
+			"violation": {"type":"keyword", "index": true},
+			"respondent": {"type":"keyword", "index": true},
+			"action_type": {"type":"keyword", "index": true},
+			"title_words": {"type":"keyword", "index": true},
+			"filed_on": {"type":"date"}
+		    }
+		},
+		"agencies": {
+		    "properties": {
+			"id": {"type":"long"},
+			"parent_id": {"type":"long"},
+			"name": {"type":"keyword", "index": true},
+			"short_name": {"type":"keyword", "index": true},
+			"type": {"type":"keyword", "index": true},
+			"slug":{"type":"keyword", "index": true},
+			"url": {"type":"keyword", "index": true},
+			"description":{"type":"string", "analyzer":"english"}
+		    }
+		},
+		"rule":{
+		    "properties":{
+			"id":{"type":"long"},
+			"comments_close_on":{"type":"date"},
+			"effective_on":{"type":"date"},
+			"significant":{"type":"boolean"}
+		    }
+		},
+	  	"agency_update":{
+		    "properties":{
+			"id":{"type":"long"},
+			"is_sro":{"type":"boolean"}
+		    }
+		},
+		"enforcement":{
+		    "properties":{
+			"id": {"type":"long"},
+			"doc_id": {"type":"long"},
+			"filed_on": {"type":"date"},
+			"activity_on": {"type":"date"},
+			"metadata": {
+			    "properties": {
+				"termination_date": {"type":"keyword", "index": true},
+				"date_of_initial_action": {"type":"keyword", "index": true}
+			    }
+			}
+		    }
+		},
+		"whitepaper": {
+		    "properties":{
+			"id": {"type":"long"},
+			"doc_id": {"type":"long"},
+			"metadata": {
+			    "properties": {
+				"authors": {"type":"keyword", "index": true},
+				"topics":  {"type":"keyword", "index": true},
+				"byline": {
+				    "properties":{
+					"author": {"type":"keyword", "index": true},
+					"firm": {"type":"keyword", "index": true},
+					"auth_path": {"type":"keyword", "index": true},
+					"firm_path": {"type":"keyword", "index": true}
+				    }
+				}
+			    }
+			}
+		    }
+		},
+		"mainstream_news": {
+		    "properties":{
+				"id": {"type":"long"},
+				"doc_id": {"type":"long"},
+				"image_hash": {"type":"keyword", "index": true},
+				"image_url": {"type":"keyword", "index": true},
+				"image_content_type": {"type":"keyword", "index": true},
+				"news_source": {
+					"properties": {
+						"id": {"type":"long", "index": true},
+						"name": {"type":"keyword", "index": true}
+					}
+				},
+				"has_real_full_text": {"type":"boolean", "index": true}
+		    }
+		},
+		"children": {
+		    "properties": {
+			"id": {"type":"long"},
+			"parent_id": {"type":"long"},
+			"agency_ids": {"type":"long"},
+			"official_id":  {"type":"keyword", "index": true},
+			"category":  {"type":"keyword", "index": true},
+			"jurisdiction":  {"type":"keyword", "index": true},
+			"title": {"type":"string", "analyzer":"english"}
+		    }
+		},
+		"topics": {
+			"type": "nested",
+		    "properties": {
+			"id": {"type":"long"},
+			"name": {"type":"keyword", "index": true},
+			"judge_count": {"type":"long"},
+			"positive_judgments": {"type":"long"},
+			"model_probability":{"type":"float"}
+		    }
+		},
+		"cited_associations": {
+		    "properties": {
+			"act_ids": {"type":"long"},
+			"citation_ids": {"type":"long"},
+			"concept_ids": {"type":"long"},
+			"named_regulation_ids": {"type":"long"},
+			"bank_ids": {"type":"long"}
+		    }
+		},
+		"cfr_parts": {
+		    "properties": {
+			"cite":  {"type":"keyword", "index": true}
+		    }
+		},
+		"dockets": {
+		    "properties": {
+			"docket_id": {"type":"keyword", "index": true},
+			"type": {"type":"keyword", "index": true},
+			"short_name": {"type":"keyword", "index": true},
+			"documents": {
+			    "properties": {
+				"id": {"type":"long"},
+				"pub_date": {"type":"date", "format": "yyyy-MM-dd"},
+				"parent_id": {"type":"long"},
+				"official_id":  {"type":"keyword", "index": true},
+				"cite":  {"type":"keyword", "index": true},
+				"category":  {"type":"keyword", "index": true},
+				"jurisdiction":  {"type":"keyword", "index": true},
+				"title": {"type":"keyword", "index": true},
+				"summary_text": {"type":"keyword", "index": true},
+				"web_url": {"type":"keyword", "index": true},
+				"pdf_url": {"type":"keyword", "index": true},
+				"rule": {
+				    "properties": {
+					"id": {"type":"long"},
+					"effective_on": {"type":"date", "format": "yyyy-MM-dd"},
+					"comments_close_on": {"type":"date", "format": "yyyy-MM-dd"},
+					"significant":{"type":"boolean"}
+				    }
+				}
+			    }
+			}
+		    }
+		},
+		"important_dates": {
+		    "properties": {
+			"date_text": {"type":"keyword", "index": true},
+			"parsed_dates": {"type":"date", "format": "yyyy-MM-dd"},
+			"labeled_dates": {
+			    "properties": {
+				"label": {"type":"keyword", "index": true},
+				"date": {"type":"date", "format": "yyyy-MM-dd"},
+				"snippet": {"type":"keyword", "index": true}
+			    }
+			}
+		    }
+		},
+		"audit_entries": {
+		    "properties": {
+			"id": {"type": "long"},
+			"process": {"type":"keyword", "index": true},
+			"incoming_pipeline_status": {"type":"keyword", "index": true},
+			"resulting_pipeline_status": {"type":"keyword", "index": true},
+			"real_created_at":{"type":"date"},
+			"notes":{"type":"keyword", "index": true}
+		    }
+		}
+	    }
+	}
+    }
+}

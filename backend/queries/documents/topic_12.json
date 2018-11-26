@@ -1,0 +1,7 @@
+{
+    "query": {
+	"filtered": {
+	    "filter": {"term": { "topics.id": 12 }}
+	}
+    }
+}

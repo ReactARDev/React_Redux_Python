@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- /***********
+Originally based on a MailChimp template, to update ask product to design on Mailchimp and
+afterwards download HTML and apply proper styles
+DON'T FORGET TO UPDATE the .txt file
+***********/ -->
+
+{% if debug %}
+<!-- begin debug data
+=====job_interval=====
+{{ job_interval }}
+
+=====overview=====
+{{ overview |pprint(True) }}
+
+=====deadlines====
+{{ deadlines |pprint(True) }}
+-->
+{% endif %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <title>{{subject}}</title>
+    
+    <style type="text/css">
+    ____CSS____
+    </style>
+  </head>
+  <body class="body" style="padding-top: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; padding-left: 0 !important; font-family: &apos;Arial&apos;; margin-top: 0 !important; margin-right: 0 !important; margin-bottom: 0 !important; margin-left: 0 !important; display: block !important; width: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: 100%; background: #ffffff;" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#f7f7f7">
+  <!--*|IF:MC_PREVIEW_TEXT|*-->
+  <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; visibility: hidden;">{{subject}}</span><!--<![endif]-->
+  <!--*|END:IF|*-->
+  <!-- Header -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="devicewidth" bgcolor="#f7f7f7">
+    <tr>
+      <td align="center" valign="top" style="border-collapse: collapse;">
+        <table width="730" border="0" cellspacing="0" cellpadding="0" class="devicewidth100">
+          <tr>
+            <td style="border-collapse: collapse;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000">
+                <tr>
+                  <td width="15" style="border-collapse: collapse;"> </td>
+                  <td width="230" class="hide" style="border-collapse: collapse;"> </td>
+                  <td width="240" style="border-collapse: collapse;">
+                    <div> 
+                      <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                      <a href="https://compliance.ai/" style="text-decoration: none; color: #1d1be0;"><img src="https://s3-us-west-2.amazonaws.com/jurispect-web-assets/complianceai-header-white.png" alt="compliance_logo" class="img-responsive" width="240" style="max-width: 240px !important; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none;" mc:edit="logo"></a>
+                      <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    </div>
+                  </td>
+                  <td width="230" class="hide" style="border-collapse: collapse;"> </td>
+                  <td width="15" style="border-collapse: collapse;"> </td>
+                </tr>
+              </table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                <tr>
+                  <td width="15" style="border-collapse: collapse;"> </td>
+                  <td width="700" style="border-collapse: collapse;">
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    <div mc:edit="name" style="font-family: &apos;Roboto Condensed&apos; , sans-serif; line-height: 30px; font-size: 18px; color: #000000; text-align: center; letter-spacing: -.13px;"> Hello  {{ name }}, </div>
+                    <div style="font-family: &apos;Roboto Condensed&apos; , sans-serif; line-height: 30px; font-size: 18px; color: #000000; text-align: center; letter-spacing: -.13px;"> Here's your {{ job_interval }} Compliance.ai summary of activity from your followed Federal Agencies. </div>
+                    <div mc:edit="oct_month" style="font-family: &apos;Roboto Condensed&apos; , sans-serif; font-size: 20px; color: #000000; text-align: center; letter-spacing: -.13px;"> {{ time_span }} </div>
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                  </td>
+                  <td width="15" style="border-collapse: collapse;"> </td>
+                </tr>
+              </table>
+              {% if job_interval == 'weekly' %}
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                <tr>
+                  <td width="730" style="border-collapse: collapse;">
+                    <div class="center" style="text-align: center; width: 100%; height: 548px"> 
+                    <img src="{{ api_base_url }}/agency_summary_graph?user_id{{ user_id }}&from_date={{ from_date }}&to_date={{ to_date }}" alt="agency_summary_graph" style="margin-top: auto; width: 100%; margin-right: auto; margin-bottom: auto; margin-left: auto; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;">
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              {% endif %}
+              <!-- START OF AGENCY CARD --> 
+              {% for agency_name, updates in overview.iteritems() %}
+              {% if updates.types.items()|length > 0 %}
+              <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                <tr>
+                  <td width="550" bgcolor="#c2d5d9" style="border-collapse: collapse;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="30" style="border-collapse: collapse;"> </td>
+                        <td width="520" style="border-collapse: collapse;">
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                          <div mc:edit="cfpb" style="color: #4a4a4a; font-family: &apos;Roboto Condensed&apos; , sans-serif; font-weight: 700; line-height: 35px; letter-spacing: -.21px; font-size: 30px;"> {{ agency_name }} </div>
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                          
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width="180" bgcolor="#dfeaec" style="border-collapse: collapse;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="160" style="border-collapse: collapse;">
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                          {% for update_type, details in updates.types.iteritems() %}
+                          {% if loop.index0 < 3 %}  
+                          <div mc:edit="rule" style="margin-left: 15px; color: #000000; font-family: &apos;Roboto Condensed&apos; , sans-serif; font-weight: 400; line-height: 18px; letter-spacing: -.1px; font-size: 14px;">
+                          <a style="text-decoration: none; color: #000000;" href="{{ base_url }}/content?agency={{ updates.agency_id }}&&category={{ update_type }}&published_from={{ updates.published_from }}&published_to={{ updates.published_to }}" >{{ details.count }} {{ update_type }}</a>
+                          </div>
+                          {% endif %}
+                          {% endfor %}
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  {% if updates.types.items()|length > 3 %}
+                  <td width="180" bgcolor="#dfeaec" style="border-collapse: collapse; border-left: 2px solid #c2d5d9;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="160" style="border-collapse: collapse;">
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                          {% for update_type, details in updates.types.iteritems() %}
+                          {% if (loop.index0 >= 3) and (loop.index0 < 6) %}  
+                          <div mc:edit="rule" style="margin-left: 15px; color: #000000; font-family: &apos;Roboto Condensed&apos; , sans-serif; font-weight: 400; line-height: 18px; letter-spacing: -.1px; font-size: 14px;">
+                          <a style="text-decoration: none; color: #000000;" href="{{ base_url }}/content?agency={{ updates.agency_id }}&&category={{ update_type }}&published_from={{ updates.published_from }}&published_to={{ updates.published_to }}" >{{ details.count }} {{ update_type }}</a>
+                          </div>
+                          {% endif %}
+                          {% endfor %}
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  {% endif %}
+                  {% if updates.types.items()|length > 6 %}
+                  <td width="180" bgcolor="#dfeaec" style="border-collapse: collapse; border-left: 2px solid #c2d5d9;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="160" style="border-collapse: collapse;">
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                          {% for update_type, details in updates.types.iteritems() %}
+                          {% if (loop.index0 >= 6) and (loop.index0 < 9) %}  
+                          <div mc:edit="rule" style="margin-left: 15px; color: #000000; font-family: &apos;Roboto Condensed&apos; , sans-serif; font-weight: 400; line-height: 18px; letter-spacing: -.1px; font-size: 14px;">
+                          <a style="text-decoration: none; color: #000000;" href="{{ base_url }}/content?agency={{ updates.agency_id }}&&category={{ update_type }}&published_from={{ updates.published_from }}&published_to={{ updates.published_to }}" >{{ details.count }} {{ update_type }}</a>
+                          </div>
+                          {% endif %}
+                          {% endfor %}
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  {% endif %}
+                  {% if updates.types.items()|length > 9 %}
+                  <td width="180" bgcolor="#dfeaec" style="border-collapse: collapse; border-left: 2px solid #c2d5d9;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="160" style="border-collapse: collapse;">
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                          {% for update_type, details in updates.types.iteritems() %}
+                          {% if (loop.index0 >= 9) and (loop.index0 < 12) %}  
+                          <div mc:edit="rule" style="margin-left: 15px; color: #000000; font-family: &apos;Roboto Condensed&apos; , sans-serif; font-weight: 400; line-height: 18px; letter-spacing: -.1px; font-size: 14px;">
+                          <a style="text-decoration: none; color: #000000;" href="{{ base_url }}/content?agency={{ updates.agency_id }}&&category={{ update_type }}&published_from={{ updates.published_from }}&published_to={{ updates.published_to }}" >{{ details.count }} {{ update_type }}</a>
+                          </div>
+                          {% endif %}
+                          {% endfor %}
+                          <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  {% endif %}
+                </tr>
+              </table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                <tr>
+                  <td width="30" style="border-collapse: collapse;"> </td>
+                  <td width="700" style="border-collapse: collapse;">
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    {% for category in ['Final Rule', 'Enforcement', 'Proposed Rule', 'News', 'Agency Update', 'Notice', 'Presidential Document'] %}
+                    {% if updates.types[category] %}
+                    <div mc:edit="final" style="font-size: 16px; color: #000000; text-align: left; font-family: &apos;Roboto Condensed&apos; , sans-serif; letter-spacing: -.11px; line-height: 30px; font-weight: 600;"> 
+                    {{ category }} | Published {{ updates.types[category].display_doc.publication_date }} {{ updates.types[category].display_doc.additional_date_txt }} {{ updates.types[category].display_doc.additional_date }}
+                    </div>
+                    <div mc:edit="federal" style="font-weight: 400; font-size: 14px; color: #000000; font-family: &apos;Roboto Condensed&apos; , sans-serif; text-align: left; letter-spacing: -.1px; line-height: 24px;"> 
+                    {{ updates.types[category].display_doc.summary_text }}.... 
+                    <a href="{{ base_url }}/content?overlay=pdf-overlay&summary_id={{ updates.types[category].display_doc.id }}&summary_page=summary" style="color: #5798D2; font-weight: 400; text-decoration: none;"> Read More </a> 
+                    </div>
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    <div> 
+                    <a mc:edit="view" href="{{ base_url }}/content?no_skipping=true&agency={{ updates.agency_id }}&published_from={{ updates.published_from }}&published_to={{ updates.published_to }}" style="font-weight: 600; font-size: 18px; font-family: &apos;Roboto Condensed&apos; , sans-serif; color: #5798D2; text-align: justify; letter-spacing: -.13px; line-height: 21px; text-decoration: none;"> 
+                    View all {{ agency_name }} updates 
+                    </a> 
+                    </div>
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
+                  </td>
+                  <td width="30" style="border-collapse: collapse;"> </td>
+                </tr>
+              </table> 
+              {% endif %} 
+              {% endfor %}
+              <!-- END OF AGENCY CARD -->   
+              <!-- footer -->          
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="20" style="border-collapse: collapse;"> </td>
+                  <td width="243" style="border-collapse: collapse;"> </td>
+                  <td width="204" style="border-collapse: collapse;">
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    <div> <a href="https://compliance.ai/" style="text-decoration: none; color: #1d1be0;"><img src="https://s3-us-west-2.amazonaws.com/jurispect-web-assets/compliance-header-blk.png" alt="compliance_logo" class="img-responsive" width="204" style="max-width: 204px !important; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none;" mc:edit="foot_logo"></a>
+                    </div>
+                  </td>
+                  <td width="243" style="border-collapse: collapse;"> </td>
+                  <td width="20" style="border-collapse: collapse;"> </td>
+                </tr>
+              </table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="15" style="border-collapse: collapse;"></td>
+                  <td width="700" style="border-collapse: collapse;">
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    
+                    <div mc:edit="ai" style="font-weight: 400; font-size: 18px; color: #6f6f6f; font-family: &apos;Roboto Condensed&apos; , sans-serif; text-align: center; line-height: 21px;"> AI for Financial Regulatory Intelligence </div>
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="256" style="border-collapse: collapse;">  </td>
+                        <td width="36" style="border-collapse: collapse;">
+                          <div> <a href="https://twitter.com/compliance_ai?lang=en" style="text-decoration: none; color: #1d1be0;"> <img src="https://s3-us-west-2.amazonaws.com/jurispect-web-assets/twitter.png" alt="twitter-logo" class="img-responsive" width="36" style="max-width: 36px !important; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none;" mc:edit="twitter"></a> </div>
+                        </td>
+                        <td width="40" style="border-collapse: collapse;">  </td>
+                        <td width="36" style="border-collapse: collapse;">
+                          <div> <a href="https://vimeo.com/user67278588" style="text-decoration: none; color: #1d1be0;"> <img src="https://s3-us-west-2.amazonaws.com/jurispect-web-assets/vimeo.png" alt="vim-logo" class="img-responsive" width="36" style="max-width: 36px !important; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none;" mc:edit="vimeo"></a> </div>
+                        </td>
+                        <td width="40" style="border-collapse: collapse;">  </td>
+                        <td width="36" style="border-collapse: collapse;">
+                          <div> <a href="https://www.linkedin.com/company/18092764/" style="text-decoration: none; color: #1d1be0;"> <img src="https://s3-us-west-2.amazonaws.com/jurispect-web-assets/in.png" alt="linkedin-logo" class="img-responsive" width="42" style="max-width: 42px !important; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none;" mc:edit="in"></a> </div>
+                        </td>
+                        <td width="256" style="border-collapse: collapse;">  </td>
+                      </tr>
+                    </table>
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    
+                    <div> <a href="{{ base_url }}/settings" style="font-weight: 400; font-size: 18px; color: #6f6f6f; display: block; text-decoration: underline; font-family: &apos;Roboto Condensed&apos; , sans-serif; text-align: center; line-height: 21px;" mc:edit="unsubscribe"> Unsubscribe </a> </div>
+                    <div mc:edit="country" style="font-weight: 400; font-size: 18px; color: #6f6f6f; display: block; font-family: &apos;Roboto Condensed&apos; , sans-serif; text-align: center; line-height: 30px;"> 311 California St, San Francisco, CA 94104, USA </div>
+                    <div class="vertical-spacer-sm" style="margin-bottom: 1px;">&nbsp;</div>
+                    
+                  </td>
+                  <td width="15" style="border-collapse: collapse;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+{
+    "_shards": {
+        "failed": 0,
+        "successful": 6,
+        "total": 6
+    },
+    "aggregations": {
+        "filtered_documents": {
+            "cited_acts": {
+                "buckets": [
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 1344,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 443,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 54,
+                                    "key": "new york stock exchange"
+                                },
+                                {
+                                    "doc_count": 11,
+                                    "key": "treasury department"
+                                },
+                                {
+                                    "doc_count": 10,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 9,
+                                    "key": "federal reserve system"
+                                },
+                                {
+                                    "doc_count": 5,
+                                    "key": "federal deposit insurance corporation"
+                                },
+                                {
+                                    "doc_count": 4,
+                                    "key": "employee benefits security administration"
+                                },
+                                {
+                                    "doc_count": 4,
+                                    "key": "labor department"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "federal housing finance agency"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 4
+                        },
+                        "doc_count": 1365,
+                        "key": "securities exchange act of 1934"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 643,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 282,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 14,
+                                    "key": "new york stock exchange"
+                                },
+                                {
+                                    "doc_count": 7,
+                                    "key": "california code of regulations"
+                                },
+                                {
+                                    "doc_count": 4,
+                                    "key": "federal reserve system"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "federal deposit insurance corporation"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "employee benefits security administration"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "federal housing finance agency"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "labor department"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 2
+                        },
+                        "doc_count": 656,
+                        "key": "holloman air force base land exchange act"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 297,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 61,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 22,
+                                    "key": "new york stock exchange"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "treasury department"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "california code of regulations"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "employee benefits security administration"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "internal revenue service"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "labor department"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 303,
+                        "key": "securities act of 1933"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 119,
+                                    "key": "treasury department"
+                                },
+                                {
+                                    "doc_count": 70,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 58,
+                                    "key": "justice department"
+                                },
+                                {
+                                    "doc_count": 48,
+                                    "key": "internal revenue service"
+                                },
+                                {
+                                    "doc_count": 27,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 18,
+                                    "key": "alcohol tobacco firearms and explosives bureau"
+                                },
+                                {
+                                    "doc_count": 17,
+                                    "key": "consumer financial protection bureau"
+                                },
+                                {
+                                    "doc_count": 12,
+                                    "key": "federal deposit insurance corporation"
+                                },
+                                {
+                                    "doc_count": 12,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 10,
+                                    "key": "federal reserve system"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 69
+                        },
+                        "doc_count": 277,
+                        "key": "paperwork reduction act of 1995"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 265,
+                                    "key": "justice department"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 265,
+                        "key": "rehabilitation act of 1973"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 106,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 48,
+                                    "key": "federal reserve system"
+                                },
+                                {
+                                    "doc_count": 37,
+                                    "key": "treasury department"
+                                },
+                                {
+                                    "doc_count": 32,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 31,
+                                    "key": "federal deposit insurance corporation"
+                                },
+                                {
+                                    "doc_count": 30,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 26,
+                                    "key": "consumer financial protection bureau"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "employee benefits security administration"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "federal housing finance agency"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "federal trade commission"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 10
+                        },
+                        "doc_count": 232,
+                        "key": "dodd frank wall street reform and consumer protection act"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 199,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 186,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 13,
+                                    "key": "new york stock exchange"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 199,
+                        "key": "payment clearing and settlement supervision act of 2010"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 181,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 53,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 23,
+                                    "key": "new york stock exchange"
+                                },
+                                {
+                                    "doc_count": 5,
+                                    "key": "treasury department"
+                                },
+                                {
+                                    "doc_count": 4,
+                                    "key": "federal reserve system"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "employee benefits security administration"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "labor department"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "internal revenue service"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "federal deposit insurance corporation"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 4
+                        },
+                        "doc_count": 191,
+                        "key": "investment company act of 1940"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 147,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 80,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 14,
+                                    "key": "new york stock exchange"
+                                },
+                                {
+                                    "doc_count": 4,
+                                    "key": "treasury department"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "federal reserve system"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "financial crimes enforcement network"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "internal revenue service"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "justice department"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 155,
+                        "key": "investment company amendments act of 1970"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 136,
+                                    "key": "securities and exchange commission"
+                                },
+                                {
+                                    "doc_count": 20,
+                                    "key": "financial institutions regulatory authority"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "comptroller of the currency"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "treasury department"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "employee benefits security administration"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "labor department"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "new york stock exchange"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "california code of regulations"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "federal deposit insurance corporation"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "federal housing finance agency"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 2
+                        },
+                        "doc_count": 141,
+                        "key": "investment advisers act of 1940"
+                    }
+                ],
+                "doc_count_error_upper_bound": 16,
+                "sum_other_doc_count": 3105
+            },
+            "doc_count": 22159
+        }
+    },
+    "hits": [],
+    "timed_out": false,
+    "took": 55
+}

@@ -1,0 +1,25 @@
+Hello {{ name }},
+
+Here's your {{job_interval}} compliance.ai summary of activity from your followed Federal Agencies. 
+
+{% for agency_name, updates in overview.iteritems() %}
+  {% if updates.items()|length > 0 %}
+
+    {{ agency_name }}:
+    {% for update_type, num in updates.iteritems() %}
+      {% if num > 0 %}
+  {{ num }} {{ update_type }}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+    
+
+  View on Compliance.ai: {{ base_url }}
+
+
+   Visit compliance.ai: {{ base_url }}
+   Unsubscribe: {{ base_url }}/settings
+    
+   (c) 2017 Compliance.ai
+   311 California St., Suite 350, San Francisco CA 94104

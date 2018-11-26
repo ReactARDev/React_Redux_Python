@@ -1,0 +1,20 @@
+
+{
+    "query": {
+	"filtered": {
+	    "query": {
+		"multi_match": {
+		    "query": "Dodd Frank",
+		    "fields": ["summary_text", "full_text", "title" ]
+		}
+	    }
+	}
+    },
+    "highlight": {
+	"fields" : {
+	    "full_text" : { },
+	    "summary_text" : { },
+	    "title" : { }
+	}
+    }
+}

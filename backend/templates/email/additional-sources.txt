@@ -1,0 +1,17 @@
+   A user has requested an additonal source or topic
+
+   Name: {{name}}
+
+   Email: {{email}}
+
+Federal data sources:
+
+   {{ other_agencies }}
+
+State data sources:
+
+   {{ other_state_agencies }}
+
+Topics:
+
+   {{ other_topics }}

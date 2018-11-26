@@ -1,0 +1,205 @@
+{
+    "_shards": {
+        "failed": 0,
+        "successful": 6,
+        "total": 6
+    },
+    "aggregations": {
+        "filtered_documents": {
+            "by_act": {
+                "buckets": [
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 1680,
+                                    "key": "sec"
+                                },
+                                {
+                                    "doc_count": 53,
+                                    "key": "nyse"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "finra"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "cfpb"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 1681,
+                        "key": "securities exchange act of 1934"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 1424,
+                                    "key": "sec"
+                                },
+                                {
+                                    "doc_count": 33,
+                                    "key": "nyse"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "finra"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 1424,
+                        "key": "holloman air force base land exchange act"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 908,
+                                    "key": "sec"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "cfpb"
+                                },
+                                {
+                                    "doc_count": 2,
+                                    "key": "finra"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "nyse"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 911,
+                        "key": "securities act of 1933"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 753,
+                                    "key": "sec"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 753,
+                        "key": "investment advisers act of 1940"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 545,
+                                    "key": "sec"
+                                },
+                                {
+                                    "doc_count": 1,
+                                    "key": "cfpb"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 546,
+                        "key": "sarbanes oxley act of 2002"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 522,
+                                    "key": "sec"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 522,
+                        "key": "investment company act of 1940"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 518,
+                                    "key": "sec"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 518,
+                        "key": "investment advisers supervision coordination act"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 185,
+                                    "key": "sec"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 185,
+                        "key": "investment company amendments act of 1970"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 110,
+                                    "key": "sec"
+                                },
+                                {
+                                    "doc_count": 3,
+                                    "key": "cfpb"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 113,
+                        "key": "administrative procedure act"
+                    },
+                    {
+                        "by_agency": {
+                            "buckets": [
+                                {
+                                    "doc_count": 94,
+                                    "key": "sec"
+                                },
+                                {
+                                    "doc_count": 18,
+                                    "key": "cfpb"
+                                }
+                            ],
+                            "doc_count_error_upper_bound": 0,
+                            "sum_other_doc_count": 0
+                        },
+                        "doc_count": 112,
+                        "key": "dodd frank wall street reform and consumer protection act"
+                    }
+                ],
+                "doc_count_error_upper_bound": 2,
+                "sum_other_doc_count": 448
+            },
+            "doc_count": 2951
+        }
+    },
+    "hits": [],
+    "timed_out": false,
+    "took": 50
+}

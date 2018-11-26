@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .node {
+      stroke: #fff;
+      stroke-width: 1.5px;
+      }
+      .link {
+      stroke: #999;
+      stroke-opacity: .6;
+      }
+    </style>
+    <script src="http://d3js.org/d3.v2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var buildProfileHTML = function(d) {
+        var html  = '<td id="profile_pane" colspan="2" style="vertical-align:middle">';
+        html += '<table id="profile_table">';
+
+	if (d.category != undefined) {
+	  html += '<tr><td><b>Document ID:</b></td>';
+	  html += '<td><a href="/citation_graph/' + d.id  + '">' + d.id + '</a></td></tr>';
+	  html += '<tr><td><b>Category</b></td><td>' + d.category + '</td></tr>';
+	} else if (d.short_name != undefined) {
+	  html += '<tr><td><b>Regulation ID:</b></td>';
+	  html += '<td><a href="/regulation_graph/' + d.id  + '">' + d.id + '</a></td></tr>';
+	  html += '<tr><td><b>Category</b></td><td>Named Regulation</td></tr>';
+	} else {
+	  html += '<tr><td><b>Act ID:</b></td>';
+	  html += '<td><a href="/act_graph/' + d.id  + '">' + d.id + '</a></td></tr>';
+	  html += '<tr><td><b>Category</b></td><td>Legislative Act</td></tr>';
+	}
+	
+        if (d.short_name != undefined) {
+	  html += '<tr><td><b>Code</b></td><td>' + d.short_name + '</td></tr>';
+	}
+	
+	if (d.title != undefined) {
+	  html += '<tr><td><b>Title</b></td><td>' + d.title + '</td></tr>';;
+	} else if (d.name != undefined) {
+	  html += '<tr><td><b>Name</b></td><td>' + d.name + '</td></tr>';
+	}
+	  
+        if (d.pub_date != undefined) {
+	  html += '<tr><td><b>Published</b></td><td>' + d.pub_date + '</td></tr>';
+	} else if (d.date != undefined) {
+	  html += '<tr><td><b>Passed</b></td><td>' + d.date + '</td></tr>';
+	}
+	
+        if (d.times_cited != undefined) {
+	  html += '<tr><td><b>Times Cited</b></td><td>' + d.times_cited + '</td></tr>';
+	}
+	
+	html += '</table></td>';
+      
+        return html;
+      };
+	
+      var loadDocProfile = function(d) {
+        html = buildProfileHTML(d);
+        $( "#profile_pane" ).replaceWith(html);
+      };
+
+      var loadNeighborhoodGraph = function(graph) {
+	    var width  = 600;
+	    var height = 600;
+
+	    var svg = d3.select("#svg_pane").append("svg")
+		.attr("width", width)
+                .attr("height", height);
+
+	    var force = d3.layout.force()
+		.charge(-50)
+		.linkDistance( function(d) { return d.source.strength; })
+		.size([width, height]);
+
+	    force
+		.nodes(graph.nodes)
+		.links(graph.links)
+                .start();
+
+            svg.append("svg:defs").selectAll("marker")
+               .data(["end"])
+               .enter().append("svg:marker")
+               .attr("id", String)
+               .attr("viewBox", "0 -5 10 10")
+               .attr("refX", 15)
+               .attr("refY", -1.5)
+               .attr("markerWidth", 5)
+               .attr("markerHeight", 5)
+               .attr("orient", "auto")
+               .append("svg:path")
+               .attr("d", "M0,-5L10,0L0,5");
+      
+	    var link = svg.selectAll(".link")
+		.data(graph.links)
+                .enter().append("line")
+		.attr("class", "link")
+                .attr("marker-end", "url(#end)");
+
+	    var node = svg.selectAll(".node")
+		.data(graph.nodes)
+		.enter().append("circle")
+		.attr("class", "node")
+		.attr("r", function(d) { return d.size; } )
+                .style("fill", function(d) { return d3.rgb(d.color); } )
+		.call(force.drag);
+
+            node.append("svg:title").text(function(d) { return d.name; })
+            node.on("click", function(d) { return loadDocProfile(d); } );
+
+	    force.on("tick", function() {
+		link.attr("x1", function(d) { return d.source.x; })
+		    .attr("y1", function(d) { return d.source.y; })
+		    .attr("x2", function(d) { return d.target.x; })
+		    .attr("y2", function(d) { return d.target.y; });
+		node.attr("cx", function(d) { return d.x; })
+	            .attr("cy", function(d) { return d.y; });
+	
+	    });
+	
+      };
+      
+      d3.json('/{{data_route}}/{{doc_id}}', loadNeighborhoodGraph);
+	
+    </script>
+    <table>
+      <tr>
+	<td id="svg_pane" colspan="6"></td>
+	<td id="profile_pane" colspan="2" style="vertical-align:middle"></td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+{% if debug %}
+<!-- begin debug data
+/*===========================
+IMPORTANT: make changes to .html file, then run
+bin/inlineemailstyles.js to update convert the CSS from complianceai.css
+to inline styles
+
+THIS IS A TEMPLATE FROM WHICH ALL EMAILS SHOULD BE BUILT FROM TO KEEP STYLES CONSISTENT
+=============================*/
+-->
+{% endif %}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>{{ subject }}</title>
+
+	<style type="text/css">
+____CSS____
+    </style>
+</head>
+<body>
+	<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+	<tr>
+		<td>
+      /********************************************
+      STANDARD HEADER BELOW 
+      **********************************************/
+      <table id="outer-container" align="center">
+        <tr><td>
+          <table id="logo">
+            <tr><td>
+              <img src="https://s3-us-west-2.amazonaws.com/jurispect-web-assets/compliance-header-blk.png" />
+            </td></tr>
+          </table>
+          /********************************************
+          ADD YOUR CONTENT / TEXT HERE
+          **********************************************/
+          <div class="vertical-spacer">&nbsp;</div>
+          /********************************************
+          STANDARD FOOTER BELOW
+          **********************************************/
+					<table id="footer" width="600">
+						 <tr>
+								<td class="contact">
+									 <div class="vertical-spacer-sm">&nbsp;</div>
+									 <div class="vertical-spacer-sm">&nbsp;</div>
+									 <div class="center">
+										 <div class="contact-link"><a href="{{ base_url }}/privacy">Privacy</a></div>
+										 <div class="lineBorder" width="1" height="16"></div>
+										 <div class="contact-link"><a href="{{ base_url }}/support">Support</a></div>
+									 </div>
+									 <div class="vertical-spacer-sm">&nbsp;</div>
+									 <div class="center">
+										 <div class="address">
+												<div class="copyright">&copy;</div> 2017 Compliance.ai <div class="oval" width="2" height="2"></div> 311 California St., Suite 350, San Francisco CA 94104
+										 </div>
+									 </div>
+									 <div class="vertical-spacer-sm">&nbsp;</div>
+								</td>
+						 </tr>
+					</table>
+        </td></tr>
+      </table> <!-- end #outer-container -->
+    </td>
+	</tr>
+	</table>
+	<!-- End of wrapper table -->
+</body>
+</html>

@@ -1,0 +1,20 @@
+Hello {{user_first_name}},
+
+Your {{user_account_item}} has been changed
+
+The {{user_account_item}} for your Compliance.ai Account - {{user_email}} - was recently changed. 
+If you made this change, you can ignore this message. 
+
+If you didn't change your {{user_account_item}}, your account might have been compromised. 
+To get back into your account, {{account_change_txt_begin}} {{url}} {{account_change_txt_end}}.
+
+
+Sincerely,
+The Compliance.ai Team
+
+Visit compliance.ai: {{ base_url }}
+Privacy: {{ base_url }}/privacy
+Help: {{ base_url }}/support
+ 
+(c) 2017 Compliance.ai
+311 California St., Suite 350, San Francisco CA 94104

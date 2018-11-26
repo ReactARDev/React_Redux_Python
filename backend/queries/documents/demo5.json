@@ -1,0 +1,11 @@
+{
+    "_source":{"exclude":"full_text"},
+    "query":{"filtered":{"filter":{
+	"bool":{"must":[
+	    {"match": {"full_text": "Dodd-Frank"}},
+	    {"term": {"acts.name":"Dodd-Frank Wall Street Reform and Consumer Protection Act"}},
+	    {"terms": {"category":["Final Rule", "Proposed Rule"]}},
+	    {"terms": {"agencies.id":[164,573]}}
+	]}
+    }}}
+}

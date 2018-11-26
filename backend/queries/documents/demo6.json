@@ -1,0 +1,4 @@
+{
+    "_source":{"exclude":"full_text"},
+    "query": { "match": { "full_text": "Dodd Frank"} }
+}

@@ -1,0 +1,2495 @@
+{
+    "_shards": {
+        "failed": 0,
+        "successful": 6,
+        "total": 6
+    },
+    "aggregations": {
+        "filtered_documents": {
+            "by_agency": {
+                "buckets": [
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 25,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 25,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 50,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 31,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 19,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 50,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 29,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 19,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 48,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 32,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 22,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 54,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 53,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 21,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 74,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 33,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 12,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 45,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 24,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 15,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 39,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 28,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 25,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 53,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 31,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 28,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 59,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 33,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 23,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 56,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 34,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 27,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 61,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 33,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 24,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 57,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 28,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 20,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 48,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 694,
+                        "key": "treasury department"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 20,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 16,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 36,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 17,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 15,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 32,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 14,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 14,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 28,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 17,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 13,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 30,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 37,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 13,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 50,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 16,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 22,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 12,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 20,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 20,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 17,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 37,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 22,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 20,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 42,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 17,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 12,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 29,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 20,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 13,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 33,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 20,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 15,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 35,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 14,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 13,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 27,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 421,
+                        "key": "internal revenue service"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 11,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 19,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 1,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 10,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 17,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 8,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 11,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 14,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 12,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 11,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 18,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 11,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 16,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 10,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 9,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 19,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 14,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 163,
+                        "key": "justice department"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 9,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 14,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 12,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 9,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 12,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 11,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 9,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 14,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 14,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 18,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 12,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 10,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 16,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 11,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 144,
+                        "key": "securities and exchange commission"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 10,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 13,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 9,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 16,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 13,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 18,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 13,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 19,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 8,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 8,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 132,
+                        "key": "federal reserve system"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 8,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 12,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 14,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 8,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 12,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 18,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 10,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 3,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 113,
+                        "key": "federal deposit insurance corporation"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 14,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 15,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 10,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 3,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 9,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 10,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 3,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 8,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 89,
+                        "key": "consumer financial protection bureau"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 10,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 10,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 2,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 1,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 82,
+                        "key": "federal trade commission"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1372636800000,
+                                    "key_as_string": "2013-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 13,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 8,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 11,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 2,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 6,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 3,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 5,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 9,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 3,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 2,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 75,
+                        "key": "comptroller of the currency"
+                    },
+                    {
+                        "by_quarter": {
+                            "buckets": [
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 5,
+                                    "key": 1380585600000,
+                                    "key_as_string": "2013-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1388534400000,
+                                    "key_as_string": "2014-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 0,
+                                    "key": 1396310400000,
+                                    "key_as_string": "2014-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1404172800000,
+                                    "key_as_string": "2014-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 3,
+                                    "key": 1412121600000,
+                                    "key_as_string": "2014-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 3,
+                                    "key": 1420070400000,
+                                    "key_as_string": "2015-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 3,
+                                                "key": "Proposed Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1427846400000,
+                                    "key_as_string": "2015-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1435708800000,
+                                    "key_as_string": "2015-07"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 6,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 1,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 7,
+                                    "key": 1443657600000,
+                                    "key_as_string": "2015-10"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 7,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 11,
+                                    "key": 1451606400000,
+                                    "key_as_string": "2016-01"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 4,
+                                                "key": "Final Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1459468800000,
+                                    "key_as_string": "2016-04"
+                                },
+                                {
+                                    "by_category": {
+                                        "buckets": [
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Final Rule"
+                                            },
+                                            {
+                                                "doc_count": 2,
+                                                "key": "Proposed Rule"
+                                            }
+                                        ],
+                                        "doc_count_error_upper_bound": 0,
+                                        "sum_other_doc_count": 0
+                                    },
+                                    "doc_count": 4,
+                                    "key": 1467331200000,
+                                    "key_as_string": "2016-07"
+                                }
+                            ]
+                        },
+                        "doc_count": 56,
+                        "key": "drug enforcement administration"
+                    }
+                ],
+                "doc_count_error_upper_bound": 1,
+                "sum_other_doc_count": 471
+            },
+            "doc_count": 1334
+        }
+    },
+    "hits": [],
+    "timed_out": false,
+    "took": 63
+}

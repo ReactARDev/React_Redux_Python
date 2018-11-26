@@ -1,0 +1,7 @@
+Hello {{email}},
+
+Welcome to Compliance.ai! Please visit {{url}} to activate your account.
+
+We look forward to making your compliance work easier.
+
+-The Compliance.ai Team

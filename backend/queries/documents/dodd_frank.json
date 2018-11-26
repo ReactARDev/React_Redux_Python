@@ -1,0 +1,12 @@
+{
+    "query": {
+	"bool": {
+	    "should": [
+		{"match_phrase": { "act_mentions": "dodd frank" } },
+		{"match_phrase": { "summary_text": "dodd frank" } },
+		{"match_phrase": { "full_text": "dodd frank" } },
+		{"match_phrase": { "title": "dodd frank" } }
+	    ]
+	}
+    }
+}

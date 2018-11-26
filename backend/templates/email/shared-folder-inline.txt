@@ -1,0 +1,12 @@
+{{owner_first_name}} shared a folder with you.
+
+{{user_msg}}
+
+Any questions please contact us: support@compliance.ai
+
+Visit compliance.ai: {{ base_url }}
+Privacy: {{ base_url }}/privacy
+Help: {{ base_url }}/support
+ 
+(c) 2017 Compliance.ai
+311 California St., Suite 350, San Francisco CA 94104

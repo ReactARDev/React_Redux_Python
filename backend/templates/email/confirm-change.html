@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> {% if debug %}
+<!-- begin debug data
+/*===========================
+IMPORTANT: make changes to .html file, then run
+bin/inlineemailstyles.js to update convert the CSS from complianceai.css
+to inline styles
+=============================*/
+-->
+{% endif %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ subject }}</title>
+
+    <style type="text/css">
+        ____CSS____
+    </style>
+</head>
+
+<body>
+    <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+        <tr>
+            <td>
+                <table id="outer-container" align="center">
+                    <tr>
+                        <td>
+                            <table id="logo">
+                                <tr>
+                                    <td>
+                                        <img src="https://s3-us-west-2.amazonaws.com/jurispect-web-assets/compliance-header-blk.png" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+                                <tbody class="mcnButtonBlockOuter">
+                                <tr>
+                                <td style="text-align:left" valign="top" align="center" class="sign-off-msg">
+                                <div>
+                                <p style="font-family:helvetica neue,helvetica,arial,verdana,sans-serif; margin: 10px; font-size: 14px; line-height: 18px;">Hello {{user_first_name}},</p>
+					                      <p style="font-family:helvetica neue,helvetica,arial,verdana,sans-serif; margin: 10px; font-size: 14px; line-height: 18px;">
+											          The {{user_account_item}} for your Compliance.ai Account - <strong>{{user_email}}</strong> - was recently changed. 
+											          If you made this change, you can ignore this message. 
+																</p>
+																<p style="font-family:helvetica neue,helvetica,arial,verdana,sans-serif; margin: 10px; font-size: 14px; line-height: 18px;">
+					                      	If you didn't change your {{user_account_item}}, your account might have been compromised. 
+																	To get back into your account, {{account_change_txt_begin}} <a href="{{url}}">{{link_txt}}</a> {{account_change_txt_end}}.
+					                      </p>
+                                </div>
+                                </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+                                <tbody class="mcnButtonBlockOuter">
+                                    <tr>
+                                        <td style="text-align:left" valign="top" align="center" class="sign-off-msg">
+                                            <div>
+                                                <p style="font-family:helvetica neue,helvetica,arial,verdana,sans-serif; margin: 10px; font-size: 14px; line-height: 18px;">Sincerely,</p>
+                                                <p style="font-family:helvetica neue,helvetica,arial,verdana,sans-serif; margin: 10px; font-size: 14px; line-height: 18px;">The Compliance.ai Team</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="vertical-spacer">&nbsp;</div>
+                            <table id="footer" width="600">
+                                <tr>
+                                    <td class="contact">
+                                        <div class="vertical-spacer-sm">&nbsp;</div>
+                                        <div class="center">
+                                            <a class="contact-link" href="{{ base_url }}" style="font-family:helvetica neue,helvetica,arial,verdana,sans-serif ; text-decoration: none;">Visit Compliance.ai</a>
+                                            <br>
+                                            <br>
+                                            <div class="contact-link"><a href="{{ base_url }}/privacy">Privacy</a></div>
+                                            <div class="lineBorder" width="1" height="16"></div>
+                                            <div class="contact-link"><a href="{{ base_url }}/support">Support</a></div>
+                                        </div>
+                                        <div class="vertical-spacer-sm">&nbsp;</div>
+                                        <div class="center">
+                                            <div class="address">
+                                                <div class="copyright">&copy;</div> 2017 Compliance.ai
+                                                <div class="oval" width="2" height="2"></div> 311 California St., Suite 350, San Francisco CA 94104
+                                            </div>
+                                        </div>
+                                        <div class="vertical-spacer-sm">&nbsp;</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- end #outer-container -->
+            </td>
+        </tr>
+    </table>
+    <!-- End of wrapper table -->
+</body>
+
+</html>

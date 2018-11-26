@@ -1,0 +1,9 @@
+{
+    "_source":{"exclude":"full_text"},
+    "query":{"filtered":{"filter":{
+	"bool":{"must":[
+	    {"terms": {"place_mentions":["CA","California"]}},
+	    {"terms": {"org_mentions":["BofA","Bank of America"]}}
+	]}
+    }}}
+}

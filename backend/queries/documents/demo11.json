@@ -1,0 +1,8 @@
+{
+    "_source":{"exclude":"full_text"},
+    "query":{"filtered":{"filter":{
+	"bool":{"must":[
+	    {"terms": {"place_mentions":["CA","California"]}}
+	]}
+    }}}
+}

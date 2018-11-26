@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*~
+
+# C extensions
+*.so
+
+.env
+.env_dev
+.env_integration
+.env_production
+.env_dev_with_index
+
+# Auto-generated graphql schema
+schema.json
+schema.graphql
+
+# Credentials
+.boto
+
+# PyCharm auto-generated
+.idea
+
+# virtual env related
+env
+
+# mac files
+.DS_Store
+
+# virtual env
+venv/
+
+# stanford ner installation
+learning/stanford-ner-2014-06-16
+
+# VS Code auto-generated
+.vscode
