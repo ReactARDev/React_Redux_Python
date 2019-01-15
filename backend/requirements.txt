@@ -65,7 +65,7 @@ SQLAlchemy==1.1.15
 tldextract==1.7.5
 UgliPyJS==0.2.5
 Unidecode==0.4.19
-urllib3==1.22
+urllib3>=1.23
 watchdog==0.8.3
 webassets==0.12.0
 WebOb==1.5.1
